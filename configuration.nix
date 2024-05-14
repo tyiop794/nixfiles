@@ -49,6 +49,12 @@
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
+
+  # Autologin, since our drive is encrypted
+  services.xserver.displayManager.autoLogin.enable = true;
+  services.xserver.displayManager.autoLogin.user = "kamilyousuf";
+  systemd.services."getty@tty1".enable = false;
+  systemd.services."autovt@tty1".enable = false;
   
   # Exclude certain GNOME packages
   environment.gnome.excludePackages = with pkgs.gnome; [
