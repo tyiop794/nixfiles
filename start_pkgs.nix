@@ -17,6 +17,6 @@
      fzf
      ripgrep
      jq
-     lz4jsoncat
+     lz4json
   ];
 }
