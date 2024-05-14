@@ -16,5 +16,7 @@
      #command-line tools
      fzf
      ripgrep
+     jq
+     lz4jsoncat
   ];
 }
