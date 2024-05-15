@@ -24,5 +24,6 @@
      jq
      mozlz4a
      bat
+     newsboat
   ];
 }
