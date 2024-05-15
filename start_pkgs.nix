@@ -1,7 +1,6 @@
 {config, pkgs, ...}:
 {
   home.packages = with pkgs; [
-     firefox
      tree
      neovim
      fastfetch
@@ -12,6 +11,8 @@
      fragments
      pika-backup
      keepassxc
+     firefox
+     thunderbird
 
      #command-line tools
      fzf
