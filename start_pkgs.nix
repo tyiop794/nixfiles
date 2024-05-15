@@ -16,6 +16,7 @@
      discord
      dolphin-emu
      spotify
+     anki
 
      #command-line tools
      fzf
