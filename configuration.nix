@@ -134,7 +134,6 @@
     powertop
     curl
     distrobox
-    flatpak
     openfortivpn
     gnome.dconf-editor
     lsb-release
