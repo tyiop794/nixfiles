@@ -189,7 +189,7 @@
     automatic = true;
     dates = "weekly";
     options = "--delete-older-than 30d";
-  }
+  };
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
