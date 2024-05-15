@@ -130,6 +130,7 @@
     gnome.gnome-tweaks
     gnome.gnome-terminal
     gnome.gnome-power-manager
+    gnome-extension-manager
     powertop
     curl
     distrobox
