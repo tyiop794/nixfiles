@@ -20,5 +20,7 @@
      jq
      mozlz4a
 
+    # GNOME extensions
+    gnomeExtensions.blur-my-shell
   ];
 }
