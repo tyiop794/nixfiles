@@ -50,6 +50,9 @@
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
 
+  # Enable gnome keyring
+  security.pam.services.gdm.enableGnomeKeyring = true;
+
   # Autologin, since our drive is encrypted
   services.displayManager.autoLogin.enable = true;
   services.displayManager.autoLogin.user = "kamilyousuf";
