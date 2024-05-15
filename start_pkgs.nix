@@ -15,6 +15,7 @@
      thunderbird
      discord
      dolphin-emu
+     spotify
 
      #command-line tools
      fzf
