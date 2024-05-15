@@ -13,6 +13,8 @@
      keepassxc
      firefox
      thunderbird
+     discord
+     dolphin-emu
 
      #command-line tools
      fzf
