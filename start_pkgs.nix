@@ -19,6 +19,6 @@
      ripgrep
      jq
      mozlz4a
-
+     bat
   ];
 }
