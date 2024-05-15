@@ -169,6 +169,20 @@
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 
+  # Set up auto-updating
+  system.autoUpgrade = {
+    enable = true;
+    flake = inputs.self.outPath;
+    flags = [
+        "--update-input"
+        "nixpkgs"
+        "--no-write-lock-file"
+        "-L"
+    ];
+    dates = "02:00";
+    randomizedDelaySec = "45min";
+  };
+
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
