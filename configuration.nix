@@ -141,6 +141,14 @@
     powertop
   ];
 
+  # Enable Steam
+  nixpkgs.config.allowUnfree = true;
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true;
+    dedicatedServer.openFirewall = true;
+  };
+
   # Change the default editor
   environment.variables.EDITOR = "nvim";
 
