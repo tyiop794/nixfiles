@@ -184,6 +184,13 @@
     randomizedDelaySec = "45min";
   };
 
+  # Collect the garbage after a week
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 30d";
+  }
+
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
