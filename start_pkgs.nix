@@ -19,5 +19,6 @@
      ripgrep
      jq
      mozlz4a
+
   ];
 }

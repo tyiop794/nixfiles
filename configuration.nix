@@ -137,6 +137,7 @@
     openfortivpn
     gnome.dconf-editor
     lsb-release
+    powertop
   ];
 
   # Change the default editor
