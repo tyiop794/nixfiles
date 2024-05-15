@@ -25,7 +25,7 @@
   ];
   home.stateVersion = "23.11";
 
-  packages.bat.config = {
+  home.packages.bat.config = {
     theme = "Gruvbox";
   };
 
