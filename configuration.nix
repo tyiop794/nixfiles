@@ -133,7 +133,6 @@
     gnome-extension-manager
     powertop
     curl
-    distrobox
     openfortivpn
     gnome.dconf-editor
     lsb-release
