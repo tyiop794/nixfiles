@@ -17,6 +17,7 @@
      dolphin-emu
      spotify
      anki
+     tor-browser
 
      #command-line tools
      fzf
