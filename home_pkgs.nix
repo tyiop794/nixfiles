@@ -18,6 +18,7 @@
      spotify
      anki
      tor-browser
+     libreoffice
 
      #command-line tools
      fzf
