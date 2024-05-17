@@ -61,7 +61,7 @@
   programs.firefox = {
   	enable = true;
   	profiles.default = {
-		extensions = with pkgs.inputs.firefox-addons.packages.${pkgs.system}; [
+		extensions = with inputs.firefox-addons.packages.${pkgs.system}; [
 			ublock-origin
 		];
 	};
