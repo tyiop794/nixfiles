@@ -1281,3 +1281,5 @@
 [05/17/24, 11:52:44:968] info: [CHECK-FOR-OLD-CHANNEL] (T06Q3GFNTT5) Within limit [internal DMs]: 11 
 [05/17/24, 11:52:44:968] info: [CHECK-FOR-OLD-CHANNEL] (T06Q3GFNTT5) Within limit [app DMs]: 0 
 [05/17/24, 11:52:44:968] info: [CHECK-FOR-OLD-CHANNEL] (T06Q3GFNTT5) Within limit [record channels]: 0 
+[05/17/24, 11:55:53:594] info: [DND_V2] (TM73UH3RQ) Checking for changes in DND status for the following members: U0421MCJE4S,U01QVE4SBQU,U03UM8LQSQP,U03V1HZQF8X,U01LKUZMAFL,U0194HWHNR4,U05LSTX4GF7,UMLD2J5KR,U0103PQ9EE9,U02AR8PG4BZ,U06CXD49JSW 
+[05/17/24, 11:55:53:599] info: [DND_V2] (TM73UH3RQ) Will check for changes in DND status again in 5 minutes 
