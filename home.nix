@@ -59,10 +59,12 @@
   };
 
   programs.firefox = {
-  	extensions = with pkgs.input.firefox-addons; [
-		ublock-origin
-		sponsorblock
-	];
+  	profiles.kyousuf = {
+		extensions = with pkgs.input.firefox-addons; [
+			ublock-origin
+			sponsorblock
+		];
+	};
   };
 
   # Let home Manager install and manage itself.
