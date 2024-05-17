@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   home.username = "kamilyousuf";
@@ -60,7 +60,7 @@
 
   programs.firefox = {
   	profiles.default = {
-		extensions = with pkgs.input.firefox-addons; [
+		extensions = with inputs.firefox-addons; [
 			ublock-origin
 			sponsorblock
 		];
