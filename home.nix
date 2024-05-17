@@ -41,6 +41,9 @@
 		tap-to-click = false;
 		speed = 0.55;
 	};
+	"org/gnome/desktop/input-sources" = {
+		xkb-options = ['caps:escape_shifted_capslock'];
+	};
   };
 
   # Let home Manager install and manage itself.
