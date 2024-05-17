@@ -24,6 +24,7 @@
   imports = [
      ./home_pkgs.nix
      ./home_cfgs/gnome.nix
+     ./home_cfgs/neovim.nix
   ];
   home.stateVersion = "23.11";
 
@@ -31,9 +32,6 @@
     theme = "Gruvbox";
   };
 
-  programs.neovim = {
-  	defaultEditor = true;
-  };
 
   programs.firefox = {
   	enable = true;
