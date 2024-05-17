@@ -30,6 +30,9 @@
   };
 
   dconf.settings = {
+  	"org/gnome/shell" = {
+		disable-user-extensions = false;
+	};
 	"org/gnome/desktop/interface" = {
 		text-scaling-factor = 1.25;		
 	};
