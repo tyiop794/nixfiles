@@ -39,6 +39,7 @@
 	"org/gnome/desktop/peripherals/touchpad" = {
 		tap-and-drag = false;
 		tap-to-click = false;
+		speed = 0.55;
 	};
   };
 
