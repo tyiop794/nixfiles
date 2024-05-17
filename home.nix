@@ -21,7 +21,7 @@
 
   # Packages that should be installed to the user profile.
   imports = [
-     ./start_pkgs.nix
+     ./home_pkgs.nix
   ];
   home.stateVersion = "23.11";
 

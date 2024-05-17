@@ -25,5 +25,10 @@
      mozlz4a
      bat
      newsboat
+
+     # GNOME shell extensions
+     gnomeExtensions.night-theme-switcher
+     gnomeExtensions.gsconnect
+
   ];
 }
