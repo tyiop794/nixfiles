@@ -36,6 +36,10 @@
 	"org/gnome/mutter" = {
 		dynamic-workspaces = true;
 	};
+	"org/gnome/desktop/peripherals/touchpad" = {
+		tap-and-drap = false;
+		tap-to-click = false;
+	};
   };
 
   # Let home Manager install and manage itself.
