@@ -1,0 +1,6 @@
+2024/05/17-11:34:55.900 c52 Creating DB /home/kamilyousuf/.config/Slack/IndexedDB/https_app.slack.com_0.indexeddb.leveldb since it was missing.
+2024/05/17-11:34:55.904 c52 Reusing MANIFEST /home/kamilyousuf/.config/Slack/IndexedDB/https_app.slack.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/05/17-11:36:45.811 c6d Level-0 table #5: started
+2024/05/17-11:36:45.814 c6d Level-0 table #5: 4678 bytes OK
+2024/05/17-11:36:45.816 c6d Delete type=0 #3
+2024/05/17-11:36:45.817 c51 Manual compaction at level-0 from '\x00\x03\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at (end)
