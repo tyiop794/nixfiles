@@ -203,7 +203,6 @@
     flags = [
         "--update-input"
         "nixpkgs"
-        "--no-write-lock-file"
         "-L"
     ];
     dates = "17:00";
