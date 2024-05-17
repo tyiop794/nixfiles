@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+cd ~/nixfiles
+git add . 
+git commit -m "$(date +%F--%T)"
+git push
+sudo nixos-rebuild switch
