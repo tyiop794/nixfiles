@@ -22,16 +22,27 @@
 	modules = [
 	   ./configuration.nix
 	   ./virtualisation.nix
+	   /*
 	   home-manager.nixosModules.home-manager
 	   {
 	       home-manager.useGlobalPkgs = true;
 	       home-manager.useUserPackages = true;
-	       specialArgs = {inherit inputs; };
 
 	       home-manager.users.kamilyousuf = import ./home.nix;
 	   }
+	   */
 	];
     };
+
+    homeConfigurations = {
+	"kamilyousuf@tardis" = home-manager.lib.homeManagerConfiguration {
+	    pkgs = nixpkgs.legacyPackages.x86_64-linux;
+	    extraSpecialArgs = {inherit inputs outputs;};
+	    modules = [
+	    	./home.nix
+	    ];
+	};
+    }
 
   };
 }
