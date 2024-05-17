@@ -82,11 +82,12 @@
     geary       # email client
     seahorse    # password manager
     pkgs.gnome-console
+    pkgs.snapshot # camera program
 
     # these should be self explanatory
     gnome-calculator gnome-calendar gnome-characters gnome-clocks gnome-contacts
     gnome-font-viewer gnome-logs gnome-maps gnome-music pkgs.gnome-photos gnome-screenshot
-    gnome-weather gnome-disk-utility pkgs.gnome-connections
+    gnome-weather gnome-disk-utility pkgs.gnome-connections 
   ];
 
   # Configure keymap in X11

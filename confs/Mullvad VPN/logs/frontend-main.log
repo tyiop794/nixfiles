@@ -6,3 +6,12 @@
 [2024-05-17 13:36:26.223][info] Connected to the daemon
 [2024-05-17 13:36:26.412][info] Skip autoconnect because account token is not set
 [2024-05-17 13:36:26.762][error] Failed to check autostart file: ENOENT: no such file or directory, access '/home/kamilyousuf/.config/autostart/mullvad-vpn.desktop'
+[2024-05-17 14:08:24.168][info] Suspend event received, disconnecting from daemon
+[2024-05-17 14:08:24.171][verbose] GRPC Channel connectivity state changed to 4
+[2024-05-17 14:08:24.174][info] Disconnected from the daemon
+[2024-05-17 14:08:24.180][info] Suspend event received, disconnecting from daemon
+[2024-05-17 14:08:24.181][info] Disconnected from the daemon
+[2024-05-17 15:03:33.558][info] Resume event received, connecting to daemon
+[2024-05-17 15:03:33.569][info] Resume event received, connecting to daemon
+[2024-05-17 15:03:33.570][info] Connected to the daemon
+[2024-05-17 15:03:33.573][info] Connected to the daemon

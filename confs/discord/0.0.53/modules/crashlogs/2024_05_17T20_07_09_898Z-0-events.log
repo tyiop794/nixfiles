@@ -1,0 +1,14 @@
+2024-05-17T20:07:09.921Z 0: 
+
+----------------------------------------------
+2024-05-17T20:07:09.957Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.53"}, modulepath: /home/kamilyousuf/.config/discord/0.0.53/modules
+2024-05-17T20:07:09.964Z 2: ✅ webContents.created web1 ""
+2024-05-17T20:07:09.968Z 3: ✅ window.created win1 "discord"
+2024-05-17T20:07:10.404Z 4: ✅ webContents.did-finish-load web1
+2024-05-17T20:07:31.332Z 5: ✅ webContents.created web2 ""
+2024-05-17T20:07:31.343Z 6: ✅ window.created win2 "Discord"
+2024-05-17T20:07:34.334Z 7: ✅ webContents.did-finish-load web2
+2024-05-17T20:07:34.432Z 8: window.close win1
+2024-05-17T20:07:34.446Z 9: webContents.destroyed web1
+2024-05-17T20:07:34.448Z 10: window.closed win1
+2024-05-17T20:08:50.830Z 11: window.close win2
