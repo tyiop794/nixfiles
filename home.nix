@@ -59,7 +59,7 @@
   };
 
   programs.firefox = {
-  	profiles.kyousuf = {
+  	profiles.default = {
 		extensions = with pkgs.input.firefox-addons; [
 			ublock-origin
 			sponsorblock
