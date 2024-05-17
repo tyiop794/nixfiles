@@ -13,5 +13,8 @@
 
 	       fish_add_path /home/kamilyousuf/nixfiles/scripts
 	    ";
+	shellAliases = {
+	   ardb = "distrobox enter arch-toolbox-latest";
+	};
   };
 }
