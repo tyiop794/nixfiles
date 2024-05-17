@@ -2,7 +2,6 @@
 {
   home.packages = with pkgs; [
      tree
-     neovim
      fastfetch
      mpv
      yt-dlp
