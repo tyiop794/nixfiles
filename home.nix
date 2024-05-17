@@ -66,7 +66,7 @@
 			ublock-origin
 			sponsorblock
 			tridactyl
-			dark-reader
+			darkreader
 		];
 	};
   };
