@@ -30,6 +30,7 @@
      bat
      newsboat
      lf
+     tmux
 
      # GNOME shell extensions
      gnomeExtensions.night-theme-switcher

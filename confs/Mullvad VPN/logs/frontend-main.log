@@ -1,0 +1,8 @@
+[2024-05-17 13:36:25.964][verbose] Chromium sandbox is enabled
+[2024-05-17 13:36:25.966][info] Running version 2024.1
+[2024-05-17 13:36:25.967][verbose] Creating gui-settings file and writing the default settings to it
+[2024-05-17 13:36:26.078][info] Detected locale: en-US
+[2024-05-17 13:36:26.127][error] Error while retrieving theme {"code":127,"killed":false,"signal":null,"cmd":"gsettings get org.gnome.desktop.interface icon-theme"}
+[2024-05-17 13:36:26.223][info] Connected to the daemon
+[2024-05-17 13:36:26.412][info] Skip autoconnect because account token is not set
+[2024-05-17 13:36:26.762][error] Failed to check autostart file: ENOENT: no such file or directory, access '/home/kamilyousuf/.config/autostart/mullvad-vpn.desktop'
