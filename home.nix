@@ -29,6 +29,7 @@
   home.stateVersion = "23.11";
 
   programs.bat.config = {
+    enable = true;
     theme = "Gruvbox";
   };
 

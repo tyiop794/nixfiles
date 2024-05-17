@@ -26,7 +26,6 @@
      ripgrep
      jq
      mozlz4a
-     bat
      newsboat
      lf
      tmux
