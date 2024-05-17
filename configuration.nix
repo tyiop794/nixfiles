@@ -33,6 +33,8 @@
   	enable = true;
 	package = pkgs.mullvad-vpn;
   };
+  services.resolved.enable = true;
+
   # Set your time zone.
   time.timeZone = "America/Chicago";
 
