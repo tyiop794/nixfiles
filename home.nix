@@ -25,6 +25,8 @@
      ./home_pkgs.nix
      ./home_cfgs/gnome.nix
      ./home_cfgs/neovim.nix
+     ./home_cfgs/firefox.nix
+     ./home_cfgs/fish.nix
   ];
   home.stateVersion = "23.11";
 
@@ -33,33 +35,6 @@
     config = {
        theme = "gruvbox-dark";
     };
-  };
-
-
-  programs.firefox = {
-  	enable = true;
-  	profiles.default = {
-		extensions = with inputs.firefox-addons.packages.${pkgs.system}; [
-			ublock-origin
-			sponsorblock
-			tridactyl
-			darkreader
-		];
-	};
-  };
-  programs.fish = {
-  	enable = true;
-	shellInit = 
-	    "
-	       if status is-interactive
-	            # stuff
-	       end
-
-	       set fish_greeting
-	       set -g fish_key_bindings fish_vi_key_bindings
-
-	       fish_add_path /home/kamilyousuf/nixfiles/scripts
-	    ";
   };
 
   # Let home Manager install and manage itself.
