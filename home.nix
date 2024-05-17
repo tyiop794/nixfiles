@@ -32,6 +32,10 @@
   dconf.settings = {
   	"org/gnome/shell" = {
 		disable-user-extensions = false;
+		enabled-extensions = [
+			"gsconnect@andyholmes.github.io"
+			"nightthemeswitcher@romainvigier.fr"
+		];
 	};
 	"org/gnome/desktop/interface" = {
 		text-scaling-factor = 1.25;		
