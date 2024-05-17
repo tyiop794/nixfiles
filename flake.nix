@@ -14,7 +14,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, firefox-addons, ... }@inputs: let {
+  outputs = { self, nixpkgs, home-manager, firefox-addons, ... }@inputs: let
     inherit (self) outputs;
     systems = [
       "aarch64-linux"
