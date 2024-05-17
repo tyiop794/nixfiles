@@ -1,0 +1,211 @@
+{
+  "9f7fce44-49b7-4135-87c4-820bc40ae8d9": {
+    "config_version": 2,
+    "run": [
+      {
+        "end": "2024-05-17T17:24:18.928972229-05:00",
+        "outcome": {
+          "Completed": {
+            "stats": {
+              "archive": {
+                "duration": 122.216418,
+                "id": "adc346adf5693e2a1748a50201651a4847f8aa7eb87af4b00aba99c0d943c461",
+                "name": "tardis-286a3714",
+                "stats": {
+                  "compressed_size": 6778695144,
+                  "deduplicated_size": 1596457514,
+                  "nfiles": 51661,
+                  "original_size": 11347693180
+                }
+              }
+            }
+          }
+        },
+        "messages": [],
+        "include": [
+          ""
+        ],
+        "exclude": [
+          "Caches",
+          "Trash",
+          "FlatpakApps",
+          "VmsContainers"
+        ]
+      },
+      {
+        "end": "2024-05-17T17:21:24.645097882-05:00",
+        "outcome": {
+          "Completed": {
+            "stats": {
+              "archive": {
+                "duration": 8.897625,
+                "id": "b3d2f4c49f98d4975ecdf9202a35f928821494f035b5fcbb232228d785f57d42",
+                "name": "tardis-8df84917",
+                "stats": {
+                  "compressed_size": 863,
+                  "deduplicated_size": 863,
+                  "nfiles": 0,
+                  "original_size": 1510
+                }
+              }
+            }
+          }
+        },
+        "messages": [
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/var/home/kamilyousuf: stat: [Errno 2] No such file or directory: '/var/home/kamilyousuf'",
+              "msgid": "Undefined"
+            }
+          }
+        ],
+        "include": [
+          "/var/home/kamilyousuf/"
+        ],
+        "exclude": [
+          {
+            "PathPrefix": "/var/home/kamilyousuf/.cache"
+          },
+          {
+            "PathPrefix": "/var/home/kamilyousuf/.config/libvirt"
+          },
+          {
+            "PathPrefix": "/var/home/kamilyousuf/.local/share/Trash"
+          },
+          {
+            "PathPrefix": "/var/home/kamilyousuf/.local/share/bottles"
+          },
+          {
+            "PathPrefix": "/var/home/kamilyousuf/.local/share/containers"
+          },
+          {
+            "PathPrefix": "/var/home/kamilyousuf/.local/share/docker"
+          },
+          {
+            "PathPrefix": "/var/home/kamilyousuf/.local/share/gnome-boxes"
+          },
+          {
+            "PathPrefix": "/var/home/kamilyousuf/.local/share/libvirt"
+          },
+          {
+            "PathPrefix": "/var/home/kamilyousuf/.var/app/com.usebottles.bottles"
+          },
+          {
+            "PathPrefix": "/var/home/kamilyousuf/.var/app/org.gnome.Boxes"
+          },
+          {
+            "PathPrefix": "/var/home/kamilyousuf/.var/app/org.gnome.BoxesDevel"
+          },
+          {
+            "RegularExpression": "^var/home/kamilyousuf/\\.local/share/flatpak/(?!overrides)"
+          },
+          {
+            "RegularExpression": "^var/home/kamilyousuf/\\.var/app/[^/]+/cache/"
+          }
+        ]
+      },
+      {
+        "end": "2024-05-16T19:19:13-05:00",
+        "outcome": {
+          "Completed": {
+            "stats": {
+              "archive": {
+                "duration": 266.0,
+                "id": "40838414b3c87073159d00425fc0c6c434661d7a5d1682406ef7dcd22d77561c",
+                "name": "tardis-honk-6deb326e",
+                "stats": {
+                  "compressed_size": 0,
+                  "deduplicated_size": 0,
+                  "nfiles": 0,
+                  "original_size": 0
+                }
+              }
+            }
+          }
+        },
+        "messages": [],
+        "include": [
+          "/var/home/kamilyousuf/"
+        ],
+        "exclude": [
+          {
+            "PathPrefix": "/var/home/kamilyousuf/.cache"
+          },
+          {
+            "PathPrefix": "/var/home/kamilyousuf/.config/libvirt"
+          },
+          {
+            "PathPrefix": "/var/home/kamilyousuf/.local/share/Trash"
+          },
+          {
+            "PathPrefix": "/var/home/kamilyousuf/.local/share/bottles"
+          },
+          {
+            "PathPrefix": "/var/home/kamilyousuf/.local/share/containers"
+          },
+          {
+            "PathPrefix": "/var/home/kamilyousuf/.local/share/docker"
+          },
+          {
+            "PathPrefix": "/var/home/kamilyousuf/.local/share/gnome-boxes"
+          },
+          {
+            "PathPrefix": "/var/home/kamilyousuf/.local/share/libvirt"
+          },
+          {
+            "PathPrefix": "/var/home/kamilyousuf/.var/app/com.usebottles.bottles"
+          },
+          {
+            "PathPrefix": "/var/home/kamilyousuf/.var/app/org.gnome.Boxes"
+          },
+          {
+            "PathPrefix": "/var/home/kamilyousuf/.var/app/org.gnome.BoxesDevel"
+          },
+          {
+            "RegularExpression": "^var/home/kamilyousuf/\\.local/share/flatpak/(?!overrides)"
+          },
+          {
+            "RegularExpression": "^var/home/kamilyousuf/\\.var/app/[^/]+/cache/"
+          }
+        ]
+      }
+    ],
+    "running": null,
+    "last_completed": {
+      "end": "2024-05-17T17:24:18.928972229-05:00",
+      "outcome": {
+        "Completed": {
+          "stats": {
+            "archive": {
+              "duration": 122.216418,
+              "id": "adc346adf5693e2a1748a50201651a4847f8aa7eb87af4b00aba99c0d943c461",
+              "name": "tardis-286a3714",
+              "stats": {
+                "compressed_size": 6778695144,
+                "deduplicated_size": 1596457514,
+                "nfiles": 51661,
+                "original_size": 11347693180
+              }
+            }
+          }
+        }
+      },
+      "messages": [],
+      "include": [
+        ""
+      ],
+      "exclude": [
+        "Caches",
+        "Trash",
+        "FlatpakApps",
+        "VmsContainers"
+      ]
+    },
+    "last_check": null,
+    "suggested_exclude": {
+      "PermissionDenied": []
+    }
+  }
+}

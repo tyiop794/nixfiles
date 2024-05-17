@@ -1,0 +1,58 @@
+[
+  {
+    "config_version": 2,
+    "id": "9f7fce44-49b7-4135-87c4-820bc40ae8d9",
+    "archive_prefix": "tardis-",
+    "repo_id": "09f0b5bb28e3ac423f7d786a8ecfbc24a982b517534c14c5231dd5d248c217e7",
+    "repo": {
+      "type": "Local",
+      "path": "backup",
+      "mount_path": "/run/media/kamilyousuf/7cc5003c-3b80-49c5-8a2d-e15b497b53fd",
+      "uri": "file:///run/media/kamilyousuf/7cc5003c-3b80-49c5-8a2d-e15b497b53fd/backup",
+      "drive_name": "Samsung PSSD T7",
+      "mount_name": "1000 GB Volume",
+      "volume_uuid": "7cc5003c-3b80-49c5-8a2d-e15b497b53fd",
+      "volume_uuid_identifier": "7cc5003c-3b80-49c5-8a2d-e15b497b53fd",
+      "removable": true,
+      "icon": ". GThemedIcon drive-harddisk-solidstate-usb drive-harddisk-solidstate drive-harddisk drive drive-harddisk-solidstate-usb-symbolic drive-harddisk-solidstate-symbolic drive-harddisk-symbolic drive-symbolic",
+      "icon_symbolic": ". GThemedIcon drive-harddisk-solidstate-usb-symbolic drive-harddisk-solidstate-symbolic drive-harddisk-symbolic drive-symbolic drive-harddisk-solidstate-usb drive-harddisk-solidstate drive-harddisk drive",
+      "settings": {
+        "command_line_args": []
+      }
+    },
+    "encrypted": true,
+    "encryption_mode": "repokey-blake2",
+    "include": [
+      ""
+    ],
+    "exclude": [
+      "Caches",
+      "Trash",
+      "FlatpakApps",
+      "VmsContainers"
+    ],
+    "schedule": {
+      "enabled": false,
+      "settings": {
+        "run_on_battery": false
+      },
+      "frequency": {
+        "Daily": {
+          "preferred_time": "17:00:00"
+        }
+      }
+    },
+    "prune": {
+      "enabled": false,
+      "keep": {
+        "hourly": 48,
+        "daily": 14,
+        "weekly": 4,
+        "monthly": 12,
+        "yearly": 10
+      }
+    },
+    "title": "",
+    "user_scripts": {}
+  }
+]
