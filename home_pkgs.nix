@@ -21,7 +21,6 @@
      libreoffice
      slack
      space-cadet-pinball
-     mullvad-vpn
 
      #command-line tools
      fzf
