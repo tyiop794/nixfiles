@@ -3,7 +3,6 @@
   home.packages = with pkgs; [
      tree
      fastfetch
-     mpv
      yt-dlp
 
      # GUI programs
