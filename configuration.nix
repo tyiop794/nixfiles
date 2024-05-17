@@ -141,6 +141,7 @@
     gnome.dconf-editor
     lsb-release
     powertop
+    home-manager
   ];
 
   # Enable Steam
