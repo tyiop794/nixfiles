@@ -63,6 +63,7 @@
 		extensions = with inputs.firefox-addons; [
 			ublock-origin
 			sponsorblock
+			honk
 		];
 	};
   };
