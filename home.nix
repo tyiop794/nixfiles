@@ -42,7 +42,7 @@
 		speed = 0.55;
 	};
 	"org/gnome/desktop/input-sources" = {
-		xkb-options = ['caps:escape_shifted_capslock'];
+		xkb-options = "['caps:escape_shifted_capslock']";
 	};
   };
 
