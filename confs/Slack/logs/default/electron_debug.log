@@ -1,8 +1,0 @@
-[3142:0517/113323.843921:WARNING:key_storage_linux.cc(168)] OSCrypt tried Libsecret but couldn't initialise.
-[3142:0517/113323.981614:WARNING:bluez_dbus_manager.cc(248)] Floss manager not present, cannot set Floss enable/disable.
-[3142:0517/113324.123768:ERROR:browser_main_loop.cc(278)] Gtk: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
-[3142:0517/113500.041730:ERROR:browser_main_loop.cc(278)] Gtk: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
-[3142:0517/113500.042689:ERROR:browser_main_loop.cc(278)] Gtk: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
-[4332:0517/113506.514734:WARNING:sync_reader.cc(175)] ASR: No room in socket buffer.: Broken pipe (32)
-[3142:0517/113643.099148:ERROR:browser_main_loop.cc(278)] Gtk: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
-[3142:0517/113643.099915:ERROR:browser_main_loop.cc(278)] Gtk: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
