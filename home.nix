@@ -33,6 +33,9 @@
 	"org/gnome/desktop/interface" = {
 		text-scaling-factor = 1.25;		
 	};
+	"org/gnome/mutter" = {
+		dynamic-workspaces = true;
+	};
   };
 
   # Let home Manager install and manage itself.
