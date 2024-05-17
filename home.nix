@@ -31,7 +31,7 @@
   programs.bat = {
     enable = true;
     config = {
-       theme = "Gruvbox";
+       theme = "gruvbox-dark";
     };
   };
 
