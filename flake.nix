@@ -26,7 +26,7 @@
 	   {
 	       home-manager.useGlobalPkgs = true;
 	       home-manager.useUserPackages = true;
-	       extraSpecialArgs = {inherit inputs outputs; };
+	       extraSpecialArgs = {inherit inputs; };
 
 	       home-manager.users.kamilyousuf = import ./home.nix;
 	   }
