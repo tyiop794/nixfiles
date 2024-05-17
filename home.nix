@@ -49,7 +49,7 @@
   };
   programs.fish = {
   	enable = true;
-	shellInit = {
+	shellInit = 
 	    "
 	       if status is-interactive
 	            # stuff
@@ -60,7 +60,6 @@
 
 	       fish_add_path /home/kamilyousuf/nixfiles/scripts
 	    "
-	};
   };
 
   # Let home Manager install and manage itself.
