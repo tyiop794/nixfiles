@@ -60,7 +60,7 @@
 
   programs.firefox = {
   	profiles.default = {
-		extensions = with inputs.firefox-addons; [
+		extensions = with pkgs.inputs.firefox-addons; [
 			ublock-origin
 		];
 	};
