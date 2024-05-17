@@ -133,6 +133,7 @@
     gnome.gnome-tweaks
     gnome.gnome-terminal
     gnome.gnome-power-manager
+    gnome.gnome-themes-extra
     gnome-extension-manager
     powertop
     curl
