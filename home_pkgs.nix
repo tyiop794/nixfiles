@@ -19,6 +19,7 @@
      anki
      tor-browser
      libreoffice
+     slack
 
      #command-line tools
      fzf
