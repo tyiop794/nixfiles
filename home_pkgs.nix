@@ -8,7 +8,7 @@
      yt-dlp
 
      # GUI programs
-     fragments
+     qbittorrent
      pika-backup
      keepassxc
      firefox
