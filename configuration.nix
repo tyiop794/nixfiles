@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      inputs.home-manager.nixosModules.home-manager
     ];
 
   # Use the systemd-boot EFI boot loader.
@@ -114,6 +115,12 @@
     shell = pkgs.fish;
   };
 
+  home-manager = {
+     extraSpecialArgs = { inherit inputs; };
+     users = {
+       kamilyousuf = import ./home.nix;
+     };
+  };
   # Disable the root account
   users.users.root.hashedPassword = "!";
 

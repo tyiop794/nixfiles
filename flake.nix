@@ -26,7 +26,7 @@
     forAllSystems = nixpkgs.lib.genAttrs systems;
   in {  nixosConfigurations.tardis = nixpkgs.lib.nixosSystem {
     	system = "x86_64-linux";
-        specialArgs = { inherit inputs outputs; };
+        specialArgs = { inherit inputs outputs system; };
 	modules = [
 	   ./configuration.nix
 	   ./virtualisation.nix
