@@ -58,6 +58,13 @@
   	defaultEditor = true;
   };
 
+  programs.firefox = {
+  	extensions = with pkgs.input.firefox-addons; [
+		ublock-origin
+		sponsorblock
+	];
+  };
+
   # Let home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
