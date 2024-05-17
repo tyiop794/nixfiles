@@ -1261,3 +1261,5 @@
 [05/17/24, 11:37:49:954] info: [COUNTS] (T06Q3GFNTT5) Applying counts to channels. wasLastConnectFast: false isConnected: true 
 [05/17/24, 11:37:49:956] info: [COUNTS] (T06Q3GFNTT5) Threads has_unreads:false mention_count:0 
 [05/17/24, 11:37:49:958] info: [COUNTS] (T06Q3GFNTT5) Completed counts processing 
+[05/17/24, 11:40:53:527] info: [DND_V2] (TM73UH3RQ) Checking for changes in DND status for the following members: U0421MCJE4S,U01QVE4SBQU,U03UM8LQSQP,U03V1HZQF8X,U01LKUZMAFL,U0194HWHNR4,U05LSTX4GF7,UMLD2J5KR,U0103PQ9EE9,U02AR8PG4BZ,U06CXD49JSW 
+[05/17/24, 11:40:53:531] info: [DND_V2] (TM73UH3RQ) Will check for changes in DND status again in 5 minutes 
