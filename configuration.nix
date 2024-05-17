@@ -197,6 +197,7 @@
   services.openssh.enable = true;
 
   # Set up auto-updating
+  /*
   system.autoUpgrade = {
     enable = true;
     flake = inputs.self.outPath;
@@ -208,6 +209,7 @@
     dates = "17:00";
     randomizedDelaySec = "45min";
   };
+  */
 
   # Collect the garbage after a week
   nix.gc = {
