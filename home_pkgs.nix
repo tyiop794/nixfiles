@@ -25,6 +25,7 @@
      mozlz4a
      bat
      newsboat
+     lf
 
      # GNOME shell extensions
      gnomeExtensions.night-theme-switcher
