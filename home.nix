@@ -37,7 +37,7 @@
 		dynamic-workspaces = true;
 	};
 	"org/gnome/desktop/peripherals/touchpad" = {
-		tap-and-drap = false;
+		tap-and-drag = false;
 		tap-to-click = false;
 	};
   };
