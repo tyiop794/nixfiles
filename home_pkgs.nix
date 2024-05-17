@@ -20,6 +20,7 @@
      tor-browser
      libreoffice
      slack
+     space-cadet-pinball
 
      #command-line tools
      fzf
