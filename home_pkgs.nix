@@ -19,7 +19,6 @@
      libreoffice
      slack
      space-cadet-pinball
-     jetbrains.idea-community
 
      #command-line tools
      fzf
