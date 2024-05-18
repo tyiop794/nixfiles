@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-cd /home/kamilyousuf/nixfiles/scripts
+cd /home/kamilyousuf/nixfiles/
 nix flake update
 /home/kamilyousuf/nixfiles/scripts/nrb
