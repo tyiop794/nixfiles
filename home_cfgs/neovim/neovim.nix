@@ -15,6 +15,7 @@ in
 	   nvim-lspconfig
 	   nvim-treesitter.withAllGrammars
 	   plenary-nvim
+	   vim-fugitive
 	   (fromGithub {inherit pkgs; rev="ac7ad3c8e61630d15af1f6266441984f54f54fd2"; ref="HEAD"; user="elihunter173"; repo="dirbuf.nvim"; })
 	];
   };
