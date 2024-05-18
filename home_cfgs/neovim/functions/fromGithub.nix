@@ -1,8 +1,4 @@
-{user, repo, rev, ref ? "HEAD", buildScript ? ":"}:
-
-let
-  pkgs = import <nixpkgs> {};
-in
+{pkgs, user, repo, rev, ref ? "HEAD", buildScript ? ":"}:
 
 pkgs.vimUtils.buildVimPlugin {
    pname = "${pkgs.lib.strings.sanitizeDerivationName repo}";
