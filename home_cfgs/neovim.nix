@@ -1,5 +1,4 @@
 {config, inputs, pkgs, lib, ... }:
-/*
   let
     fromGithub = ref: repo: pkgs.vimUtils.buildVimPlugin {
       pname = "${lib.strings.sanitizeDerivationName repo}";
@@ -10,7 +9,6 @@
       };
     };
   in 
-  */
 {
   # My neovim configuration
   # (will be more complex later)
@@ -22,7 +20,7 @@
 	   nvim-treesitter.withAllGrammars
 	   plenary-nvim
 	   gruvbox
-	   # (fromGithub "HEAD" "elihunter173/dirbuf.nvim")
+	   (fromGithub "HEAD" "elihunter173/dirbuf.nvim")
 	];
   };
 }
