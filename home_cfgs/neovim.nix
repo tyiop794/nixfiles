@@ -1,11 +1,12 @@
 {config, inputs, pkgs, lib, ... }:
   let
-    fromGithub = ref: repo: pkgs.vimUtils.buildVimPlugin {
+    fromGithub = rev: ref: repo: pkgs.vimUtils.buildVimPlugin {
       pname = "${lib.strings.sanitizeDerivationName repo}";
       version = ref;
       src = builtins.fetchGit {
         url = "https://github.com/${repo}.git";
 	ref = ref;
+	rev = rev;
       };
     };
   in 
@@ -20,7 +21,7 @@
 	   nvim-treesitter.withAllGrammars
 	   plenary-nvim
 	   gruvbox
-	   (fromGithub "HEAD" "elihunter173/dirbuf.nvim")
+	   (fromGithub "ac7ad3c8e61630d15af1f6266441984f54f54fd2" "HEAD" "elihunter173/dirbuf.nvim")
 	];
   };
 }
