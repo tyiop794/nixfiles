@@ -1,4 +1,4 @@
-{user, repo, rev, ref ? "HEAD", buildScript ? ":"}:
+{repo, rev, ref ? "HEAD", buildScript ? ":"}:
 
 let
   pkgs = import <nixpkgs> {};
