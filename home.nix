@@ -44,7 +44,6 @@
 	hwdec-codecs = "all";
 	resume-playback = true;
 	save-position-on-quit = true;
-	force-window = true;
     };
   };
 
