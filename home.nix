@@ -39,6 +39,12 @@
 
   programs.mpv = {
     enable = true;
+    config = {
+	hwdec = "auto";
+	hwdec-codecs = "all";
+	resume-playback = true;
+	save-position-on-quit = true;
+    };
   };
 
   # Let home Manager install and manage itself.
