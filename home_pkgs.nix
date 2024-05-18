@@ -19,7 +19,6 @@
      libreoffice
      slack
      space-cadet-pinball
-     spotify
 
      #command-line tools
      fzf
