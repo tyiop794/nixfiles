@@ -5,7 +5,7 @@ let
 in
 
 pkgs.vimUtils.buildVimPlugin {
-   pname = "${lib.strings.sanitizeDerivationName repo}";
+   pname = "${pkgs.lib.strings.sanitizeDerivationName repo}";
    version = ref;
    src = builtins.fetchGit {
       url = "https://github.com/${repo}.git";
