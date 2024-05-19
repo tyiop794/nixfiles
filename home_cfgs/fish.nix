@@ -15,6 +15,7 @@
 	    ";
 	shellAliases = {
 	   ardb = "distrobox enter arch-toolbox-latest";
+	   ndev = "nix develop";
 	};
   };
 }
