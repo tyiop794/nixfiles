@@ -21,6 +21,8 @@ in
 	];
 	extraLuaConfig = "
 	require'lspconfig'.clangd.setup{}
+	require'lspconfig'.rust_analyzer.setup{}
+	vim.cmd('set expandtab sw=4 sts=4')
 	";
   };
 }
