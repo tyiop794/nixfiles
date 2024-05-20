@@ -21,6 +21,6 @@ in
 	];
 	extraLuaConfig = "
 	require'lspconfig'.clangd.setup{}
-	"
+	";
   };
 }
