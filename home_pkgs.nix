@@ -28,6 +28,7 @@
      newsboat
      lf
      tmux
+     ncdu
 
      # GNOME shell extensions
      gnomeExtensions.night-theme-switcher
