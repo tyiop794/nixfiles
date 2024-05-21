@@ -33,7 +33,7 @@
             gcc # The GNU Compiler Collection
           ];
 	  shellHook = "
-	  exec fish
+          export PS1=\"(cpp) $PWD:\$ \"
 	  ";
         };
       });
