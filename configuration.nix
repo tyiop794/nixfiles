@@ -81,6 +81,7 @@
     seahorse    # password manager
     pkgs.gnome-console
     pkgs.snapshot # camera program
+    pkgs.gnome-tour
 
     # these should be self explanatory
     gnome-calculator gnome-calendar gnome-characters gnome-clocks gnome-contacts
