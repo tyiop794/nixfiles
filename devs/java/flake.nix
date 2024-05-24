@@ -14,8 +14,9 @@
        };
      in pkgs.mkShell {
        packages = with pkgs; [
-         openjdk
-         idea-community
+         jdk
+         jetbrains.idea-community
+         jdt-language-server
        ];
        shellHook = "
        exec fish

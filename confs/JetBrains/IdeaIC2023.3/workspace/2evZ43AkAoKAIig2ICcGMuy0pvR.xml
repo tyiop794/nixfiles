@@ -1,0 +1,248 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="stationScript" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/VUGroundStation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Extras/ControlThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Extras/Server.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary">
+    <fileType name="JAVA">
+      <summary usageCount="5" lastUsed="1716439725256" />
+    </fileType>
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/src/ControlThread.java" />
+      <option value="$PROJECT_DIR$/src/VUGroundStation.java" />
+      <option value="$PROJECT_DIR$/src/Extras/Server.java" />
+      <option value="$PROJECT_DIR$/src/honk/hello.java" />
+      <option value="$PROJECT_DIR$/src/Extras/ControlThread.java" />
+    </changedPaths>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="JAVA">
+      <summary usageCount="5" lastUsage="1716439725256" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="stationScript" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/kamilyousuf/IdeaProjects/stationScript}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stationScript" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/kamilyousuf/IdeaProjects/stationScript}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kamilyousuf/IdeaProjects/stationScript/src}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stationScript" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/kamilyousuf/IdeaProjects/stationScript}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kamilyousuf/IdeaProjects/stationScript/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kamilyousuf/IdeaProjects/stationScript/src/Extras}" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="TerminalArrangementManager">
+    <option name="myTabStates">
+      <TerminalTabState tabName="Local" currentWorkingDirectory="/">
+        <shellCommand>
+          <arg value="/run/current-system/sw/bin/fish" />
+          <arg value="-i" />
+        </shellCommand>
+      </TerminalTabState>
+    </option>
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2408854" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Find" show_stripe_button="false" weight="0.33028847" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.33028847" />
+      <window_info anchor="bottom" id="Run" order="4" show_stripe_button="false" weight="0.33028847" />
+      <window_info anchor="bottom" id="Services" order="4" weight="0.33028847" />
+      <window_info anchor="bottom" id="Build" order="4" weight="0.33028847" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" />
+      <unified_weights bottom="0.33028847" left="0.2408854" />
+    </layoutV2>
+    <recentWindows>
+      <value>Terminal</value>
+      <value>Build</value>
+      <value>Services</value>
+      <value>Project</value>
+      <value>Run</value>
+      <value>Find</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1818" height="290" key="GridCell.Tab.0.bottom" timestamp="1716442355228">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1818" height="290" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1716442355228" />
+    <state width="1818" height="290" key="GridCell.Tab.0.center" timestamp="1716442355228">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1818" height="290" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1716442355228" />
+    <state width="1818" height="290" key="GridCell.Tab.0.left" timestamp="1716442355228">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1818" height="290" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1716442355228" />
+    <state width="1818" height="290" key="GridCell.Tab.0.right" timestamp="1716442355228">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1818" height="290" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1716442355228" />
+    <state x="332" y="107" width="1256" height="912" key="SettingsEditor" timestamp="1716440341839">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="332" y="107" width="1256" height="912" key="SettingsEditor/0.40.1920.1040@0.40.1920.1040" timestamp="1716440341839" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/ControlThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/honk/hello.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Extras/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Extras/ControlThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/VUGroundStation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI" />
+      <state key="GlobalLibrariesConfigurable.UI" />
+      <state key="JdkListConfigurable.UI" />
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>stationScript</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
