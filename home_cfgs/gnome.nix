@@ -15,6 +15,10 @@
 		dynamic-workspaces = true;
 		edge-tiling = true;
 	};
+        "org/gnome/shell/extensions/nightthemeswitcher/commands" = {
+                sunrise = "gsettings set org.gnome.desktop.interface gtk-theme \"Adwaita\"";
+                sunset = "gsettings set org.gnome.desktop.interface gtk-theme \"Adwaita-dark\"";
+        };
 	"org/gnome/desktop/peripherals/touchpad" = {
 		tap-and-drag = false;
 		tap-to-click = false;
