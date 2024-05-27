@@ -6,6 +6,7 @@
 		enabled-extensions = [
 			"gsconnect@andyholmes.github.io"
 			"nightthemeswitcher@romainvigier.fr"
+                        "blur-my-shell@aunetx"
 		];
 	};
 	"org/gnome/desktop/interface" = {
