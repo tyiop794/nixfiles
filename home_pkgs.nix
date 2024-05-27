@@ -33,6 +33,7 @@
      # GNOME shell extensions
      gnomeExtensions.night-theme-switcher
      gnomeExtensions.gsconnect
+     gnomeExtensions.blur-my-shell
 
   ];
 }
