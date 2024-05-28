@@ -21,6 +21,7 @@ in
 	extraLuaConfig = "
 	vim.cmd('set expandtab sw=4 sts=4')
         vim.cmd('set number')
+        vim.cmd('set relativenumber')
 	";
   };
 }
