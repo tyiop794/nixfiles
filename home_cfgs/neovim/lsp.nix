@@ -4,6 +4,7 @@
         plugins = with pkgs.vimPlugins; [
             nvim-lspconfig
             nvim-treesitter.withAllGrammars
+            nvim-cmp
         ];
         extraPackages = with pkgs; [
             clang-tools
