@@ -16,6 +16,7 @@
 	shellAliases = {
 	   ardb = "distrobox enter arch-toolbox-latest";
 	   ndev = "nix develop";
+           rvpn = "FUCKFORTICLIENT_OPTS=\"--trusted-cert bc40094ce61c62ac08e814405d5a9126b5c2216fde56157a79ac10caeea61b9b\" ./fuckForticlient.sh -S edge.rhodes.edu:10443 -c"
 	};
   };
 }

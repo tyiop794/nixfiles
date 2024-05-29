@@ -27,7 +27,6 @@
      mozlz4a
      newsboat
      lf
-     tmux
      ncdu
 
      # GNOME shell extensions
