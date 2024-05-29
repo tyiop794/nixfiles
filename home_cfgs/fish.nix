@@ -12,6 +12,7 @@
 	       set -g fish_key_bindings fish_vi_key_bindings
 
 	       fish_add_path /home/kamilyousuf/nixfiles/scripts
+               fish_add_path /usr/local/gcc-arm-none-eabi-4_7-2013q3/bin
 	    ";
 	shellAliases = {
 	   ardb = "distrobox enter arch-toolbox-latest";
