@@ -160,6 +160,7 @@
     lsb-release
     powertop
     home-manager
+    wl-clipboard
   ];
 
   # Enable Steam
