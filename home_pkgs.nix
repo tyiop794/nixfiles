@@ -29,6 +29,9 @@
      lf
      ncdu
 
+     # Nerd fonts
+     nerdfonts
+
      # GNOME shell extensions
      gnomeExtensions.night-theme-switcher
      gnomeExtensions.gsconnect
