@@ -19,6 +19,7 @@
      libreoffice
      slack
      space-cadet-pinball
+     adwsteamgtk
 
      #command-line tools
      fzf
