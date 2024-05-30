@@ -8,6 +8,7 @@
 			sponsorblock
 			tridactyl
 			darkreader
+                        bitwarden
 		];
 	};
   };
