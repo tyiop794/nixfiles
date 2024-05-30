@@ -28,6 +28,7 @@
      newsboat
      lf
      ncdu
+     bitwarden-cli
 
      # Nerd fonts
      nerdfonts
