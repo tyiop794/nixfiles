@@ -1,5 +1,13 @@
 { config, inputs, pkgs, home-manager, ... }:
 {
+  # Setup GNOME shell extensions
+  home.packages = with pkgs.gnomeExtensions; [
+     night-theme-switcher
+     gsconnect
+     blur-my-shell
+     rounded-window-corners
+  ];
+
   dconf.settings = {
   	"org/gnome/shell" = {
 		disable-user-extensions = false;
