@@ -161,6 +161,7 @@
     powertop
     home-manager
     wl-clipboard
+    killall
   ];
 
   # Enable Steam
