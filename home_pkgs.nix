@@ -30,6 +30,7 @@
      lf
      ncdu
      bitwarden-cli
+     sl
 
      # Nerd fonts
      nerdfonts
