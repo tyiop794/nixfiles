@@ -2,6 +2,6 @@
 
 cd ~/nixfiles
 git add . 
-([ -z $1 ] && git commit -m "$(date +%F--%T)") || git commit -m "$(date +%F--%T): \"$1\""
+([ -z $1 ] >/dev/null && git commit -m "$(date +%F--%T)") || git commit -m "$(date +%F--%T): \"$1\""
 git push
 sudo nixos-rebuild switch
