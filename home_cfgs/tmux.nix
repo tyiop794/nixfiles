@@ -24,6 +24,9 @@
 
         # Time settings
         set -g status-right \"%I:%M %p, %d-%b-%y, %a\"
+
+        # Set VI keybindings for navigating windows in tmux
+        set-window-option -g mode-keys vi
         ";
   };
 }
