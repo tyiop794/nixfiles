@@ -1,4 +1,4 @@
-{ config, inputs, pkgs, home-manager, ... }:
+{ config, inputs, pkgs, home-manager, lib, ... }:
 {
   # Setup GNOME shell extensions
   home.packages = with pkgs.gnomeExtensions; [
@@ -38,7 +38,7 @@
 	};
         "org/gnome/settings-daemon/plugins/color" = {
                 night-light-schedule-automatic = true;
-                night-light-temperature = "3,255";
+                night-light-temperature = lib.hm.gvariant.mkUint32 3255;
         };
   };
 }
