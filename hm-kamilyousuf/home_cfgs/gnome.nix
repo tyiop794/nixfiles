@@ -36,5 +36,9 @@
 	"org/gnome/desktop/input-sources" = {
 		xkb-options = [ "caps:escape_shifted_capslock" ];
 	};
+        "org/gnome/settings-daemon/plugins/color" = {
+                night-light-schedule-automatic = true;
+                night-light-temperature = 3255;
+        };
   };
 }
