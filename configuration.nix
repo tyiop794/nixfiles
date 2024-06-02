@@ -129,7 +129,7 @@
   home-manager = {
      extraSpecialArgs = { inherit inputs; };
      users = {
-       kamilyousuf = import ./home.nix;
+       kamilyousuf = import ./hm-kamilyousuf/home.nix;
      };
   };
   # Disable the root account
