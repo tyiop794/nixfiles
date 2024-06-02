@@ -1,5 +1,5 @@
 {
-  description = "Flake with rust and cargo";
+  description = "Flake with latex";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
