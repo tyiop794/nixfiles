@@ -48,6 +48,14 @@
     };
   };
 
+  programs.firejail = {
+     wrappedBinaries = {
+        firefox = {
+            executable = "${pkgs.firefox}/bin/firefox";
+            profile = "${pkgs.firefox}/etc/firejail/firefox.profile";
+        };
+  };
+
   # Let home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
