@@ -9,7 +9,6 @@
      qbittorrent
      pika-backup
      keepassxc
-     firefox
      thunderbird
      discord
      dolphin-emu
