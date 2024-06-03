@@ -163,6 +163,7 @@
     wl-clipboard
     killall
     htop
+    firefox
   ];
 
   # Enable Steam
