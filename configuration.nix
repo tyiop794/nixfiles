@@ -162,6 +162,7 @@
     home-manager
     wl-clipboard
     killall
+    htop
   ];
 
   # Enable Steam

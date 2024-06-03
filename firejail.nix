@@ -11,6 +11,7 @@
             extraArgs = [
                 "--ignore=private-dev"
                 "--dbus-user.talk=org.freedesktop.Notifications" 
+                "--env=GTK_THEME=Adwaita:dark"
             ];
         };
         discord = {
