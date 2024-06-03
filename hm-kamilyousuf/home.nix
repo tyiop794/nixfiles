@@ -25,7 +25,7 @@
      ./home_pkgs.nix
      ./home_cfgs/gnome.nix
      ./home_cfgs/neovim/neovim.nix
-     ./home_cfgs/firefox.nix
+     # ./home_cfgs/firefox.nix
      ./home_cfgs/fish.nix
      ./home_cfgs/tmux.nix
   ];
