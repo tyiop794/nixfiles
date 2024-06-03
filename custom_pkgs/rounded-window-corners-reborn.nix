@@ -37,14 +37,6 @@ buildNpmPackage rec {
     install -Dm644 "$out/share/gnome-shell/extensions/rounded-window-corners@fxgn/schemas/org.gnome.shell.extensions.rounded-window-corners.gschema.xml" -t "$out/share/glib-2.0/schemas/" 
   '';
 
-  /*
-  passthru = {
-    extensionUuid = "rounded-window-corners@fxgn";
-    extensionPortalSlug = "rounded-window-corners";
-    updateScript = unstableGitUpdater { };
-  };
-  */
-
   meta = with lib; {
     description = "Rounded window corners";
     license = licenses.gpl3;
