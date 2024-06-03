@@ -230,16 +230,6 @@
   # Enable firewall
   networking.firewall.enable = true;
 
-  # Enable firejail
-  programs.firejail = {
-      enable = true;
-      wrappedBinaries = {
-        firefox = {
-            executable = "${pkgs.firefox}/bin/firefox";
-            profile = "${pkgs.firejail}/etc/firejail/firefox.profile";
-        };
-      };
-  };
 
   # Copy the NixOS configuration file and link it from the resulting system
   # (/run/current-system/configuration.nix). This is useful in case you

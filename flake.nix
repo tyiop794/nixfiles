@@ -30,6 +30,7 @@
 	modules = [
 	   ./configuration.nix
 	   ./virtualisation.nix
+           ./firejail.nix
 	];
     };
     /*
