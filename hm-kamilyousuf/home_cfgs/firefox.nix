@@ -1,7 +1,7 @@
 {config, inputs, pkgs, ... }:
 {
   programs.firefox = {
-  	enable = false;
+  	enable = true;
   	profiles.default = {
 		extensions = with inputs.firefox-addons.packages.${pkgs.system}; [
 			ublock-origin
