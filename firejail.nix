@@ -5,7 +5,6 @@
   programs.firejail = {
       enable = true;
       wrappedBinaries = {
-        /*
         firefox = {
             executable = "${pkgs.firefox}/bin/firefox";
             profile = "${pkgs.firejail}/etc/firejail/firefox.profile";
@@ -15,7 +14,6 @@
                 "--env=GTK_THEME=Adwaita:dark"
             ];
         };
-        */
         discord = {
             executable = "${pkgs.discord}/bin/discord";
             profile = "${pkgs.firejail}/etc/firejail/discord.profile";
