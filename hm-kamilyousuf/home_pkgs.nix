@@ -8,7 +8,8 @@
      # GUI programs
      qbittorrent
      pika-backup
-     keepassxc
+     # keepassxc
+     bitwarden-desktop
      thunderbird
      discord
      dolphin-emu

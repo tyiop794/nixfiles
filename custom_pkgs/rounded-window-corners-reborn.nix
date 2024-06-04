@@ -41,6 +41,6 @@ buildNpmPackage rec {
     description = "Rounded window corners";
     license = licenses.gpl3;
     maintainers = with maintainers; [  ];
-    homepage = "https://github.com/p-e-w/argos";
+    homepage = "https://github.com/flexagoon/rounded-window-corners"
   };
 }
