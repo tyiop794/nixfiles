@@ -15,6 +15,7 @@
 			"gsconnect@andyholmes.github.io"
 			"nightthemeswitcher@romainvigier.fr"
                         "blur-my-shell@aunetx"
+                        "rounded-window-corners@fxgn"
 		];
 	};
 	"org/gnome/desktop/interface" = {
