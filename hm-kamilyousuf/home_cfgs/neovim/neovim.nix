@@ -12,7 +12,6 @@ in
   programs.neovim = {
   	enable = true;
   	defaultEditor = true;
-        type = "lua";
 	plugins = with pkgs.vimPlugins; [
 	   plenary-nvim
 	   vim-fugitive
