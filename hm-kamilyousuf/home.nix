@@ -28,6 +28,7 @@
      ./home_cfgs/firefox.nix
      ./home_cfgs/fish.nix
      ./home_cfgs/tmux.nix
+     ./home_cfgs/mpv.nix
   ];
   home.stateVersion = "23.11";
 
@@ -38,15 +39,6 @@
     };
   };
 
-  programs.mpv = {
-    enable = true;
-    config = {
-	hwdec = "auto";
-	hwdec-codecs = "all";
-	resume-playback = true;
-	save-position-on-quit = true;
-    };
-  };
 
   # Let home Manager install and manage itself.
   programs.home-manager.enable = true;
