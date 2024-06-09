@@ -2,13 +2,15 @@
 {
   programs.neovim = {
 	plugins = with pkgs.vimPlugins; [
-	   gruvbox-nvim
+           {
+	        plugin = gruvbox-nvim;
+                type = "lua";
+                config = ''
+                  vim.o.background = \"dark\"
+                  vim.o.termguicolors = true
+                  vim.cmd('colorscheme gruvbox')
+                ''
+           }
 	];
-	extraLuaConfig = 
-	"
-          vim.o.background = \"dark\"
-	  vim.o.termguicolors = true
-	  vim.cmd('colorscheme gruvbox')
-	";
   };
 }
