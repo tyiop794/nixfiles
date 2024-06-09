@@ -6,7 +6,7 @@
 	        plugin = gruvbox-nvim;
                 type = "lua";
                 config = ''
-                  vim.o.background = \"dark\"
+                  vim.o.background = "dark"
                   vim.o.termguicolors = true
                   vim.cmd('colorscheme gruvbox')
                 '';
