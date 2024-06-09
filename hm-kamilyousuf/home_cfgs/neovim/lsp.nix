@@ -22,7 +22,7 @@
             {
                 plugin = nvim-cmp;
                 type = "lua";
-                config = (builtins.readFile lsp.lua);
+                config = (builtins.readFile ./lsp.lua);
             }
             vim-vsnip
             cmp-vsnip
