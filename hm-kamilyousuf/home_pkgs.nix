@@ -33,7 +33,7 @@
      sl
 
      # Nerd fonts
-     nerdfonts
+     # nerdfonts
 
   ];
 }
