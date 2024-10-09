@@ -12,9 +12,13 @@
        url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
        inputs.nixpkgs.follows = "nixpkgs";
     };
+    lix-module = {
+       url = "https://git.lix.systems/lix-project/nixos-module/archive/2.91.0.tar.gz";
+       inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, firefox-addons, ... }@inputs: let
+  outputs = { self, nixpkgs, lix-module, home-manager, firefox-addons, ... }@inputs: let
     inherit (self) outputs;
     systems = [
       "aarch64-linux"
@@ -28,6 +32,7 @@
     	system = "x86_64-linux";
         specialArgs = { inherit inputs outputs; };
 	modules = [
+            lix-module.nixosModules.default
 	   ./configuration.nix
 	   ./virtualisation.nix
            # ./firejail.nix

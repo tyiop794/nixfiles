@@ -6,19 +6,21 @@
      yt-dlp
 
      # GUI programs
+     # note: for packages I commented out,
+     # I will likely use flatpak versions instead of nix versions
      qbittorrent
-     pika-backup
+     # pika-backup
      # keepassxc
      bitwarden-desktop
      thunderbird
-     discord
+     # discord
      dolphin-emu
-     spotify
+     # spotify
      anki
      tor-browser
-     libreoffice
-     slack
-     space-cadet-pinball
+     # libreoffice
+     # slack
+     # space-cadet-pinball
      adwsteamgtk
 
      #command-line tools
@@ -29,7 +31,7 @@
      newsboat
      lf
      ncdu
-     bitwarden-cli
+     # bitwarden-cli
      sl
 
      # Nerd fonts

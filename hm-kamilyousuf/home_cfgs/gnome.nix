@@ -20,6 +20,7 @@
 	};
 	"org/gnome/desktop/interface" = {
 		text-scaling-factor = 1.25;		
+                gtk-theme = "Adwaita-dark";
 	};
 	"org/gnome/mutter" = {
 		dynamic-workspaces = true;
