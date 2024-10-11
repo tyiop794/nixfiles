@@ -4,6 +4,7 @@
   inputs = {
     # nixos-unstable repository
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    nix-flatpak.url = "github:gmodena/nix-flatpak"
     home-manager = {
        url = "github:nix-community/home-manager/master";
        inputs.nixpkgs.follows = "nixpkgs";
@@ -18,7 +19,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, lix-module, home-manager, firefox-addons, ... }@inputs: let
+  outputs = { self, nixpkgs, lix-module, home-manager, firefox-addons, nix-flatpak, ... }@inputs: let
     inherit (self) outputs;
     systems = [
       "aarch64-linux"
@@ -33,6 +34,7 @@
         specialArgs = { inherit inputs outputs; };
 	modules = [
             lix-module.nixosModules.default
+            nix-flatpak.nixModules.nix-flatpak
 	   ./configuration.nix
 	   ./virtualisation.nix
            # ./firejail.nix
