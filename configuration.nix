@@ -40,7 +40,7 @@
   services.resolved.enable = true;
 
   # Set your time zone.
-  time.timeZone = "America/Denver";
+  time.timeZone = "America/Chicago";
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -173,17 +173,20 @@
 
   # Enable Steam
   nixpkgs.config.allowUnfree = true;
-  programs.steam = {
-    enable = true;
-    remotePlay.openFirewall = true;
-    dedicatedServer.openFirewall = true;
-  };
+  # programs.steam = {
+  #   enable = true;
+  #   remotePlay.openFirewall = true;
+  #   dedicatedServer.openFirewall = true;
+  # };
 
   # Change the default editor
   environment.variables.EDITOR = "nvim";
 
   # Enable zram
   zramSwap.enable = true;
+
+  # Enable systemd-oomd
+  systemd.oomd.enable = true;
 
   # Enable and configure TLP
   services.tlp = {
