@@ -74,7 +74,7 @@
   systemd.services."autovt@tty1".enable = false;
   
   # Exclude certain GNOME packages
-  environment.gnome.excludePackages = with pkgs.gnome; [
+  environment.gnome.excludePackages = with pkgs; [
     baobab      # disk usage analyzer
     cheese      # photo booth
     eog         # image viewer
@@ -85,9 +85,10 @@
     yelp        # help viewer
     geary       # email client
     seahorse    # password manager
-    pkgs.gnome-console
-    pkgs.snapshot # camera program
-    pkgs.gnome-tour
+    gnome-console
+    snapshot # camera program
+    gnome-tour
+    gnome-software
 
     # these should be self explanatory
     gnome-calculator gnome-calendar gnome-characters gnome-clocks gnome-contacts
