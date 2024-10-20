@@ -204,7 +204,10 @@
   zramSwap.enable = true;
 
   # Enable systemd-oomd
-  systemd.oomd.enable = true;
+  systemd.oomd = {
+    enable = true;
+    wantedBy = [ "multi-user.target" ];
+  };
 
   # Enable and configure TLP
   services.tlp = {
