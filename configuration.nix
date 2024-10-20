@@ -126,7 +126,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.kamilyousuf = {
     isNormalUser = true;
-    extraGroups = [ "wheel"  "networkmanager" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel"  "networkmanager" "libvirt" ]; # Enable ‘sudo’ for the user.
     # set an init password b/c root does not have one
     initialPassword = "dingus";
     # set our default shell
