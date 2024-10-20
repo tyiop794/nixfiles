@@ -42,7 +42,7 @@
 
   services.flatpak.packages = [
     "us.zoom.Zoom"
-    "heheheh"
+    "org.gnome.World.PikaBackup"
   ];
 
 }
