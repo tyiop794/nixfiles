@@ -21,7 +21,7 @@
 	"org/gnome/desktop/interface" = {
 		text-scaling-factor = 1.25;		
                 gtk-theme = "Adwaita-dark";
-                color-scheme = "'prefer-dark'";
+                color-scheme = "prefer-dark";
 	};
 	"org/gnome/mutter" = {
 		dynamic-workspaces = true;
