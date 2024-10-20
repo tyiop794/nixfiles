@@ -47,4 +47,8 @@
     "org.DolphinEmu.dolphin-emu"
   ];
 
+  services.flatpak.update.auto = {
+    enable = true;
+    onCalendar = "weekly";
+  };
 }
