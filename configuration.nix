@@ -123,6 +123,10 @@
   # Enable the fish shell
   programs.fish.enable = true;
 
+  # Enable virtualization
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.kamilyousuf = {
     isNormalUser = true;
