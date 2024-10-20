@@ -156,7 +156,8 @@
     wget
     git
     gnome-tweaks
-    gnome-terminal
+    # gnome-terminal
+    ptyxis
     gnome-power-manager
     gnome-themes-extra
     gnome-extension-manager
