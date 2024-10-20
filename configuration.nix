@@ -204,7 +204,7 @@
   zramSwap.enable = true;
 
   # Enable systemd-oomd
-  systemd.oomd = {
+  systemd.services.oomd = {
     enable = true;
     wantedBy = [ "multi-user.target" ];
   };
