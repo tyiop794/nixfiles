@@ -124,7 +124,10 @@
   programs.fish.enable = true;
 
   # Enable virtualization
-  virtualisation.libvirtd.enable = true;
+  virtualisation.libvirtd = {
+    enable = true;
+    extraGroups = [ "libvirt" ];
+  };
   programs.virt-manager.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
