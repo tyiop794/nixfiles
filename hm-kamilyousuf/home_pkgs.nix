@@ -8,20 +8,20 @@
      # GUI programs
      # note: for packages I commented out,
      # I will likely use flatpak versions instead of nix versions
-     qbittorrent
+     # qbittorrent
      # pika-backup
      # keepassxc
-     bitwarden-desktop
-     thunderbird
+     # bitwarden-desktop
+     # thunderbird
      # discord
-     dolphin-emu
+     # dolphin-emu
      # spotify
-     anki
-     tor-browser
+     # anki
+     # tor-browser
      # libreoffice
      # slack
      # space-cadet-pinball
-     adwsteamgtk
+     # adwsteamgtk
 
      #command-line tools
      fzf

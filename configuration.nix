@@ -174,7 +174,7 @@
   ];
 
   # Enable Steam
-  nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.allowUnfree = false;
   # programs.steam = {
   #   enable = true;
   #   remotePlay.openFirewall = true;
