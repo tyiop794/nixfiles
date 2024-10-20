@@ -126,8 +126,9 @@
   # Enable virtualization
   virtualisation.libvirtd = {
     enable = true;
-    extraGroups = [ "libvirt" ];
   };
+
+  users.groups.libvirt = {};
   programs.virt-manager.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
