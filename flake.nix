@@ -34,7 +34,7 @@
         specialArgs = { inherit inputs outputs; };
 	modules = [
             lix-module.nixosModules.default
-            nix-flatpak.nixosModules.nix-flatpak
+            # nix-flatpak.nixosModules.nix-flatpak
 	   ./configuration.nix
 	   ./virtualisation.nix
            # ./firejail.nix
