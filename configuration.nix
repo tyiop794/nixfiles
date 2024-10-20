@@ -120,6 +120,12 @@
   # Enable touchpad support (enabled default in most desktopManager).
   services.libinput.enable = true;
 
+  # Controller support (hopefully?)
+  services.udev.extraRules = ''
+    ${builtins.readFile ./controllers/70-steam-input.rules}
+    ${builtins.readFile ./controllers/70-steam-vr.rules}
+  ''
+
   # Enable the fish shell
   programs.fish.enable = true;
 
