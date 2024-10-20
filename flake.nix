@@ -36,8 +36,8 @@
 	modules = [
             lix-module.nixosModules.default
             nix-flatpak.nixosModules.nix-flatpak
-	   ./configuration.nix
 	   ./virtualisation.nix
+	   ./configuration.nix
            # ./firejail.nix
 	];
     };
