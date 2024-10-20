@@ -4,7 +4,7 @@
   inputs = {
     # nixos-unstable repository
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-    nix-flatpak.url = "github:gmodena/nix-flatpak";
+    nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.4.1";
     home-manager = {
        url = "github:nix-community/home-manager/master";
        inputs.nixpkgs.follows = "nixpkgs";
@@ -34,7 +34,7 @@
         specialArgs = { inherit inputs outputs; };
 	modules = [
             lix-module.nixosModules.default
-            # nix-flatpak.nixosModules.nix-flatpak
+            nix-flatpak.nixosModules.nix-flatpak
 	   ./configuration.nix
 	   ./virtualisation.nix
            # ./firejail.nix
