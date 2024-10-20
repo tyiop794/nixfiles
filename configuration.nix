@@ -155,10 +155,10 @@
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
     git
-    gnome.gnome-tweaks
-    gnome.gnome-terminal
-    gnome.gnome-power-manager
-    gnome.gnome-themes-extra
+    gnome-tweaks
+    gnome-terminal
+    gnome-power-manager
+    gnome-themes-extra
     gnome-extension-manager
     powertop
     curl
