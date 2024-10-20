@@ -44,6 +44,7 @@
     "us.zoom.Zoom"
     "org.gnome.World.PikaBackup"
     "com.discordapp.Discord"
+    "org.DolphinEmu.dolphin-emu"
   ];
 
 }
