@@ -1,6 +1,9 @@
 {config, pkgs, inputs, ...}:
 {
   imports = [inputs.nix-flatpak.homeManagerModules.nix-flatpak];
+  services.flatpak.packages = [
+    "us.zoom.Zoom"
+  ];
   home.packages = with pkgs; [
      tree
      fastfetch
