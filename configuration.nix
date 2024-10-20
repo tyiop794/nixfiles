@@ -163,7 +163,7 @@
     powertop
     curl
     openfortivpn
-    gnome.dconf-editor
+    dconf-editor
     lsb-release
     powertop
     home-manager
