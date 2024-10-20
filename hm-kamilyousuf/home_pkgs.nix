@@ -43,6 +43,7 @@
   services.flatpak.packages = [
     "us.zoom.Zoom"
     "org.gnome.World.PikaBackup"
+    "com.discordapp.Discord"
   ];
 
 }
