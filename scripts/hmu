@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+cd /home/kamilyousuf/nixfiles/hm-kamilyousuf
+git add .
+nix flake update
+/home/kamilyousuf/nixfiles/scripts/hmb
