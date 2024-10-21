@@ -51,8 +51,8 @@
   #   "com.rtosta.zapzap"
   # ];
   
-  services.flatpak.update.auto = {
-    enable = true;
-    onCalendar = "weekly";
-  };
+  # services.flatpak.update.auto = {
+  #   enable = true;
+  #   onCalendar = "weekly";
+  # };
 }
