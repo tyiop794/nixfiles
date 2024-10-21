@@ -2,24 +2,28 @@
 
 {
     systemd.user.services.home-manager-update = {
-        serviceConfig = {
+        Unit = {
             Description = "Update Home Manager packages automatically";
+        };
+        Service = {
             Type = "oneshot";
             ExecStart = "${pkgs.home-manager}/bin/home-manager switch";
         };
-        install = {
-            wantedBy = [ "timers.target" ];
+        Install = {
+            WantedBy = [ "timers.target" ];
         };
     };
 
     systemd.user.timers.home-manager-update = {
-        timerConfig = {
-            Description = "Run Home Manager updates daily";
+        Unit = {
+            Description = "Run Home Manager updates daily"
+        };
+        Timer = {
             OnCalendar = "daily";
             Persistent = true;
         };
-        install = {
-            wantedBy = [ "timers.target" ];
+        Install = {
+            WantedBy = [ "timers.target" ];
         };
     };
 
