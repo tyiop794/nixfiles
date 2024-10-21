@@ -29,6 +29,7 @@
      ./home_cfgs/fish.nix
      ./home_cfgs/tmux.nix
      ./home_cfgs/mpv.nix
+     ./home_cfgs/ssh.nix
   ];
   home.stateVersion = "23.11";
 
