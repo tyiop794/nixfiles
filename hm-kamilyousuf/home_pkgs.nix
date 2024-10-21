@@ -50,8 +50,6 @@
     "com.ticktick.TickTick"
   ];
   
-  programs.ssh.enable = true;
-
   services.flatpak.update.auto = {
     enable = true;
     onCalendar = "weekly";
