@@ -6,6 +6,6 @@
             Host derecho
                 HostName derecho.hpc.ucar.edu
                 User kyousuf
-        ''
+        '';
     };
 }
