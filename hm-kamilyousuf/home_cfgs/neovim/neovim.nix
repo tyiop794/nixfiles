@@ -7,7 +7,7 @@ in
   # (will be more complex later)
   imports = [
     ./colorscheme.nix
-    # ./lsp.nix
+    ./lsp.nix
     # ./plugins.nix
   ];
   programs.neovim = {
