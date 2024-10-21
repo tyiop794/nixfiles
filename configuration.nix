@@ -42,6 +42,11 @@
   # Set your time zone.
   time.timeZone = "America/Chicago";
 
+  # Add myself as a trusted user
+  nix.extraOptions = ''
+    trusted-users = root kamilyousuf
+  ''
+
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
