@@ -18,7 +18,7 @@
                     }
                 '';
             }
-            # nvim-treesitter.withAllGrammars
+            nvim-treesitter.withAllGrammars
             {
                 plugin = nvim-cmp;
                 type = "lua";
