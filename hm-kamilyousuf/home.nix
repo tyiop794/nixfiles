@@ -3,7 +3,7 @@
 {
   home.username = "kamilyousuf";
   home.homeDirectory = "/home/kamilyousuf";
-  nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.allowUnfree = false;
 
   # link the configuration file in current directory to the specified location in home directory
   # home.file.".config/i3/wallpaper.jpg".source = ./wallpaper.jpg;
