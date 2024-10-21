@@ -6,7 +6,7 @@ in
   # My neovim configuration
   # (will be more complex later)
   imports = [
-    # ./colorscheme.nix
+    ./colorscheme.nix
     # ./lsp.nix
     # ./plugins.nix
   ];
