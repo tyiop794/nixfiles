@@ -27,7 +27,4 @@
         };
     };
 
-    systemd.user.services.home-manager-update.serviceConfig.StandardOutput = "append:%h/.local/share/home-manager-update.log";
-    systemd.user.services.home-manager-update.serviceConfig.StandardError = "append:%h/.local/share/home-manager-update.log";
-
 }
