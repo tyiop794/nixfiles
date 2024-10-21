@@ -46,7 +46,8 @@
     "org.gnome.World.PikaBackup"
     "com.discordapp.Discord"
     "org.DolphinEmu.dolphin-emu"
-    "com.github.k4zmu2a.spacecadetpinball"
+    "com.slack.Slack"
+    "com.ticktick.TickTick"
   ];
 
   services.flatpak.update.auto = {
