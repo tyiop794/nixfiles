@@ -1,5 +1,5 @@
 {
-  description = "Generic Python Development Environment";
+  description = "Python Dev Environment with Custom Fish Config";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -28,22 +28,32 @@
           pkgs.jq
         ];
 
+        # Write custom config.fish to a temporary file and set XDG_CONFIG_HOME to point to it
         shellHook = ''
           echo "Welcome to the Python development environment!"
           echo "Use 'direnv allow' to automatically load this environment."
 
-          # Set a custom fish prompt
-          if status --is-interactive
-            and [ $SHELL = *fish ];  # Check if we're in fish
-            function fish_prompt
+          # Create a temporary directory for custom fish config
+          export TMP_FISH_CONFIG=$(mktemp -d)
+
+          # Create the custom config.fish file in the temp directory
+          cat > $TMP_FISH_CONFIG/fish/config.fish << 'EOF'
+          # Custom fish prompt
+          function fish_prompt
               set_color cyan
               echo -n "(py-dev) "
               set_color normal
-              __fish_prompt_default  # Append the default Fish prompt
-            end
+              echo -n (prompt_pwd)
+              echo -n " > "
           end
+
+          # Additional customizations go here
+          set -g fish_greeting "Welcome to the Python dev environment!"
+          EOF
+
+          # Launch Fish with the custom config
+          exec (${pkgs.fish}/bin/fish -C $TMP_FISH_CONFIG/fish/config.fish)
         '';
       };
     });
 }
-
