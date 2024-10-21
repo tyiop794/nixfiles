@@ -34,6 +34,7 @@
      ncdu
      # bitwarden-cli
      sl
+     devenv
 
      # Nerd fonts
      nerdfonts
