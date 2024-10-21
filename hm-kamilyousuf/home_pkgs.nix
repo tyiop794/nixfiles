@@ -40,6 +40,7 @@
 
   ];
 
+  services.flatpak.enable = true;
   # Flatpaks for (most) GUI programs
   services.flatpak.packages = [
     "us.zoom.Zoom"

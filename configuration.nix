@@ -63,7 +63,7 @@
   services.xserver.enable = true;
 
   # Enable flatpak
-  services.flatpak.enable = true;
+  # services.flatpak.enable = true;
 
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
