@@ -16,7 +16,7 @@
 
     systemd.user.timers.home-manager-update = {
         Unit = {
-            Description = "Run Home Manager updates daily"
+            Description = "Run Home Manager updates daily";
         };
         Timer = {
             OnCalendar = "daily";
