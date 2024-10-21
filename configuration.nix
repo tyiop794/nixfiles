@@ -45,7 +45,7 @@
   # Add myself as a trusted user
   nix.extraOptions = ''
     trusted-users = root kamilyousuf
-  ''
+  '';
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
