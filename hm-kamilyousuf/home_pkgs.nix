@@ -41,15 +41,15 @@
   ];
 
   # Flatpaks for (most) GUI programs
-  services.flatpak.packages = [
-    "us.zoom.Zoom"
-    "org.gnome.World.PikaBackup"
-    "com.discordapp.Discord"
-    "org.DolphinEmu.dolphin-emu"
-    "com.slack.Slack"
-    "com.ticktick.TickTick"
-    "com.rtosta.zapzap"
-  ];
+  # services.flatpak.packages = [
+  #   "us.zoom.Zoom"
+  #   "org.gnome.World.PikaBackup"
+  #   "com.discordapp.Discord"
+  #   "org.DolphinEmu.dolphin-emu"
+  #   "com.slack.Slack"
+  #   "com.ticktick.TickTick"
+  #   "com.rtosta.zapzap"
+  # ];
   
   services.flatpak.update.auto = {
     enable = true;
