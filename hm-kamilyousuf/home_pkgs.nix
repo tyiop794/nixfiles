@@ -32,6 +32,7 @@
      newsboat
      lf
      ncdu
+     glow
      # bitwarden-cli
      sl
 
