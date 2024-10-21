@@ -8,7 +8,7 @@ in
   imports = [
     ./colorscheme.nix
     ./lsp.nix
-    # ./plugins.nix
+    ./plugins.nix
   ];
   programs.neovim = {
   	enable = true;
