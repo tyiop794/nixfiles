@@ -2,7 +2,7 @@
 
 {
     systemd.user.services.home-manager-update = {
-        description = "Update Home Manager packages automatically";
+        # description = "Update Home Manager packages automatically";
         serviceConfig = {
             Type = "oneshot";
             ExecStart = "${config.home.sessionVariables.NIXPKGS_PATH}/bin/home-manager switch";
@@ -11,7 +11,7 @@
     };
 
     systemd.user.timers.home-manager-update = {
-        description = "Run Home Manager updates daily";
+        # description = "Run Home Manager updates daily";
         timerConfig = {
             OnCalendar = "daily";
             Persistent = true;
