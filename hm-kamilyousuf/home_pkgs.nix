@@ -49,6 +49,7 @@
     "org.DolphinEmu.dolphin-emu"
     "com.slack.Slack"
     "com.ticktick.TickTick"
+    "com.rtosta.zapzap"
   ];
   
   services.flatpak.update.auto = {
