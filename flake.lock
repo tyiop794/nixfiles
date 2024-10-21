@@ -9,11 +9,11 @@
       },
       "locked": {
         "dir": "pkgs/firefox-addons",
-        "lastModified": 1729414746,
-        "narHash": "sha256-B7wGWFjIL6/BllPaTXyp31srxG7+4I0hlsBkL6S8pIM=",
+        "lastModified": 1729491205,
+        "narHash": "sha256-luvUK8ZTRTdsVao7VqnxvGEvA3rjEmfiwakDyHxQhx8=",
         "owner": "rycee",
         "repo": "nur-expressions",
-        "rev": "7bd3068e495e1f430e1a640b5f9ee683e4e5e616",
+        "rev": "9764579885c84ba5d4bcd9d3061409a527ff805c",
         "type": "gitlab"
       },
       "original": {
@@ -123,21 +123,6 @@
         "url": "https://git.lix.systems/lix-project/nixos-module/archive/2.91.1-1.tar.gz"
       }
     },
-    "nix-flatpak": {
-      "locked": {
-        "lastModified": 1729453639,
-        "narHash": "sha256-L19R5CXCfTU9IFs9FAaYhDiteegfhJQMiAHLfls4Pdw=",
-        "owner": "gmodena",
-        "repo": "nix-flatpak",
-        "rev": "68bc646058386e2ffbd9d78d79d6558e684f6b8c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "gmodena",
-        "repo": "nix-flatpak",
-        "type": "github"
-      }
-    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1729256560,
@@ -175,7 +160,6 @@
         "firefox-addons": "firefox-addons",
         "home-manager": "home-manager",
         "lix-module": "lix-module",
-        "nix-flatpak": "nix-flatpak",
         "nixpkgs": "nixpkgs_2"
       }
     },
