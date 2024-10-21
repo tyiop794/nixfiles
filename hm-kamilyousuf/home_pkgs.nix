@@ -40,11 +40,13 @@
 
   ];
 
+  # Flatpaks for (most) GUI programs
   services.flatpak.packages = [
     "us.zoom.Zoom"
     "org.gnome.World.PikaBackup"
     "com.discordapp.Discord"
     "org.DolphinEmu.dolphin-emu"
+    "com.github.k4zmu2a.spacecadetpinball"
   ];
 
   services.flatpak.update.auto = {
