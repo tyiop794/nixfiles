@@ -25,6 +25,11 @@
      # space-cadet-pinball
      # adwsteamgtk
 
+     # GUI programs
+     gimp
+     inkscape
+     anki
+
      #command-line tools
      fzf
      ripgrep
