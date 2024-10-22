@@ -7,7 +7,7 @@
         };
         Service = {
             Type = "oneshot";
-            ExecStart = "${pkgs.home-manager}/bin/home-manager switch";
+            ExecStart = "${config.home.homeDirectory}/nixfiles/scripts/hmu";
         };
         Install = {
             WantedBy = [ "timers.target" ];
