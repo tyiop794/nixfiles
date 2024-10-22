@@ -9,6 +9,7 @@
      # GUI programs
      # note: for packages I commented out,
      # I will likely use flatpak versions instead of nix versions
+     # especially since many of these programs are closed source
      # qbittorrent
      # pika-backup
      # keepassxc
@@ -51,7 +52,6 @@
     "com.slack.Slack"
     "com.ticktick.TickTick"
     "com.rtosta.zapzap"
-    "org.gimp.GIMP"
   ];
   
   services.flatpak.update.auto = {
