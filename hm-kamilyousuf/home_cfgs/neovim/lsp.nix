@@ -16,7 +16,7 @@
                     require'lspconfig'.pyright.setup{
                         capabilities = capabilities
                     }
-                    require'lspconfig'.millet.setup{
+                    require'lspconfig'.millet-ls.setup{
                         capabilities = capabilities
                     }
                 '';
