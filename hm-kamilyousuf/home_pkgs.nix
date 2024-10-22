@@ -37,6 +37,8 @@
      lf
      ncdu
      glow
+     tldr
+     bottom
      # bitwarden-cli
      sl
 
