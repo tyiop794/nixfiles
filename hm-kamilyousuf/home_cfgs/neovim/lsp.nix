@@ -16,6 +16,9 @@
                     require'lspconfig'.pyright.setup{
                         capabilities = capabilities
                     }
+                    require'lspconfig'.millet.setup{
+                        capabilities = capabilities
+                    }
                 '';
             }
             {
@@ -46,6 +49,7 @@
             clang-tools
             rust-analyzer
             pyright
+            millet
         ];
         /*
         extraLuaConfig = "
