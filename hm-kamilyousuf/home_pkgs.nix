@@ -51,6 +51,7 @@
     "com.slack.Slack"
     "com.ticktick.TickTick"
     "com.rtosta.zapzap"
+    "org.gimp.GIMP"
   ];
   
   services.flatpak.update.auto = {
