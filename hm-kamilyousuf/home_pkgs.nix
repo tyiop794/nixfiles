@@ -50,6 +50,7 @@
   services.flatpak.enable = true;
   # Flatpaks for (most) GUI programs
   services.flatpak.packages = [
+    "com.github.tchx84.Flatseal"
     "us.zoom.Zoom"
     "org.gnome.World.PikaBackup"
     "com.discordapp.Discord"
