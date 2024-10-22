@@ -26,8 +26,6 @@
      # adwsteamgtk
 
      # GUI programs
-     gimp
-     inkscape
      anki
 
      #command-line tools
@@ -57,6 +55,8 @@
     "com.slack.Slack"
     "com.ticktick.TickTick"
     "com.rtosta.zapzap"
+    "org.inkscape.Inkscape"
+    "org.gimp.GIMP"
   ];
   
   services.flatpak.update.auto = {
