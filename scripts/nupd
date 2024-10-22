@@ -3,4 +3,4 @@
 cd /home/kamilyousuf/nixfiles/
 git add .
 nix flake update
-/home/kamilyousuf/nixfiles/scripts/nrb "system update"
+/home/kamilyousuf/nixfiles/scripts/nrb-old "system update"

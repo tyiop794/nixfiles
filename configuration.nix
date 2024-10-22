@@ -84,7 +84,7 @@
     cheese      # photo booth
     eog         # image viewer
     epiphany    # web browser
-    pkgs.gedit       # text editor
+    gedit       # text editor
     simple-scan # document scanner
     totem       # video player
     yelp        # help viewer
@@ -97,8 +97,8 @@
 
     # these should be self explanatory
     gnome-calculator gnome-calendar gnome-characters gnome-clocks gnome-contacts
-    gnome-font-viewer gnome-logs gnome-maps gnome-music pkgs.gnome-photos gnome-screenshot
-    gnome-weather gnome-disk-utility pkgs.gnome-connections 
+    gnome-font-viewer gnome-logs gnome-maps gnome-music gnome-photos gnome-screenshot
+    gnome-weather gnome-disk-utility gnome-connections 
   ];
 
   # Exclude xterm
