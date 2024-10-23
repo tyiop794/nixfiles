@@ -75,16 +75,19 @@
   # Needed since the school's wifi does not support safe renegotiation
   # Create the OpenSSL configuration file
   environment.etc."ssl/openssl-custom.cnf".text = ''
-    openssl_conf = openssl_init
+    openssl_conf = default_conf
 
-    [openssl_init]
+    [ default_conf ]
+
     ssl_conf = ssl_sect
 
     [ssl_sect]
-    system_default = ssl_default
 
-    [ssl_default]
-    Options = UnsafeRenegotiation
+    system_default = ssl_default_sect
+
+    [ssl_default_sect]
+
+    Options = UnsafeLegacyRenegotiation
   '';
 
   # Set environment variable to point OpenSSL to the custom config
