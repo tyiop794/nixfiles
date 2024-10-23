@@ -47,6 +47,12 @@
     trusted-users = root kamilyousuf
   '';
 
+  nixpkgs.config.packageOverrides = pkgs: rec {
+    wpa_supplicant = pkgs.wpa_supplicant.overrideAttrs (attrs: {
+        patches = attrs.patches ++ [ ./eduroam.patch ];
+    });
+  };
+
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
