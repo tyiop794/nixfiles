@@ -72,6 +72,24 @@
   # Enable gnome keyring
   security.pam.services.gdm.enableGnomeKeyring = true;
 
+  # Needed since the school's wifi does not support safe renegotiation
+  # Create the OpenSSL configuration file
+  environment.etc."ssl/openssl-custom.cnf".text = ''
+    openssl_conf = openssl_init
+
+    [openssl_init]
+    ssl_conf = ssl_sect
+
+    [ssl_sect]
+    system_default = ssl_default
+
+    [ssl_default]
+    Options = UnsafeRenegotiation
+  '';
+
+  # Set environment variable to point OpenSSL to the custom config
+  environment.variables.OPENSSL_CONF = "/etc/ssl/openssl-custom.cnf";
+
   # Autologin, since our drive is encrypted
   services.displayManager.autoLogin.enable = true;
   services.displayManager.autoLogin.user = "kamilyousuf";
