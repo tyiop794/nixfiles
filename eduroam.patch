@@ -1,4 +1,4 @@
---- wpa_supplicant-2.10/src/crypto/tls_openssl.c	2022-01-16 15:51:29.000000000 -0500
+--- wpa_supplicant-2.11/src/crypto/tls_openssl.c	2022-01-16 15:51:29.000000000 -0500
 +++ src/crypto/tls_openssl.c.legacy	2022-09-29 10:10:02.999974141 -0400
 @@ -1048,7 +1048,7 @@
  
