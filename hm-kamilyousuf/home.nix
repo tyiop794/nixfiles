@@ -34,12 +34,20 @@
   ];
   home.stateVersion = "23.11";
 
-  programs.bat = {
-    enable = true;
-    config = {
-       theme = "gruvbox-dark";
-    };
+  programs = { 
+      bat = {
+        enable = true;
+        config = {
+           theme = "gruvbox-dark";
+        };
+      };
+
+      direnv = {
+        enable = true;
+        nix-direnv.enable = true;
+      }; 
   };
+
 
 
   # Let home Manager install and manage itself.
