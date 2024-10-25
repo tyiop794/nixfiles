@@ -41,7 +41,6 @@
      bottom
      # bitwarden-cli
      sl
-     file
 
      # Nerd fonts
      nerdfonts
