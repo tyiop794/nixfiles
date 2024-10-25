@@ -39,6 +39,7 @@
      glow
      tldr
      bottom
+     unzip
      # bitwarden-cli
      sl
 
