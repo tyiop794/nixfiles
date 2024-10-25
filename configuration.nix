@@ -204,6 +204,7 @@
     gnome-tweaks
     # gnome-terminal
     ptyxis
+    file
     gnome-power-manager
     gnome-themes-extra
     gnome-extension-manager
@@ -217,6 +218,7 @@
     wl-clipboard
     killall
     htop
+
     # (pkgs.callPackage ./custom_pkgs/rounded-window-corners-reborn.nix)
     # firefox
   ];
