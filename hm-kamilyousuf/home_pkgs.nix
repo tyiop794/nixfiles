@@ -61,6 +61,7 @@
     "com.rtosta.zapzap"
     "org.inkscape.Inkscape"
     "org.gimp.GIMP"
+    "org.qbittorrent.qBittorrent"
   ];
   
   services.flatpak.update.auto = {

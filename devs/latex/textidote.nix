@@ -2,7 +2,7 @@
 
 # TODO: fill this out to package textidote
 stdenv.mkDerivation rec {
-  pname = "your-java-program";
+  pname = "textidote";
   version = "1.0.0";
 
   # Specify the source of the JAR file
