@@ -63,6 +63,7 @@
     "org.gimp.GIMP"
     "org.qbittorrent.qBittorrent"
     "fr.handbrake.ghb"
+    "org.torproject.torbrowser-launcher"
   ];
   
   services.flatpak.update.auto = {
