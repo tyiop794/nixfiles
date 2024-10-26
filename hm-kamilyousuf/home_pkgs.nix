@@ -62,6 +62,7 @@
     "org.inkscape.Inkscape"
     "org.gimp.GIMP"
     "org.qbittorrent.qBittorrent"
+    "fr.handbrake.ghb"
   ];
   
   services.flatpak.update.auto = {
