@@ -242,6 +242,19 @@
   # Enable systemd-oomd
   systemd.services.oomd = {
     enable = true;
+    thresholds = [
+        {
+            resource = "memory";
+            pressure = "medium";
+            durationSec = 10;
+        }
+        {
+            resource = "swap";
+            pressure = "medium";
+            durationSec = 20;
+        }
+    ];
+    memoryMargin = "200M";
     wantedBy = [ "multi-user.target" ];
   };
 
