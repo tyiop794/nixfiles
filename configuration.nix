@@ -242,18 +242,9 @@
   # Enable systemd-oomd
   systemd.services.oomd = {
     enable = true;
-    thresholds = [
-        {
-            resource = "memory";
-            pressure = "medium";
-            durationSec = 10;
-        }
-        {
-            resource = "swap";
-            pressure = "medium";
-            durationSec = 20;
-        }
-    ];
+    enableRootSlice = true;
+    enableSystemSlice = true;
+    enableUserSlices = true;
     wantedBy = [ "multi-user.target" ];
   };
 
