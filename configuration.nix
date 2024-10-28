@@ -240,7 +240,7 @@
   zramSwap.enable = true;
 
   # Enable systemd-oomd
-  systemd.services.oomd = {
+  systemd.oomd = {
     enable = true;
     enableRootSlice = true;
     enableSystemSlice = true;
