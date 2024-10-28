@@ -254,7 +254,6 @@
             durationSec = 20;
         }
     ];
-    memoryMargin = "200M";
     wantedBy = [ "multi-user.target" ];
   };
 
