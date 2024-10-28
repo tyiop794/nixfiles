@@ -6,6 +6,8 @@
 	hwdec-codecs = "all";
 	resume-playback = true;
 	save-position-on-quit = true;
+        slang = "en";
+        alang = "ja";
     };
   };
 }
