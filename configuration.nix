@@ -243,7 +243,7 @@
   systemd.oomd = {
     enable = true;
     enableRootSlice = true;
-    enableSystemSlice = true;
+    enabledSystemSlice = true;
     enableUserSlices = true;
   };
 
