@@ -218,6 +218,8 @@
     wl-clipboard
     killall
     htop
+    pciutils
+    glxinfo
 
     # (pkgs.callPackage ./custom_pkgs/rounded-window-corners-reborn.nix)
     # firefox
