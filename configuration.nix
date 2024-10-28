@@ -245,7 +245,6 @@
     enableRootSlice = true;
     enableSystemSlice = true;
     enableUserSlices = true;
-    wantedBy = [ "multi-user.target" ];
   };
 
   # Enable and configure TLP
