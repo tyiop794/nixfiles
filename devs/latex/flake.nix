@@ -15,6 +15,7 @@
      in pkgs.mkShell {
        packages = with pkgs; [
           texlive.combined.scheme-full
+          (callPackage ./textidote.nix)
        ];
        shellHook = "
        exec fish

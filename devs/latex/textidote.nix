@@ -1,14 +1,13 @@
 { lib, stdenv, fetchurl, jdk }:
 
-# TODO: fill this out to package textidote
 stdenv.mkDerivation rec {
   pname = "textidote";
-  version = "1.0.0";
+  version = "0.8.3";
 
   # Specify the source of the JAR file
   src = fetchurl {
-    url = "https://example.com/your-java-program-${version}.jar";
-    sha256 = "sha256-hash-of-the-jar";
+    url = "https://github.com/sylvainhalle/textidote/releases/download/${version}/textidote.jar";
+    sha256 = "sha256-04862cc03ad5a8d101f89f53c01d05a29f800bcaaf3e8e7728653b8aea42eed9";
   };
 
   # The Java runtime environment needed to run the program
@@ -18,20 +17,20 @@ stdenv.mkDerivation rec {
   installPhase = ''
     mkdir -p $out/bin
     mkdir -p $out/share/java
-    cp $src $out/share/java/your-java-program.jar
+    cp $src $out/share/java/textidote.jar
 
     # Create a wrapper script to run the jar file
-    cat > $out/bin/your-java-program <<EOF
+    cat > $out/bin/textidote <<EOF
     #!${stdenv.shell}
-    exec ${jdk}/bin/java -jar $out/share/java/your-java-program.jar "\$@"
+    exec ${jdk}/bin/java -jar $out/share/java/textidote.jar "\$@"
     EOF
 
-    chmod +x $out/bin/your-java-program
+    chmod +x $out/bin/textidote
   '';
 
   meta = with lib; {
-    description = "Your Java program packaged in Nix";
-    license = licenses.mit; # Adjust as appropriate
+    description = "Grammar checker for LaTeX files";
+    license = licenses.gpl3; # Adjust as appropriate
     platforms = platforms.all;
   };
 }
