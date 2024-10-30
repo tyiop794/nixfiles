@@ -21,7 +21,7 @@
                 type = "lua";
                 config = ''
                 require("trouble").setup()
-                ''
+                '';
            }
         ];
     };
