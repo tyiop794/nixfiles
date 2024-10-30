@@ -19,6 +19,9 @@
            {
                 plugin = trouble-nvim;
                 type = "lua";
+                config = ''
+                vim.cmd('packadd! trouble')
+                '';
            }
         ];
     };
