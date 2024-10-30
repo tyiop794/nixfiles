@@ -16,7 +16,10 @@
                 vim.opt.termguicolors = true
                 '';
            }
-           trouble-nvim
+           {
+                plugin = trouble-nvim;
+                type = "lua";
+           }
         ];
     };
 }
