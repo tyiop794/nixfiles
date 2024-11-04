@@ -19,7 +19,7 @@
 		# ];
 	};
 	"org/gnome/desktop/interface" = {
-		text-scaling-factor = 1.25;		
+		text-scaling-factor = 1.00;		
                 gtk-theme = "Adwaita-dark";
                 color-scheme = "prefer-dark";
 	};
