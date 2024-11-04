@@ -26,7 +26,7 @@
 	"org/gnome/mutter" = {
 		dynamic-workspaces = true;
 		edge-tiling = true;
-                experimental-features = "['scale-monitor-framebuffer']"
+                experimental-features = "['scale-monitor-framebuffer']";
 	};
         # "org/gnome/shell/extensions/nightthemeswitcher/commands" = {
         #         sunrise = "gsettings set org.gnome.desktop.interface gtk-theme \"Adwaita\"";
