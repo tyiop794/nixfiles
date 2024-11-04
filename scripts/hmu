@@ -5,3 +5,4 @@ git add .
 nix flake update
 /home/kamilyousuf/nixfiles/scripts/hmb "update"
 distrobox upgrade --all
+flatpak upgrade -y
