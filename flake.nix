@@ -4,6 +4,11 @@
   inputs = {
     # nixos-unstable repository
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    flatpak_nixpkgs = {
+        url = "github:NixOS/nixpkgs";
+        ref = "master";
+        rev = "7695a1e9a9789fa13684ffd87c02b6c9f9e99b96";
+    };
     # nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.4.1";
     # nix-flatpak.url = "github:gmodena/nix-flatpak";
     # home-manager = {
@@ -29,9 +34,13 @@
       "aarch64-darwin"
       "x86_64-darwin"
     ];
+    flatpakOverlay = final: prev: {
+        flatpak = flatpak_nixpkgs.legacyPackages.x86_64-linux.flatpak;
+    };
     forAllSystems = nixpkgs.lib.genAttrs systems;
   in {  nixosConfigurations.tardis = nixpkgs.lib.nixosSystem {
     	system = "x86_64-linux";
+        nixpkgs.overlays = [ flatpakOverlay ];
         specialArgs = { inherit inputs outputs; };
 	modules = [
             lix-module.nixosModules.default
