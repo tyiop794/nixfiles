@@ -42,7 +42,7 @@
     forAllSystems = nixpkgs.lib.genAttrs systems;
   in {  nixosConfigurations.tardis = nixpkgs.lib.nixosSystem {
     	system = "x86_64-linux";
-        nixpkgs.overlays = [ flatpakOverlay ];
+        # nixpkgs.overlays = [ flatpakOverlay ];
         specialArgs = { inherit inputs outputs; };
 	modules = [
             lix-module.nixosModules.default
