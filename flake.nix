@@ -47,6 +47,7 @@
             inherit inputs outputs; 
             flatpak_nixpkgs = import flatpak_nixpkgs {
                 inherit system;
+                config.allowUnfree = false;
             };
         };
 	modules = [
