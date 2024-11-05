@@ -36,9 +36,9 @@
       "aarch64-darwin"
       "x86_64-darwin"
     ];
-    flatpakOverlay = final: prev: {
-        flatpak = flatpak_nixpkgs.legacyPackages.x86_64-linux.flatpak;
-    };
+    # flatpakOverlay = final: prev: {
+    #     flatpak = flatpak_nixpkgs.legacyPackages.x86_64-linux.flatpak;
+    # };
     forAllSystems = nixpkgs.lib.genAttrs systems;
   in {  nixosConfigurations.tardis = nixpkgs.lib.nixosSystem {
     	system = "x86_64-linux";
