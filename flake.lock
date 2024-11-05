@@ -71,6 +71,22 @@
         "type": "github"
       }
     },
+    "flatpak_nixpkgs": {
+      "locked": {
+        "lastModified": 1730776358,
+        "narHash": "sha256-UeKSh82oZIzKPVPlvB2fKZ2rambw0603LL31VwCLPlw=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "7695a1e9a9789fa13684ffd87c02b6c9f9e99b96",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "7695a1e9a9789fa13684ffd87c02b6c9f9e99b96",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": "nixpkgs"
@@ -158,6 +174,7 @@
     "root": {
       "inputs": {
         "firefox-addons": "firefox-addons",
+        "flatpak_nixpkgs": "flatpak_nixpkgs",
         "home-manager": "home-manager",
         "lix-module": "lix-module",
         "nixpkgs": "nixpkgs_2"

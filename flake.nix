@@ -5,8 +5,7 @@
     # nixos-unstable repository
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
     flatpak_nixpkgs = {
-        url = "github:NixOS/nixpkgs";
-        rev = "7695a1e9a9789fa13684ffd87c02b6c9f9e99b96";
+        url = "github:NixOS/nixpkgs/7695a1e9a9789fa13684ffd87c02b6c9f9e99b96";
     };
     # nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.4.1";
     # nix-flatpak.url = "github:gmodena/nix-flatpak";
