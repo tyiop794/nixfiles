@@ -2,7 +2,7 @@
 # your system. Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
 
-{ config, lib, pkgs, inputs, ... }:
+{ config, lib, pkgs, inputs, flatpak_nixpkgs, ... }:
 
 {
   imports =
@@ -52,6 +52,12 @@
         patches = attrs.patches ++ [ ./eduroam.patch ];
     });
   };
+
+  nixpkgs.overlays = [
+    (self: super: {
+        flatpak = flatpak_nixpkgs.flatpak;
+    })
+  ];
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";

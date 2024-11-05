@@ -36,14 +36,19 @@
       "aarch64-darwin"
       "x86_64-darwin"
     ];
-    # flatpakOverlay = final: prev: {
-    #     flatpak = flatpak_nixpkgs.legacyPackages.x86_64-linux.flatpak;
-    # };
+    flatpakOverlay = final: prev: {
+        flatpak = flatpak_nixpkgs.legacyPackages.x86_64-linux.flatpak;
+    };
     forAllSystems = nixpkgs.lib.genAttrs systems;
   in {  nixosConfigurations.tardis = nixpkgs.lib.nixosSystem {
     	system = "x86_64-linux";
-        # nixpkgs.overlays = [ flatpakOverlay ];
-        specialArgs = { inherit inputs outputs; };
+        nixpkgs.overlays = [ flatpakOverlay ];
+        specialArgs = { 
+            inherit inputs outputs; 
+            flatpak_nixpkgs = import flatpak_nixpkgs {
+                inherit system;
+            };
+        };
 	modules = [
             lix-module.nixosModules.default
             # nix-flatpak.nixosModules.nix-flatpak
