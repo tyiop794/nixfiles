@@ -45,10 +45,7 @@
         nixpkgs.overlays = [ flatpakOverlay ];
         specialArgs = { 
             inherit inputs outputs; 
-            flatpak_nixpkgs = import flatpak_nixpkgs {
-                inherit system;
-                config.allowUnfree = false;
-            };
+            flatpak_nixpkgs = import flatpak_nixpkgs;
         };
 	modules = [
             lix-module.nixosModules.default
