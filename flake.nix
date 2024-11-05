@@ -44,8 +44,10 @@
     	system = "x86_64-linux";
         nixpkgs.overlays = [ flatpakOverlay ];
         specialArgs = { 
-            inherit inputs outputs; 
-            flatpak_nixpkgs = import flatpak_nixpkgs;
+            # inherit inputs outputs; 
+            flatpak_nixpkgs = import flatpak_nixpkgs {
+                inherit system;
+            }
         };
 	modules = [
             lix-module.nixosModules.default
