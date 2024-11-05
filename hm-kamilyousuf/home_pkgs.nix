@@ -27,6 +27,7 @@
 
      # GUI programs
      anki
+     higan
 
      #command-line tools
      fzf
@@ -64,6 +65,7 @@
     "org.qbittorrent.qBittorrent"
     "fr.handbrake.ghb"
     "org.torproject.torbrowser-launcher"
+    "dev.geopjr.Tuba"
   ];
   
   services.flatpak.update.auto = {

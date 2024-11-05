@@ -15,11 +15,12 @@
      in pkgs.mkShell {
        packages = with pkgs; [
           texlive.combined.scheme-full
-          (callPackage ./textidote.nix)
+          (callPackage ./textidote.nix {})
        ];
-       shellHook = "
-       exec fish
-       ";
+       sname = "obs_seq_paper";
+       shellHook = ''
+            export PS1="($sname : \w ) :> "
+       '';
   };
 };
 }

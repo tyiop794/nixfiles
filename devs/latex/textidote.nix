@@ -6,9 +6,19 @@ stdenv.mkDerivation rec {
 
   # Specify the source of the JAR file
   src = fetchurl {
-    url = "https://github.com/sylvainhalle/textidote/releases/download/${version}/textidote.jar";
-    sha256 = "sha256-04862cc03ad5a8d101f89f53c01d05a29f800bcaaf3e8e7728653b8aea42eed9";
+    url = "https://github.com/sylvainhalle/textidote/releases/download/v0.8.3/textidote.jar";
+    sha256 = "sha256-BIYswDrVqNEB+J9TwB0Fop+AC8qvPo53KGU7iupC7tk=";
+    curlOpts = "-L -H Accept:application/octet-stream";
   };
+
+  phases = ["installPhase"];
+
+  # src = fetchFromGitHub {
+  #   owner = "sylvainhalle";
+  #   repo = "textidote";
+  #   rev = "v0.9";
+  #   sha256 = lib.fakeSha256;
+  # };
 
   # The Java runtime environment needed to run the program
   buildInputs = [ jdk ];
