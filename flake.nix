@@ -47,7 +47,7 @@
             # inherit inputs outputs; 
             flatpak_nixpkgs = import flatpak_nixpkgs {
                 inherit system;
-            }
+            };
         };
 	modules = [
             lix-module.nixosModules.default
