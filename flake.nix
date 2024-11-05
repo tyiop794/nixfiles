@@ -27,7 +27,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, lix-module, home-manager, firefox-addons, ... }@inputs: let
+  outputs = { self, nixpkgs, lix-module, home-manager, firefox-addons, flatpak_nixpkgs, ... }@inputs: let
     inherit (self) outputs;
     systems = [
       "aarch64-linux"
