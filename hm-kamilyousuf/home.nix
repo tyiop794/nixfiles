@@ -1,9 +1,15 @@
-{ config, inputs, pkgs, home-manager,... }:
+{ config, inputs, pkgs, home-manager, flatpak_nixpkgs, ... }:
 
 {
   home.username = "kamilyousuf";
   home.homeDirectory = "/home/kamilyousuf";
   nixpkgs.config.allowUnfree = false;
+
+  nixpkgs.overlays = [
+    (self: super : {
+        flatpak = flatpak_nixpkgs.flatpak;
+    })
+  ];
 
   # link the configuration file in current directory to the specified location in home directory
   # home.file.".config/i3/wallpaper.jpg".source = ./wallpaper.jpg;
