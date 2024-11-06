@@ -6,9 +6,9 @@
   nixpkgs.config.allowUnfree = false;
 
   nixpkgs.overlays = [
-    (self: super : {
-        flatpak = flatpak_nixpkgs.flatpak;
-    })
+    # (self: super : {
+    #     flatpak = flatpak_nixpkgs.flatpak;
+    # })
   ];
 
   # link the configuration file in current directory to the specified location in home directory
