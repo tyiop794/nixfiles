@@ -18,7 +18,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, firefox-addons, nix-flatpak, flake_nixpkgs, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, firefox-addons, nix-flatpak, flatpak_nixpkgs, ... }@inputs:
     let
       inherit (self) outputs; 
       system = "x86_64-linux";
