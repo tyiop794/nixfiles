@@ -40,11 +40,11 @@
         flatpak = flatpak_nixpkgs.legacyPackages.x86_64-linux.flatpak;
     };
     forAllSystems = nixpkgs.lib.genAttrs systems;
-  in {  nixosConfigurations.tardis = nixpkgs.lib.nixosSystem {
+  in {  nixosConfigurations.tardis = nixpkgs.lib.nixosSystem rec {
     	system = "x86_64-linux";
         nixpkgs.overlays = [ flatpakOverlay ];
         specialArgs = { 
-            # inherit inputs outputs; 
+            inherit inputs outputs; 
             flatpak_nixpkgs = import flatpak_nixpkgs {
                 inherit system;
             };
