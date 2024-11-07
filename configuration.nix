@@ -57,9 +57,9 @@
     # (self: super: {
     #     flatpak = flatpak_nixpkgs.flatpak;
     # })
-    # (self: super: {
-    #     ostree = flatpak_nixpkgs.ostree;
-    # })
+    (self: super: {
+        ostree = flatpak_nixpkgs.ostree;
+    })
   ];
 
   # Configure network proxy if necessary
