@@ -41,6 +41,7 @@
      tldr
      bottom
      unzip
+     nix-tree
      # bitwarden-cli
      sl
 
