@@ -3,7 +3,7 @@
 
   inputs = {
     # nixos-unstable repository
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     # flatpak_nixpkgs = {
     #     url = "github:NixOS/nixpkgs/7695a1e9a9789fa13684ffd87c02b6c9f9e99b96";
     #     inputs.nixpkgs.follows = "nixpkgs";
