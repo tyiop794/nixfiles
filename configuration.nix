@@ -53,14 +53,14 @@
     });
   };
 
-  nixpkgs.overlays = [
-    # (self: super: {
-    #     flatpak = flatpak_nixpkgs.flatpak;
-    # })
-    # (self: super: {
-    #     ostree = flatpak_nixpkgs.ostree;
-    # })
-  ];
+  # nixpkgs.overlays = [
+  #   # (self: super: {
+  #   #     flatpak = flatpak_nixpkgs.flatpak;
+  #   # })
+  #   # (self: super: {
+  #   #     ostree = flatpak_nixpkgs.ostree;
+  #   # })
+  # ];
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -280,15 +280,15 @@
   services.openssh.enable = true;
 
   # Set up auto-updating
-  system.autoUpgrade = {
-    enable = true;
-    flake = inputs.self.outPath;
-    flags = [
-        "-L"
-    ];
-    dates = "weekly";
-    randomizedDelaySec = "45min";
-  };
+  # system.autoUpgrade = {
+  #   enable = true;
+  #   flake = inputs.self.outPath;
+  #   flags = [
+  #       "-L"
+  #   ];
+  #   dates = "weekly";
+  #   randomizedDelaySec = "45min";
+  # };
 
   # Collect the garbage after a week
   nix.gc = {
