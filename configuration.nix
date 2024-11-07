@@ -287,7 +287,7 @@
         "--no-write-lock-file"
         "-L"
     ];
-    dates = "20:00";
+    dates = "weekly";
     randomizedDelaySec = "45min";
   };
 
