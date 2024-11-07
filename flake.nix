@@ -22,12 +22,12 @@
        url = "https://git.lix.systems/lix-project/nixos-module/archive/2.91.1-1.tar.gz";
        inputs.nixpkgs.follows = "nixpkgs";
     };
-    flatpak_nixpkgs = {
-        url = "github:NixOS/nixpkgs/7695a1e9a9789fa13684ffd87c02b6c9f9e99b96";
-    };
+    # flatpak_nixpkgs = {
+    #     url = "github:NixOS/nixpkgs/7695a1e9a9789fa13684ffd87c02b6c9f9e99b96";
+    # };
   };
 
-  outputs = { self, nixpkgs, lix-module, home-manager, firefox-addons, flatpak_nixpkgs, ... }@inputs: let
+  outputs = { self, nixpkgs, lix-module, home-manager, firefox-addons, ... }@inputs: let
     inherit (self) outputs;
     systems = [
       "aarch64-linux"
@@ -45,9 +45,9 @@
         # nixpkgs.overlays = [ flatpakOverlay ];
         specialArgs = { 
             inherit inputs outputs; 
-            flatpak_nixpkgs = import flatpak_nixpkgs {
-                inherit system;
-            };
+            # flatpak_nixpkgs = import flatpak_nixpkgs {
+            #     inherit system;
+            # };
         };
 	modules = [
             lix-module.nixosModules.default
