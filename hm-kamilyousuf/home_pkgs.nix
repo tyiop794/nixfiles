@@ -67,6 +67,7 @@
     "fr.handbrake.ghb"
     "org.torproject.torbrowser-launcher"
     "dev.geopjr.Tuba"
+    "com.github.finefindus.eyedropper"
   ];
   
   services.flatpak.update.auto = {
