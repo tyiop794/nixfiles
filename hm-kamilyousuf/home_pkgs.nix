@@ -42,7 +42,7 @@
      bottom
      unzip
      nix-tree
-     # bitwarden-cli
+     xdg-utils
      sl
 
      # Nerd fonts
