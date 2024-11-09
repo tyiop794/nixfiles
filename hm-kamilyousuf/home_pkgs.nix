@@ -42,7 +42,12 @@
      bottom
      unzip
      nix-tree
+
+     # Have the 'open' utility?
      xdg-utils
+     handlr-regex
+
+     # This is stupid, but I couldn't help myself
      sl
 
      # Nerd fonts
