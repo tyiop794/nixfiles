@@ -68,6 +68,7 @@
     "com.rtosta.zapzap"
     "org.inkscape.Inkscape"
     "org.gimp.GIMP"
+    "org.libreoffice.LibreOffice"
     "org.qbittorrent.qBittorrent"
     "fr.handbrake.ghb"
     "org.torproject.torbrowser-launcher"
