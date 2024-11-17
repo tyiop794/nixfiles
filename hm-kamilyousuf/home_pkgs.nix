@@ -42,6 +42,7 @@
      bottom
      unzip
      nix-tree
+     mpi
 
      # Have the 'open' utility?
      xdg-utils
