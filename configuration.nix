@@ -43,7 +43,7 @@
   services.resolved.enable = true;
 
   # Set your time zone.
-  time.timeZone = "America/New_York";
+  time.timeZone = "America/Chicago";
 
   # Add myself as a trusted user
   nix.extraOptions = ''
