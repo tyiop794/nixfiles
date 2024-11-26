@@ -16,10 +16,6 @@
                     require'lspconfig'.pyright.setup{
                         capabilities = capabilities
                     }
-                    require'lspconfig'.vuels.setup{
-                        capabilities = capabilities,
-                        cmd = { "vue-language-server" }
-                    }
                     require'lspconfig'.millet.setup{
                         capabilities = capabilities,
                         cmd = { "millet-ls" }
@@ -55,7 +51,6 @@
             rust-analyzer
             pyright
             millet
-            vue-language-server
         ];
         /*
         extraLuaConfig = "
