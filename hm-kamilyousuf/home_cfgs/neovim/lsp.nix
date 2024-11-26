@@ -17,7 +17,8 @@
                         capabilities = capabilities
                     }
                     require'lspconfig'.vuels.setup{
-                        capabilities = capabilities
+                        capabilities = capabilities,
+                        cmd = { "vue-language-server" }
                     }
                     require'lspconfig'.millet.setup{
                         capabilities = capabilities,
