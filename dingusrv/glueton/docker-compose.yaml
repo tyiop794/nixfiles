@@ -1,0 +1,21 @@
+version: "3"
+services:
+  gluetun:
+    image: qdm12/gluetun
+    container_name: mullvad_vpn
+    cap_add:
+      - NET_ADMIN
+    ports: #make sure to include these for qbittorrent to work
+      - 6081:6881
+      - 6081:6881/udp
+      - 6011:6011      
+    environment:
+      - VPN_SERVICE_PROVIDER=mullvad
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=ew96bCNCEtjnt4qRj4KeuI6iHAd9B2lvBjw/KzkvQ0E=
+      - WIREGUARD_ADDRESSES=10.71.231.240/32
+      - SERVER_CITIES=Stockholm
+    volumes:
+      - /Home/Docker/Gluetun:/gluetun
+    restart: unless-stopped
+

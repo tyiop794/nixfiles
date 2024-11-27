@@ -1,0 +1,19 @@
+version: "2.1"
+services:
+  qbittorrent:
+    image: ghcr.io/linuxserver/qbittorrent #https://docs.linuxserver.io/images/docker-qbittorrent/#version-tags
+    container_name: qbittorrent
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Chicago
+      - WEBUI_PORT=6011
+    volumes:
+      - /home/Docker/qbittorrent/config:/config
+      - /home/Downloads:/downloads
+    ports:
+      - 6081:6881
+      - 6081:6881/udp
+      - 6011:6011 
+    network_mode: "container:your_gluetun_container_name" #change gluetun to your VPN container name   
+    restart: unless-stopped
