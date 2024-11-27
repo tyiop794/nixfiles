@@ -40,22 +40,38 @@
     #     flatpak = flatpak_nixpkgs.legacyPackages.x86_64-linux.flatpak;
     # };
     forAllSystems = nixpkgs.lib.genAttrs systems;
-  in {  nixosConfigurations.tardis = nixpkgs.lib.nixosSystem rec {
-    	system = "x86_64-linux";
-        # nixpkgs.overlays = [ flatpakOverlay ];
-        specialArgs = { 
-            inherit inputs outputs; 
-            # flatpak_nixpkgs = import flatpak_nixpkgs {
-            #     inherit system;
-            # };
+  in {  nixosConfigurations = { 
+         tardis = nixpkgs.lib.nixosSystem rec {
+            system = "x86_64-linux";
+            # nixpkgs.overlays = [ flatpakOverlay ];
+            specialArgs = { 
+                inherit inputs outputs; 
+                # flatpak_nixpkgs = import flatpak_nixpkgs {
+                #     inherit system;
+                # };
+            };
+            modules = [
+                lix-module.nixosModules.default
+                # nix-flatpak.nixosModules.nix-flatpak
+               ./virtualisation.nix
+               ./configuration.nix
+               # ./firejail.nix
+            ];
         };
-	modules = [
-            lix-module.nixosModules.default
-            # nix-flatpak.nixosModules.nix-flatpak
-	   ./virtualisation.nix
-	   ./configuration.nix
-           # ./firejail.nix
-	];
+        dingusrv =  nixpkgs.lib.nixosSystem rec {
+            system = "x86_64-linux";
+            # nixpkgs.overlays = [ flatpakOverlay ];
+            specialArgs = { 
+                inherit inputs outputs; 
+                # flatpak_nixpkgs = import flatpak_nixpkgs {
+                #     inherit system;
+                # };
+            };
+            modules = [
+                lix-module.nixosModules.default
+               ./dingusrv/configuration.nix
+            ];
+        };
     };
     /*
     homeConfigurations = {
