@@ -14,7 +14,7 @@
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.efi.efiSysMountPoint = "/boot/efi";
+  # boot.loader.efi.efiSysMountPoint = "/boot/efi";
 
   networking.hostName = "dingusrv"; # Define your hostname.
 
@@ -59,17 +59,9 @@
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
 
-  systemd.services."getty@tty1".enable = false;
-  systemd.services."autovt@tty1".enable = false;
+  # systemd.services."getty@tty1".enable = false;
+  # systemd.services."autovt@tty1".enable = false;
   
-  # Exclude xterm
-  services.xserver.excludePackages = [ pkgs.xterm ];
-  services.xserver.desktopManager.xterm.enable = false;
-
-  # Configure keymap in X11
-  services.xserver.xkb.layout = "us";
-  # services.xserver.xkb.options = "eurosign:e,caps:escape";
-
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.kamilyousuf = {
     isNormalUser = true;
@@ -147,6 +139,11 @@
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
+
+  # Disable the lid switch
+  services.logind.extraConfig = ''
+  	HandleLidSwitch=ignore
+  '';
 
   # Set up auto-updating
   # system.autoUpgrade = {
