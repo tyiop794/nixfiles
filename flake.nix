@@ -70,6 +70,7 @@
             modules = [
                 lix-module.nixosModules.default
                ./dingusrv/configuration.nix
+	       ./dingusrv/docker.nix
             ];
         };
     };
