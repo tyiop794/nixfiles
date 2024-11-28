@@ -5,6 +5,7 @@
      tree
      fastfetch
      yt-dlp
+     borgbackup
 
      # GUI programs
      # note: for packages I commented out,
