@@ -28,6 +28,7 @@
      # GUI programs
      anki
      higan
+     vorta
 
      #command-line tools
      fzf
