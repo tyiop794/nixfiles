@@ -137,7 +137,7 @@
     # these should be self explanatory
     gnome-calculator gnome-calendar gnome-characters gnome-clocks gnome-contacts
     gnome-font-viewer gnome-logs gnome-maps gnome-music gnome-photos gnome-screenshot
-    gnome-weather gnome-disk-utility gnome-connections 
+    gnome-weather gnome-connections 
   ];
 
   # Exclude xterm
