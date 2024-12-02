@@ -144,6 +144,7 @@
   fonts.packages = with pkgs; [
       nerd-fonts.noto
       nerd-fonts.dejavu-sans-mono
+      nerd-fonts.ubuntu
       noto-fonts
       noto-fonts-cjk-sans
       noto-fonts-emoji
