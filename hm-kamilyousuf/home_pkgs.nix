@@ -54,7 +54,7 @@
      sl
 
      # Nerd fonts
-     lib.pipe nerd-fonts.sources [
+     lib.pipe nerd-fonts [
        builtins.attrNames
       (builtins.map (n: nerd-fonts.${n}))
       (builtins.filter (pkg: !pkg.meta.broken))
