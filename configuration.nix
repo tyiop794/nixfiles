@@ -140,6 +140,19 @@
     gnome-weather gnome-connections 
   ];
 
+  # Install fonts system-wide
+  fonts.packages = with pkgs; [
+      noto-fonts
+      noto-fonts-cjk
+      noto-fonts-emoji
+      liberation_ttf
+      fira-code
+      fira-code-symbols
+      mplus-outline-fonts
+      dina-font
+      proggyfonts
+  ];
+
   # Exclude xterm
   services.xserver.excludePackages = [ pkgs.xterm ];
   services.xserver.desktopManager.xterm.enable = false;
