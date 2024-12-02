@@ -53,12 +53,8 @@
      # This is stupid, but I couldn't help myself
      sl
 
-     # Nerd fonts
-     lib.pipe nerd-fonts.sources [
-       builtins.attrNames
-      (builtins.map (n: nerd-fonts.${n}))
-      (builtins.filter (pkg: !pkg.meta.broken))
-    ];
+    nerd-fonts.noto
+];
 
   services.flatpak.enable = true;
   # Flatpaks for (most) GUI programs
