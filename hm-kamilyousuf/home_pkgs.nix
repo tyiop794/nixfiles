@@ -53,7 +53,7 @@
      # This is stupid, but I couldn't help myself
      sl
 
-    nerd-fonts.noto
+     # nerd-fonts.noto
 ];
 
   services.flatpak.enable = true;
