@@ -54,7 +54,7 @@
      sl
 
      # Nerd fonts
-     nerdfonts
+     nerd-fonts
 
   ];
 
