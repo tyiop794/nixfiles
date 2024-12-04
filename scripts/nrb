@@ -4,4 +4,4 @@ cd ~/nixfiles
 git add . 
 ([ -z $1 ] 2>/dev/null && git commit -m "$(date +%F--%T)") || git commit -m "$(date +%F--%T): \"$1\""
 git push
-sudo nixos-rebuild boot --show-trace
+sudo nixos-rebuild switch --show-trace

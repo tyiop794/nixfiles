@@ -3,4 +3,6 @@
 cd /home/kamilyousuf/nixfiles/
 git add .
 nix flake update
-/home/kamilyousuf/nixfiles/scripts/nrb "$1"
+git add -u
+git push
+sudo nixos-rebuild boot
