@@ -17,6 +17,7 @@
   boot.loader.efi.efiSysMountPoint = "/boot/efi";
 
   # Use the latest linux kernel
+  # Maybe not...it seems to be blowing up bluetooth for whatever reason...
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # Indicate that our drive is encrypted
