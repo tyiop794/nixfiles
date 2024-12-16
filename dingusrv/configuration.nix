@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./samba.nix
       # inputs.home-manager.nixosModules.home-manager
     ];
 
@@ -100,6 +101,8 @@
     killall
     htop
     pciutils
+    borgbackup
+    fastfetch
 
     # (pkgs.callPackage ./custom_pkgs/rounded-window-corners-reborn.nix)
     # firefox
@@ -141,20 +144,7 @@
   services.openssh.enable = true;
 
   # Disable the lid switch
-  services.logind.extraConfig = ''
-  	HandleLidSwitch=ignore
-  '';
-
-  # Set up auto-updating
-  # system.autoUpgrade = {
-  #   enable = true;
-  #   flake = inputs.self.outPath;
-  #   flags = [
-  #       "-L"
-  #   ];
-  #   dates = "weekly";
-  #   randomizedDelaySec = "45min";
-  # };
+  services.logind.lidSwitch = "ignore";
 
   # Collect the garbage after a week
   nix.gc = {
