@@ -60,6 +60,7 @@
   services.flatpak.enable = true;
   # Flatpaks for (most) GUI programs
   services.flatpak.packages = [
+    "org.libretro.RetroArch"
     "com.github.tchx84.Flatseal"
     "us.zoom.Zoom"
     "org.gnome.World.PikaBackup"
