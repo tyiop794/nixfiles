@@ -249,6 +249,8 @@
     htop
     pciutils
     glxinfo
+    lshw
+    dmidecode
 
     # (pkgs.callPackage ./custom_pkgs/rounded-window-corners-reborn.nix)
     # firefox
