@@ -53,8 +53,12 @@
         nix-direnv.enable = true;
       }; 
   };
-
-
+  
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 30d";
+  };
 
   # Let home Manager install and manage itself.
   programs.home-manager.enable = true;
