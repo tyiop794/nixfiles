@@ -57,33 +57,33 @@
      # nerd-fonts.noto
 ];
 
-  # services.flatpak.enable = true;
-  # # Flatpaks for (most) GUI programs
-  # services.flatpak.packages = [
-  #   "com.usebottles.bottles"
-  #   "com.valvesoftware.Steam"
-  #   "org.libretro.RetroArch"
-  #   "com.github.tchx84.Flatseal"
-  #   "us.zoom.Zoom"
-  #   "org.gnome.World.PikaBackup"
-  #   "com.discordapp.Discord"
-  #   "org.DolphinEmu.dolphin-emu"
-  #   "com.slack.Slack"
-  #   "com.ticktick.TickTick"
-  #   "com.rtosta.zapzap"
-  #   "org.inkscape.Inkscape"
-  #   "org.gimp.GIMP"
-  #   "org.libreoffice.LibreOffice"
-  #   "org.qbittorrent.qBittorrent"
-  #   "com.github.iwalton3.jellyfin-media-player"
-  #   "fr.handbrake.ghb"
-  #   "org.torproject.torbrowser-launcher"
-  #   "dev.geopjr.Tuba"
-  #   "com.github.finefindus.eyedropper"
-  # ];
-  #
-  # services.flatpak.update.auto = {
-  #   enable = true;
-  #   onCalendar = "weekly";
-  # };
+  services.flatpak.enable = true;
+  # Flatpaks for (most) GUI programs
+  services.flatpak.packages = [
+    "com.usebottles.bottles"
+    "com.valvesoftware.Steam"
+    "org.libretro.RetroArch"
+    "com.github.tchx84.Flatseal"
+    "us.zoom.Zoom"
+    "org.gnome.World.PikaBackup"
+    "com.discordapp.Discord"
+    "org.DolphinEmu.dolphin-emu"
+    "com.slack.Slack"
+    "com.ticktick.TickTick"
+    "com.rtosta.zapzap"
+    "org.inkscape.Inkscape"
+    "org.gimp.GIMP"
+    "org.libreoffice.LibreOffice"
+    "org.qbittorrent.qBittorrent"
+    "com.github.iwalton3.jellyfin-media-player"
+    "fr.handbrake.ghb"
+    "org.torproject.torbrowser-launcher"
+    "dev.geopjr.Tuba"
+    "com.github.finefindus.eyedropper"
+  ];
+
+  services.flatpak.update.auto = {
+    enable = true;
+    onCalendar = "weekly";
+  };
 }
