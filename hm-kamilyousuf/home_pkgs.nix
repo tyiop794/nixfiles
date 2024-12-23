@@ -60,7 +60,7 @@
   services.flatpak.enable = true;
   # Flatpaks for (most) GUI programs
   services.flatpak.packages = [
-    "com.usebottles.Bottles"
+    "com.usebottles.bottles"
     "com.valvesoftware.Steam"
     "org.libretro.RetroArch"
     "com.github.tchx84.Flatseal"

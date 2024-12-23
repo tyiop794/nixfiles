@@ -37,7 +37,7 @@
         # the path to your home.nix.
         modules = [ 
             ./home.nix 
-            nix-flatpak.homeManagerModules.nix-flatpak
+            # nix-flatpak.homeManagerModules.nix-flatpak
         ];
 
         # Optionally use extraSpecialArgs
