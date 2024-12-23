@@ -78,7 +78,7 @@
     "com.github.iwalton3.jellyfin-media-player"
     "fr.handbrake.ghb"
     "org.torproject.torbrowser-launcher"
-    # "dev.geopjr.Tuba"
+    "dev.geopjr.Tuba"
     "com.github.finefindus.eyedropper"
   ];
   
