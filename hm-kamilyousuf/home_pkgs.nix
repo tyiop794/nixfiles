@@ -60,6 +60,7 @@
   services.flatpak.enable = true;
   # Flatpaks for (most) GUI programs
   services.flatpak.packages = [
+    "com.github.wwmm.easyeffects"
     "com.usebottles.bottles"
     "com.valvesoftware.Steam"
     "org.libretro.RetroArch"
