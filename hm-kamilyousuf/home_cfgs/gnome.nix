@@ -5,7 +5,7 @@
      night-theme-switcher
      gsconnect
      blur-my-shell
-     (pkgs.callPackage ../../custom_pkgs/rounded-window-corners-reborn.nix {})
+     (pkgs.callPackage /home/kamilyousuf/nixfiles/custom_pkgs/rounded-window-corners-reborn.nix {})
   ];
 
   dconf.settings = {
