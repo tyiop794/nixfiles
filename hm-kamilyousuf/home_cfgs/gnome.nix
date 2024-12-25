@@ -6,6 +6,7 @@
      gsconnect
      blur-my-shell
      rounded-window-corners-reborn
+     wiggle
   ];
 
   dconf.settings = {
