@@ -64,7 +64,6 @@
     "com.github.wwmm.easyeffects"
     "com.usebottles.bottles"
     "com.valvesoftware.Steam"
-    "com.valvesoftware.Steam.Utility.gamescope"
     "org.libretro.RetroArch"
     "com.github.tchx84.Flatseal"
     "us.zoom.Zoom"
