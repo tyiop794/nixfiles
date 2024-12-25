@@ -1,12 +1,12 @@
 { config, inputs, pkgs, home-manager, lib, ... }:
 {
   # Setup GNOME shell extensions
-  # home.packages = with pkgs.gnomeExtensions; [
-  #    night-theme-switcher
-  #    gsconnect
-  #    blur-my-shell
-  #    (pkgs.callPackage ../../custom_pkgs/rounded-window-corners-reborn.nix {})
-  # ];
+  home.packages = with pkgs.gnomeExtensions; [
+     night-theme-switcher
+     gsconnect
+     blur-my-shell
+     (pkgs.callPackage ../../custom_pkgs/rounded-window-corners-reborn.nix {})
+  ];
 
   dconf.settings = {
   	"org/gnome/shell" = {
