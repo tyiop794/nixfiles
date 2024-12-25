@@ -64,7 +64,7 @@
     "com.github.wwmm.easyeffects"
     "com.usebottles.bottles"
     "com.valvesoftware.Steam"
-    "runtime/org.freedesktop.Platform.VulkanLayer.gamescope/x86_64/24.08"
+    "com.valvesoftware.Steam.Utility.gamescope"
     "org.libretro.RetroArch"
     "com.github.tchx84.Flatseal"
     "us.zoom.Zoom"
