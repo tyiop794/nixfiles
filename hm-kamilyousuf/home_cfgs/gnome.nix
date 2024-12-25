@@ -10,13 +10,13 @@
 
   dconf.settings = {
   	"org/gnome/shell" = {
-		disable-user-extensions = true;
-		# enabled-extensions = [
-		# 	"gsconnect@andyholmes.github.io"
-		# 	"nightthemeswitcher@romainvigier.fr"
-		#                       "blur-my-shell@aunetx"
-		#                       "rounded-window-corners@fxgn"
-		# ];
+		disable-user-extensions = false;
+		enabled-extensions = [
+			"gsconnect@andyholmes.github.io"
+			# "nightthemeswitcher@romainvigier.fr"
+		        "blur-my-shell@aunetx"
+		        "rounded-window-corners@fxgn"
+		];
 	};
 	"org/gnome/desktop/interface" = {
 		text-scaling-factor = 1.00;		
