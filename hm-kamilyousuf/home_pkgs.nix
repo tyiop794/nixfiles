@@ -61,6 +61,8 @@
   services.flatpak.enable = true;
   # Flatpaks for (most) GUI programs
   services.flatpak.packages = [
+    "net.pcsx2.PCSX2"
+    "org.duckstation.DuckStation"
     "io.github.Foldex.AdwSteamGtk"
     "org.flycast.Flycast"
     "com.github.wwmm.easyeffects"
