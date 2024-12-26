@@ -61,6 +61,7 @@
   services.flatpak.enable = true;
   # Flatpaks for (most) GUI programs
   services.flatpak.packages = [
+    "io.github.Foldex.AdwSteamGtk"
     "org.flycast.Flycast"
     "com.github.wwmm.easyeffects"
     "com.usebottles.bottles"
