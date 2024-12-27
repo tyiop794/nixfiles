@@ -67,6 +67,7 @@
     "com.github.wwmm.easyeffects"
     "com.usebottles.bottles"
     "com.valvesoftware.Steam"
+    "com.github.Matoking.protontricks"
     "runtime/org.freedesktop.Platform.VulkanLayer.gamescope/x86_64/24.08"
     "org.libretro.RetroArch"
     "com.github.tchx84.Flatseal"
