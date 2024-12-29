@@ -46,6 +46,7 @@
      nix-tree
      mpi
      f3
+     mediainfo
 
      # Have the 'open' utility?
      xdg-utils
