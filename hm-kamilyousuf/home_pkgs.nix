@@ -32,6 +32,7 @@
      vorta
 
      #command-line tools
+     gamescope
      fzf
      ripgrep
      jq
