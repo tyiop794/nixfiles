@@ -70,6 +70,7 @@
     "com.usebottles.bottles"
     "com.valvesoftware.Steam"
     "com.github.Matoking.protontricks"
+    "net.davidotek.pupgui2"
     "runtime/org.freedesktop.Platform.VulkanLayer.gamescope/x86_64/24.08"
     "org.libretro.RetroArch"
     "com.github.tchx84.Flatseal"
