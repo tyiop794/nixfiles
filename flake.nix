@@ -53,8 +53,7 @@
             modules = [
                 lix-module.nixosModules.default
                 # nix-flatpak.nixosModules.nix-flatpak
-               ./virtualisation.nix
-               ./configuration.nix
+               ./tardis/configuration.nix
                # ./firejail.nix
             ];
         };
@@ -70,7 +69,6 @@
             modules = [
                 lix-module.nixosModules.default
                ./dingusrv/configuration.nix
-	       ./dingusrv/docker.nix
             ];
         };
     };

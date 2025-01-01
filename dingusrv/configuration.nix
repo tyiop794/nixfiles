@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./samba.nix
+      ./docker.nix
       # inputs.home-manager.nixosModules.home-manager
     ];
 
