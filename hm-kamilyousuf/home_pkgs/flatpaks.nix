@@ -31,6 +31,7 @@
     "org.torproject.torbrowser-launcher"
     "dev.geopjr.Tuba"
     "com.github.finefindus.eyedropper"
+    "com.github.k4zmu2a.spacecadetpinball"
   ];
 
   services.flatpak.update.auto = {
