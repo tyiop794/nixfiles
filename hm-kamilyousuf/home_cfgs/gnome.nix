@@ -7,6 +7,7 @@
      blur-my-shell
      rounded-window-corners-reborn
      wiggle
+     dash-to-dock
   ];
 
   dconf.settings = {
