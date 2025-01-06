@@ -18,6 +18,7 @@
 			# "nightthemeswitcher@romainvigier.fr"
 		        "blur-my-shell@aunetx"
 		        "rounded-window-corners@fxgn"
+                        "dash-to-dock@micxgx.gmail.com"
 		];
 	};
 	"org/gnome/desktop/interface" = {
