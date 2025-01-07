@@ -116,7 +116,7 @@
 
   # Enable sound.
   # Disable pulseaudio
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   
   # Enable pipewire
   services.pipewire = {
