@@ -67,7 +67,7 @@
     pciutils
     glxinfo
     lshw
-    lm-sensors
+    lm_sensors
     dmidecode
     radeontop
 
