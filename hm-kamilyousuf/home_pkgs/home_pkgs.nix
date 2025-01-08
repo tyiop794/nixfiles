@@ -13,6 +13,7 @@
      anki
      higan
      vorta
+     vbam
 
      #command-line tools
      gamescope
