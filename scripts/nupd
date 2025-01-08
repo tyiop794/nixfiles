@@ -6,3 +6,4 @@ nix flake update
 git add -u
 git push
 sudo nixos-rebuild boot
+hmu

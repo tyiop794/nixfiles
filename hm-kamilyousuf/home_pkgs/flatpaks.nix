@@ -4,6 +4,7 @@
   # Flatpaks for (most) GUI programs
   services.flatpak.packages = [
     "net.pcsx2.PCSX2"
+    "net.lutris.Lutris"
     "io.gitlab.librewolf-community"
     "io.github.ungoogled_software.ungoogled_chromium"
     "org.duckstation.DuckStation"
