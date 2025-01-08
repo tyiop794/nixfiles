@@ -13,7 +13,6 @@
      anki
      higan
      vorta
-     librewolf
 
      #command-line tools
      gamescope
