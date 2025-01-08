@@ -5,6 +5,7 @@
   services.flatpak.packages = [
     "net.pcsx2.PCSX2"
     "io.gitlab.librewolf-community"
+    "io.github.ungoogled_software.ungoogled_chromium"
     "org.duckstation.DuckStation"
     "io.github.Foldex.AdwSteamGtk"
     "org.flycast.Flycast"
