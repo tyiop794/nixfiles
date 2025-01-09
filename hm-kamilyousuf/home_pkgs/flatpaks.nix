@@ -31,7 +31,7 @@
     "org.gimp.GIMP"
     "org.libreoffice.LibreOffice"
     "org.qbittorrent.qBittorrent"
-    "com.github.iwalton3.jellyfin-media-player"
+    "com.github.iwalton3.jellyfin-mpv-shim"
     "fr.handbrake.ghb"
     "org.torproject.torbrowser-launcher"
     "dev.geopjr.Tuba"
