@@ -20,6 +20,7 @@
 		        "blur-my-shell@aunetx"
 		        "rounded-window-corners@fxgn"
                         "dash-to-dock@micxgx.gmail.com"
+                        "appindicatorsupport@rgcjonas.gmail.com"
 		];
 	};
 	"org/gnome/desktop/interface" = {
