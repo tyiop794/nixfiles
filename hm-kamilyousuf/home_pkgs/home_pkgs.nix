@@ -8,10 +8,12 @@
      fastfetch
      yt-dlp
      borgbackup
+     jellyfin-mpv-shim
 
      # GUI programs
      anki
      vorta
+     jellyfin-media-player
 
      #command-line tools
      gamescope
