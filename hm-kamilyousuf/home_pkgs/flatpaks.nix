@@ -3,6 +3,7 @@
   services.flatpak.enable = true;
   # Flatpaks for (most) GUI programs
   services.flatpak.packages = [
+    "io.github.simple64.simple64"
     "net.pcsx2.PCSX2"
     "dev.ares.ares"
     "net.lutris.Lutris"
