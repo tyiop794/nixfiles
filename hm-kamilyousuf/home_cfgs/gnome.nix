@@ -8,6 +8,7 @@
      rounded-window-corners-reborn
      wiggle
      dash-to-dock
+     appindicator
   ];
 
   dconf.settings = {
