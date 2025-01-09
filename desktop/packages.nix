@@ -70,6 +70,7 @@
     lm_sensors
     dmidecode
     radeontop
+    appimage-run
 
     # (pkgs.callPackage ./custom_pkgs/rounded-window-corners-reborn.nix)
     # firefox
