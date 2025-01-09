@@ -11,10 +11,7 @@
 
      # GUI programs
      anki
-     higan
      vorta
-     vbam
-     ares
 
      #command-line tools
      gamescope
