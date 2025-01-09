@@ -14,6 +14,7 @@
      higan
      vorta
      vbam
+     ares
 
      #command-line tools
      gamescope
