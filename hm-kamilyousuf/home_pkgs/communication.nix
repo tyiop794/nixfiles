@@ -1,4 +1,4 @@
-{config, pkgs, inputs, ...};
+{config, pkgs, inputs, ...}:
 {
     services.flatpak.packages = [
         "dev.geopjr.Tuba"
