@@ -10,8 +10,4 @@
   };
 
   services.power-profiles-daemon.enable = false;
-  services.udev.extraRules = ''
-    ${builtins.readFile ./controllers/70-steam-input.rules}
-    ${builtins.readFile ./controllers/70-steam-vr.rules}
-  '';
 }
