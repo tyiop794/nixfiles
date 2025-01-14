@@ -57,6 +57,22 @@
                # ./firejail.nix
             ];
         };
+         box = nixpkgs.lib.nixosSystem rec {
+            system = "x86_64-linux";
+            # nixpkgs.overlays = [ flatpakOverlay ];
+            specialArgs = { 
+                inherit inputs outputs; 
+                # flatpak_nixpkgs = import flatpak_nixpkgs {
+                #     inherit system;
+                # };
+            };
+            modules = [
+                lix-module.nixosModules.default
+                # nix-flatpak.nixosModules.nix-flatpak
+               ./box/configuration.nix
+               # ./firejail.nix
+            ];
+        };
         dingusrv =  nixpkgs.lib.nixosSystem rec {
             system = "x86_64-linux";
             # nixpkgs.overlays = [ flatpakOverlay ];

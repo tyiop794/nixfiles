@@ -1,5 +1,8 @@
 {config, lib, pkgs, inputs, ... }:
 {
+  services.displayManager.sddm.enable = true;
+  services.desktopManager.plasma6.enable = true;
+
   # Enable Steam
   nixpkgs.config.allowUnfree = true;
   programs = {
