@@ -6,7 +6,7 @@
     ./media.nix
     ./internet.nix
     ./graphics.nix
-    ./communications.nix
+    ./communication.nix
     ./utilities.nix
   ];
 }
