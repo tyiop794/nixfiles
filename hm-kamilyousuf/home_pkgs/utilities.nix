@@ -41,4 +41,4 @@
          # This is stupid, but I couldn't help myself
          sl
     ];
-};
+}
