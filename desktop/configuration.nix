@@ -68,12 +68,6 @@
   # Enable flatpak
   services.flatpak.enable = true;
 
-  # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
-
-  # Enable gnome keyring
-  security.pam.services.gdm.enableGnomeKeyring = true;
 
   # Needed since the school's wifi does not support safe renegotiation
   # Create the OpenSSL configuration file
@@ -128,10 +122,6 @@
   services.libinput.enable = true;
 
   # Controller support (hopefully?)
-  services.udev.extraRules = ''
-    ${builtins.readFile ./controllers/70-steam-input.rules}
-    ${builtins.readFile ./controllers/70-steam-vr.rules}
-  '';
 
   # Enable the fish shell
   programs.fish.enable = true;
@@ -185,15 +175,6 @@
     enableUserSlices = true;
   };
 
-  # Enable and configure TLP
-  services.tlp = {
-    enable = true;
-    settings = {
-        PLATFORM_PROFILE_ON_AC = "balanced";
-        PLATFORM_PROFILE_ON_BAT = "low-power";
-    };
-  };
-  services.power-profiles-daemon.enable = false;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
