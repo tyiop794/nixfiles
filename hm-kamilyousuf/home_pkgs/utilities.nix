@@ -25,6 +25,7 @@
          f3
          mediainfo
          solaar
+         ltunify
 
          tree
          fastfetch
