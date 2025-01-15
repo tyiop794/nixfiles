@@ -24,6 +24,7 @@
          mpi
          f3
          mediainfo
+         solaar
 
          tree
          fastfetch
