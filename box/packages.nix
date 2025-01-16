@@ -8,5 +8,6 @@
   # ];
 
   programs.partition-manager.enable = true;
+  programs.dconf.enable = true;
 
 }
