@@ -5,7 +5,7 @@
     ./gaming.nix
     ./media.nix
     ./internet.nix
-    ./graphics.nix
+    ./production.nix
     ./communication.nix
     ./utilities.nix
   ];
