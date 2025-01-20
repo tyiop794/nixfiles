@@ -30,6 +30,7 @@
   imports = [
      ./home_pkgs/home_pkgs.nix
      ./home_cfgs/gnome.nix
+     ./home_cfgs/plasma.nix
      ./home_cfgs/neovim/neovim.nix
      ./home_cfgs/firefox.nix
      ./home_cfgs/fish.nix
