@@ -11,4 +11,7 @@
   programs.partition-manager.enable = true;
   programs.dconf.enable = true;
 
+  environment.plasma5.excludePackages = with pkgs.kdePackages; [
+    discover
+  ];
 }
