@@ -12,7 +12,7 @@
       # Use the systemd-boot EFI boot loader.
       boot.loader.systemd-boot.enable = true;
       boot.loader.efi.canTouchEfiVariables = true;
-      boot.loader.efi.efiSysMountPoint = "/boot/efi";
+      boot.loader.efi.efiSysMountPoint = "/boot";
       boot.kernelPackages = pkgs.linuxPackages_latest;
 
       # Indicate that our drive is encrypted
