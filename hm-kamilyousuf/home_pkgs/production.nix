@@ -8,5 +8,6 @@
         "org.inkscape.Inkscape"
         "org.gimp.GIMP"
         "org.kde.kdenlive"
+        "com.unity.UnityHub"
     ];
 }
