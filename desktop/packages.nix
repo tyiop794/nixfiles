@@ -64,6 +64,7 @@
     appimage-run
     gnupg
     pinentry-all
+    mangohud
 
     # (pkgs.callPackage ./custom_pkgs/rounded-window-corners-reborn.nix)
     # firefox
