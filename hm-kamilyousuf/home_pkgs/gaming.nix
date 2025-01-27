@@ -3,10 +3,10 @@
     home.packages = with pkgs; [
      gamescope
      dolphin-emu
+     simple64
     ];
     services.flatpak.packages = [
         "org.duckstation.DuckStation"
-        "io.github.simple64.simple64"
         "net.pcsx2.PCSX2"
         "dev.ares.ares"
         "net.lutris.Lutris"
