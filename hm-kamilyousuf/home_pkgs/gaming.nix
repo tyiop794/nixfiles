@@ -14,7 +14,6 @@
         "com.usebottles.bottles"
         "net.davidotek.pupgui2"
         "org.libretro.RetroArch"
-        "org.DolphinEmu.dolphin-emu"
         "com.github.k4zmu2a.spacecadetpinball"
     ];
 }
