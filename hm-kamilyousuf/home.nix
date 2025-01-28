@@ -37,6 +37,7 @@
      ./home_cfgs/tmux.nix
      ./home_cfgs/mpv.nix
      ./home_cfgs/ssh.nix
+     ./home_cfgs/bash.nix
   ];
   home.stateVersion = "23.11";
 
