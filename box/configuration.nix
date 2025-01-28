@@ -18,7 +18,7 @@
       # Indicate that our drive is encrypted
       boot.initrd.luks.devices = {
        root = {
-         device = "/dev/disk/by-uuid/72f80f50-b822-4759-9ba6-39b41242e648";
+         device = "/dev/disk/by-uuid/ce379dd6-8437-4116-9451-84340db9a006";
          preLVM = true;
         };
       };

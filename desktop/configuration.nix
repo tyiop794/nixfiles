@@ -142,7 +142,7 @@
     # set an init password b/c root does not have one
     initialPassword = "dingus";
     # set our default shell
-    shell = pkgs.fish;
+    shell = pkgs.bash;
   };
 
   # home-manager = {
