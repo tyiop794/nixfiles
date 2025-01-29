@@ -6,6 +6,7 @@
             ./hardware-configuration.nix
             ./desktop/configuration.nix
             ./packages.nix
+            ./nvidia.nix
             # ./packages-gnome.nix
         ];
         
