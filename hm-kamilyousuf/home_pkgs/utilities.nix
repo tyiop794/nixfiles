@@ -6,6 +6,7 @@
         "com.github.tchx84.Flatseal"
         "org.gnome.World.PikaBackup"
         "org.libreoffice.LibreOffice"
+        "io.appflowy.AppFlowy"
     ];
     home.packages = with pkgs; [
         # additional utilities
