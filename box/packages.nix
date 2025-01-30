@@ -7,6 +7,7 @@
   environment.systemPackages = with pkgs; [
     gnome-tweaks
     davinci-resolve
+    nvtop
   ];
 
   programs.partition-manager.enable = true;
