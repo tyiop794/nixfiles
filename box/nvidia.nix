@@ -10,6 +10,10 @@
 
     services.xserver.videoDrivers = ["nvidia"];
 
+    environment.systemPackages = with pkgs; [
+        nvidia-container-toolkit
+    ];
+
     hardware.nvidia = {
         modesetting.enable = true;
         open = false;
