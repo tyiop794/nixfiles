@@ -6,6 +6,7 @@
   programs.kdeconnect.enable = true;
   environment.systemPackages = with pkgs; [
     gnome-tweaks
+    davinci-resolve
   ];
 
   programs.partition-manager.enable = true;
