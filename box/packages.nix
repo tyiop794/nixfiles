@@ -8,6 +8,7 @@
     gnome-tweaks
     davinci-resolve
     nvtop
+    firefox
   ];
 
   programs.partition-manager.enable = true;
