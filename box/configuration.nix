@@ -14,7 +14,7 @@
       boot.loader.systemd-boot.enable = true;
       boot.loader.efi.canTouchEfiVariables = true;
       boot.loader.efi.efiSysMountPoint = "/boot";
-      boot.kernelPackages = pkgs.linuxPackages_latest;
+      # boot.kernelPackages = pkgs.linuxPackages_latest;
 
       # Indicate that our drive is encrypted
       boot.initrd.luks.devices = {
