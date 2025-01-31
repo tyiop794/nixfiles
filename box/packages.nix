@@ -9,6 +9,7 @@
     davinci-resolve
     nvtop
     firefox
+    plasma-browser-integration
   ];
 
   programs.partition-manager.enable = true;
