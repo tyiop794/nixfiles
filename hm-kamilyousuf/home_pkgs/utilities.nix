@@ -32,7 +32,6 @@
          fastfetch
          yt-dlp
          borgbackup
-         xar    
 
          # GUI programs
          anki
