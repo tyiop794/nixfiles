@@ -10,12 +10,11 @@
     nvtop
     firefox
     plasma-browser-integration
+    sshfs
   ];
 
   programs.partition-manager.enable = true;
   programs.dconf.enable = true;
-
-  services.openssh.allowSFTP = true;
 
   environment.plasma6.excludePackages = with pkgs.kdePackages; [
     discover
