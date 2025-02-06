@@ -32,6 +32,7 @@
          fastfetch
          yt-dlp
          borgbackup
+         verco
 
          # GUI programs
          anki
