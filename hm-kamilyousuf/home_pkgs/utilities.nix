@@ -32,6 +32,7 @@
          fastfetch
          yt-dlp
          borgbackup
+         universal-ctags
 
          # GUI programs
          anki
