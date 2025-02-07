@@ -23,6 +23,13 @@
                 require("trouble").setup()
                 '';
            }
+           {
+                plugin = fzf-lua;
+                type = "lua";
+                config = ''
+                require("fzf-lua").setup({"fzf-vim"})
+                '';
+           }
         ];
     };
 }
