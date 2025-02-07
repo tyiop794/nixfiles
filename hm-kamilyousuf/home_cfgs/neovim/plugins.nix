@@ -5,6 +5,7 @@
            plenary-nvim
            vim-fugitive
 	   vimtex
+           nvim-web-devicons
            {
                 plugin = nvim-tree-lua;
                 type = "lua";
