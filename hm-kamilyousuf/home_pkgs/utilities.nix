@@ -28,6 +28,7 @@
          mediainfo
          solaar
          ltunify
+         ventoy-full
 
          tree
          fastfetch
