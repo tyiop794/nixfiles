@@ -25,7 +25,7 @@
 	};
 	"org/gnome/desktop/interface" = {
 		text-scaling-factor = 1.00;		
-                gtk-theme = "Adwaita-dark";
+                gtk-theme = "Breeze-dark";
                 color-scheme = "prefer-dark";
 	};
 	"org/gnome/mutter" = {
