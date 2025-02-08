@@ -11,6 +11,7 @@
     firefox
     plasma-browser-integration
     sshfs
+    samba
   ];
 
   programs.partition-manager.enable = true;
