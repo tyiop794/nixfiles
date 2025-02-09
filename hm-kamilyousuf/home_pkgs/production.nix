@@ -2,6 +2,7 @@
 {
     home.packages = with pkgs; [
         lmms
+        ardour
     ];
     services.flatpak.packages = [
         "com.github.finefindus.eyedropper"
