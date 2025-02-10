@@ -7,6 +7,7 @@
         "org.gnome.World.PikaBackup"
         "org.libreoffice.LibreOffice"
         "io.appflowy.AppFlowy"
+        "io.github.thetumultuousunicornofdarkness.cpu-x"
     ];
     home.packages = with pkgs; [
         # additional utilities
@@ -27,12 +28,14 @@
          mediainfo
          solaar
          ltunify
+         ventoy-full
 
          tree
          fastfetch
          yt-dlp
          borgbackup
          verco
+         universal-ctags
 
          # GUI programs
          anki

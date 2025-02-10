@@ -5,6 +5,7 @@
            plenary-nvim
            vim-fugitive
 	   vimtex
+           nvim-web-devicons
            {
                 plugin = nvim-tree-lua;
                 type = "lua";
@@ -21,6 +22,13 @@
                 type = "lua";
                 config = ''
                 require("trouble").setup()
+                '';
+           }
+           {
+                plugin = fzf-lua;
+                type = "lua";
+                config = ''
+                require("fzf-lua").setup({"fzf-vim"})
                 '';
            }
         ];
