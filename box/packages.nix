@@ -8,7 +8,6 @@
     gnome-tweaks
     davinci-resolve
     nvtop
-    firefox
     plasma-browser-integration
     sshfs
     samba

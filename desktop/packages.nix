@@ -66,6 +66,7 @@
     pinentry-all
     mangohud
     libva-utils
+    firefox
 
     # (pkgs.callPackage ./custom_pkgs/rounded-window-corners-reborn.nix)
     # firefox
