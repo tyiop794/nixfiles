@@ -17,6 +17,7 @@
          mozlz4a
          newsboat
          lf
+         iotop
          ncdu
          glow
          tldr
