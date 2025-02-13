@@ -10,5 +10,6 @@
         "org.gimp.GIMP"
         "org.kde.kdenlive"
         "com.unity.UnityHub"
+        "com.jetbrains.Rider"
     ];
 }
