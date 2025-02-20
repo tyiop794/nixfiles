@@ -68,6 +68,7 @@
     libva-utils
     firefox
     git-lfs
+    git-lfs-transfer
 
     # (pkgs.callPackage ./custom_pkgs/rounded-window-corners-reborn.nix)
     # firefox
