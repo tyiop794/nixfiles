@@ -67,6 +67,7 @@
     mangohud
     libva-utils
     firefox
+    git-lfs
 
     # (pkgs.callPackage ./custom_pkgs/rounded-window-corners-reborn.nix)
     # firefox
