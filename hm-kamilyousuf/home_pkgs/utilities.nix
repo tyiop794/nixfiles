@@ -37,7 +37,6 @@
          borgbackup
          verco
          universal-ctags
-         dict
 
          # GUI programs
          anki
