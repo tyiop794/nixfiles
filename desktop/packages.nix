@@ -69,14 +69,12 @@
     firefox
     git-lfs
     git-lfs-transfer
+    dict
 
     # (pkgs.callPackage ./custom_pkgs/rounded-window-corners-reborn.nix)
     # firefox
   ];
 
-  environment = {
-    etc."dict.conf".text = "server dict.org";
-    systemPackages = with pkgs; [ dict ];
-  };
+  environment.etc."dict.conf".text = "server dict.org";
 
 }
