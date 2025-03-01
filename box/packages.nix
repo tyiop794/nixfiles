@@ -8,7 +8,7 @@
     gnome-tweaks
     davinci-resolve
     nvtop
-    plasma-browser-integration
+    kdePackages.plasma-browser-integration
     sshfs
     samba
     cifs-utils
