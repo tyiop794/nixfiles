@@ -31,7 +31,7 @@
         text = ''
             # <volume-name> <encrypted-device> [key-file] [options]
             cryptstorage UUID=f648946a-9ee0-4377-99c8-f24abd99188f /root/mykeyfile.key
-        ''
+        '';
       };
 
 }
