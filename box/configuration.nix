@@ -7,6 +7,7 @@
             ./desktop/configuration.nix
             ./packages.nix
             ./nvidia.nix
+            ./samba.nix
             # ./packages-gnome.nix
         ];
         
