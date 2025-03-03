@@ -41,6 +41,8 @@
     trusted-users = root kamilyousuf
   '';
 
+  nix.registry.nixpkgs.flake = inputs.nixpkgs;
+
 
   # nixpkgs.overlays = [
   #   # (self: super: {
