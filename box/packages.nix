@@ -9,7 +9,6 @@
     davinci-resolve
     nvtop
     kdePackages.plasma-browser-integration
-    sshfs
     samba
     cifs-utils
   ];

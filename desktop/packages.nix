@@ -70,6 +70,7 @@
     git-lfs
     git-lfs-transfer
     dict
+    sshfs
 
     # (pkgs.callPackage ./custom_pkgs/rounded-window-corners-reborn.nix)
     # firefox
