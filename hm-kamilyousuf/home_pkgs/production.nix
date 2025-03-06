@@ -11,5 +11,6 @@
         "org.kde.kdenlive"
         "com.unity.UnityHub"
         "com.jetbrains.Rider"
+        "io.github.seadve.Kooha"
     ];
 }
