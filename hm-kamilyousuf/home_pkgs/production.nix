@@ -3,6 +3,7 @@
     home.packages = with pkgs; [
         lmms
         ardour
+        wayfarer
     ];
     services.flatpak.packages = [
         "com.github.finefindus.eyedropper"
