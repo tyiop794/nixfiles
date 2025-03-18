@@ -50,7 +50,7 @@
          sl
 
          # iPhone management software
-         libimobiledevice
-         idevicerestore
+         # libimobiledevice
+         # idevicerestore
     ];
 }
