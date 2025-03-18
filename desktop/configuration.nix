@@ -34,6 +34,7 @@
   services.resolved = {
     enable = true;
     extraConfig = (builtins.readFile ./resolved.conf);
+    dnsovertls = "true";
   };
 
   # Set your time zone.
