@@ -71,6 +71,9 @@
     git-lfs-transfer
     dict
     sshfs
+    libimobiledevice
+    ifuse
+    idevicerestore
 
     # (pkgs.callPackage ./custom_pkgs/rounded-window-corners-reborn.nix)
     # firefox
