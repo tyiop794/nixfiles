@@ -48,5 +48,9 @@
 
          # This is stupid, but I couldn't help myself
          sl
+
+         # iPhone management software
+         libimobiledevice
+         idevicerestore
     ];
 }
