@@ -25,7 +25,6 @@
   # enable usbmuxd
   services.usbmuxd = {
     enable = true;
-    package = pkgs.usbmuxd2;
   };
 
   services.avahi.enable = true;
