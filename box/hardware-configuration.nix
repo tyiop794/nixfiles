@@ -29,6 +29,13 @@
       fsType = "ext4";
     };
 
+  fileSystems."/extras" =
+    { device = "/dev/disk/by-uuid/ef66ce20-081d-43f5-a444-c35ef5012414";
+      fsType = "ext4";
+    };
+
+  boot.initrd.luks.devices."cryptstorage".device = "/dev/disk/by-uuid/f648946a-9ee0-4377-99c8-f24abd99188f";
+
   swapDevices = [ ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
@@ -40,8 +47,6 @@
   # networking.interfaces.br-392aa482c258.useDHCP = lib.mkDefault true;
   # networking.interfaces.docker0.useDHCP = lib.mkDefault true;
   # networking.interfaces.enp12s0.useDHCP = lib.mkDefault true;
-  # networking.interfaces.veth45a0075.useDHCP = lib.mkDefault true;
-  # networking.interfaces.vetha27b078.useDHCP = lib.mkDefault true;
   # networking.interfaces.wlp13s0.useDHCP = lib.mkDefault true;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
