@@ -26,7 +26,7 @@
          nix-tree
          mpi
          f3
-         dg
+         dig
          mediainfo
          solaar
          ltunify
