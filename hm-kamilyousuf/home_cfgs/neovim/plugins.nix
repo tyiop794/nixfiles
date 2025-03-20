@@ -31,6 +31,13 @@
                 require("fzf-lua").setup({"fzf-vim"})
                 '';
            }
+           {
+                plugin = comment-nvim;
+                type = "lua";
+                config = ''
+                    require('Comment').setup()
+                '';
+           }
         ];
     };
 }
