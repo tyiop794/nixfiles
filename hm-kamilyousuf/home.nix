@@ -1,11 +1,13 @@
 { config, inputs, pkgs, home-manager, flatpak_nixpkgs, ... }:
 
+let
+  hostname = builtins.readFile "/etc/hostname";
+  trimmedHostname = builtins.replaceStrings ["\n"] [""] hostname;
+in
 {
   home.username = "kamilyousuf";
   home.homeDirectory = "/home/kamilyousuf";
   nixpkgs.config.allowUnfree = false;
-  hostname = builtins.readFile "/etc/hostname";
-  trimmedHostname = builtins.replaceStrings ["\n"] [""] hostname;
   nixpkgs.overlays = [
     # (self: super : {
     #     flatpak = flatpak_nixpkgs.flatpak;
