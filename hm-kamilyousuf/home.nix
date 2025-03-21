@@ -4,7 +4,8 @@
   home.username = "kamilyousuf";
   home.homeDirectory = "/home/kamilyousuf";
   nixpkgs.config.allowUnfree = false;
-
+  hostname = builtins.readFile "/etc/hostname";
+  trimmedHostname = builtins.replaceStrings ["\n"] [""] hostname;
   nixpkgs.overlays = [
     # (self: super : {
     #     flatpak = flatpak_nixpkgs.flatpak;
@@ -29,8 +30,8 @@
   # Packages that should be installed to the user profile.
   imports = [
      ./home_pkgs/home_pkgs.nix
-     ./home_cfgs/gnome.nix
-     ./home_cfgs/plasma.nix
+     # ./home_cfgs/gnome.nix
+     # ./home_cfgs/plasma.nix
      ./home_cfgs/neovim/neovim.nix
      # ./home_cfgs/firefox.nix
      ./home_cfgs/fish.nix
@@ -38,7 +39,8 @@
      ./home_cfgs/mpv.nix
      ./home_cfgs/ssh.nix
      ./home_cfgs/bash.nix
-  ];
+  ] ++ (if trimmedHostname == "tardis" then [./home_cfgs/gnome.nix] else [])
+    ++ (if trimmedHostname == "box" then [./home_cfgs/plasma.nix] else []);
   home.stateVersion = "23.11";
 
   programs = { 
