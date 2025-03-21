@@ -5,7 +5,6 @@
 
   programs.kdeconnect.enable = true;
   environment.systemPackages = with pkgs; [
-    gnome-tweaks
     davinci-resolve
     nvtop
     kdePackages.plasma-browser-integration
