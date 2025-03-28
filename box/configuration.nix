@@ -20,18 +20,18 @@
       # Indicate that our drive is encrypted
       boot.initrd.luks.devices = {
        root = {
-         device = "/dev/disk/by-uuid/ce379dd6-8437-4116-9451-84340db9a006";
+         device = "/dev/disk/by-uuid/34d73681-3fbf-4226-b75f-357e6ecbe82b";
          preLVM = true;
         };
       };
       networking.hostName = "box"; # Define your hostname.
 
-      environment.etc.crypttab = {
-        mode = "0600";
-        text = ''
-            # <volume-name> <encrypted-device> [key-file] [options]
-            cryptstorage UUID=f648946a-9ee0-4377-99c8-f24abd99188f /root/mykeyfile.key
-        '';
-      };
+      # environment.etc.crypttab = {
+      #  mode = "0600";
+      #  text = ''
+      #      # <volume-name> <encrypted-device> [key-file] [options]
+      #      cryptstorage UUID=f648946a-9ee0-4377-99c8-f24abd99188f /root/mykeyfile.key
+      #  '';
+      #};
 
 }

@@ -8,33 +8,21 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "uas" "sd_mod" ];
+  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usb_storage" "usbhid" "uas" "sd_mod" ];
   boot.initrd.kernelModules = [ "dm-snapshot" ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/65c96049-a8bb-4fda-bd9d-2c32e4672925";
+    { device = "/dev/disk/by-uuid/b1dedf98-229e-4365-9cbd-5dca7629de87";
       fsType = "ext4";
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/760A-21A3";
+    { device = "/dev/disk/by-uuid/DCCE-A34A";
       fsType = "vfat";
       options = [ "fmask=0022" "dmask=0022" ];
     };
-
-  fileSystems."/drive" =
-    { device = "/dev/disk/by-uuid/dcff09a5-0a8d-4740-a2a9-5ba92f098d48";
-      fsType = "ext4";
-    };
-
-  fileSystems."/extras" =
-    { device = "/dev/disk/by-uuid/ef66ce20-081d-43f5-a444-c35ef5012414";
-      fsType = "ext4";
-    };
-
-  boot.initrd.luks.devices."cryptstorage".device = "/dev/disk/by-uuid/f648946a-9ee0-4377-99c8-f24abd99188f";
 
   swapDevices = [ ];
 
@@ -43,9 +31,6 @@
   # still possible to use this option, but it's recommended to use it in conjunction
   # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
   networking.useDHCP = lib.mkDefault true;
-  # networking.interfaces.br-1d23a614cda9.useDHCP = lib.mkDefault true;
-  # networking.interfaces.br-392aa482c258.useDHCP = lib.mkDefault true;
-  # networking.interfaces.docker0.useDHCP = lib.mkDefault true;
   # networking.interfaces.enp12s0.useDHCP = lib.mkDefault true;
   # networking.interfaces.wlp13s0.useDHCP = lib.mkDefault true;
 
