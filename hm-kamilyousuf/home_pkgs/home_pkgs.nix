@@ -2,11 +2,11 @@
 {
   imports = [
     ./flatpaks.nix
-    ./gaming.nix
-    ./media.nix
-    ./internet.nix
+    # ./gaming.nix
+    # ./media.nix
+    # ./internet.nix
     # ./production.nix
-    ./communication.nix
-    ./utilities.nix
+    # ./communication.nix
+    # ./utilities.nix
   ];
 }
