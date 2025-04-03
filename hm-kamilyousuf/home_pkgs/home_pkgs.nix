@@ -7,6 +7,6 @@
     # ./internet.nix
     # ./production.nix
     # ./communication.nix
-    # ./utilities.nix
+    ./utilities.nix
   ];
 }
