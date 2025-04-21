@@ -179,7 +179,10 @@
   environment.variables.EDITOR = "nvim";
 
   # Enable zram
-  zramSwap.enable = true;
+  zramSwap = {
+    enable = true;
+    memoryMax = 8192 * 1024 * 1024;
+  };
 
   # Enable systemd-oomd
   systemd.oomd = {
