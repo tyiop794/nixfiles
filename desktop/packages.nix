@@ -62,6 +62,7 @@
     ifuse
     idevicerestore
     usbmuxd
+    compsize
 
 
     # (pkgs.callPackage ./custom_pkgs/rounded-window-corners-reborn.nix)
