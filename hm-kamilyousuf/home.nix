@@ -1,9 +1,5 @@
 { config, inputs, pkgs, home-manager, flatpak_nixpkgs, ... }:
 
-let
-  hostname = builtins.readFile "/etc/hostname";
-  trimmedHostname = builtins.replaceStrings ["\n"] [""] hostname;
-in
 {
   home.username = "kamilyousuf";
   home.homeDirectory = "/home/kamilyousuf";
@@ -33,7 +29,7 @@ in
   imports = [
      ./home_pkgs/home_pkgs.nix
      # ./home_cfgs/gnome.nix
-     # ./home_cfgs/plasma.nix
+     ./home_cfgs/plasma.nix
      ./home_cfgs/neovim/neovim.nix
      # ./home_cfgs/firefox.nix
      ./home_cfgs/fish.nix
@@ -41,8 +37,8 @@ in
      ./home_cfgs/mpv.nix
      ./home_cfgs/ssh.nix
      ./home_cfgs/bash.nix
-  ] ++ (if trimmedHostname == "tardis" then [./home_cfgs/gnome.nix] else [])
-    ++ (if trimmedHostname == "box" then [./home_cfgs/plasma.nix] else []);
+  ];
+
   home.stateVersion = "23.11";
 
   programs = { 
