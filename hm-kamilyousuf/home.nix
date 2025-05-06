@@ -37,6 +37,7 @@
      ./home_cfgs/mpv.nix
      ./home_cfgs/ssh.nix
      ./home_cfgs/bash.nix
+     ./home_cfgs/zsh.nix
   ];
 
   home.stateVersion = "23.11";
