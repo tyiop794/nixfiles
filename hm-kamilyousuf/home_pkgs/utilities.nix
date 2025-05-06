@@ -1,7 +1,7 @@
 {config, pkgs, inputs, ...}:
 {
     services.flatpak.packages = [
-        "io.github.Foldex.AdwSteamGtk"
+        # "io.github.Foldex.AdwSteamGtk"
         "com.github.wwmm.easyeffects"
         "com.github.tchx84.Flatseal"
         # "org.gnome.World.PikaBackup"
