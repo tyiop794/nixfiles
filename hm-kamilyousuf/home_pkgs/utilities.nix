@@ -4,11 +4,11 @@
         "io.github.Foldex.AdwSteamGtk"
         "com.github.wwmm.easyeffects"
         "com.github.tchx84.Flatseal"
-        "org.gnome.World.PikaBackup"
-        "org.libreoffice.LibreOffice"
-        "io.appflowy.AppFlowy"
+        # "org.gnome.World.PikaBackup"
+        # "org.libreoffice.LibreOffice"
+        # "io.appflowy.AppFlowy"
         "io.github.thetumultuousunicornofdarkness.cpu-x"
-        "com.github.joseexposito.touche"
+        # "com.github.joseexposito.touche"
     ];
     home.packages = with pkgs; [
         # additional utilities
