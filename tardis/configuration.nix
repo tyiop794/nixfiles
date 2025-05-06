@@ -7,6 +7,7 @@
             ./desktop/configuration.nix
             ./services.nix
 	    ./desktop/plasma.nix
+            ./touchpad.nix
         ];
         
       # Use the systemd-boot EFI boot loader.
@@ -22,5 +23,6 @@
         };
       };
       networking.hostName = "tardis"; # Define your hostname.
+
 
 }
