@@ -6,6 +6,9 @@
   # Enable nix-ld, for anything which requires an FHS environment
   programs.nix-ld.enable = true;
 
+  # Enable zsh
+  programs.zsh.enable = true;
+
   # Install fonts system-wide
   fonts.packages = with pkgs; [
       nerd-fonts.noto
