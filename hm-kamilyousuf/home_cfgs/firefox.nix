@@ -9,6 +9,7 @@
 			tridactyl
 			darkreader
                         bitwarden
+                        multi-account-containers
 		];
 	};
   };
