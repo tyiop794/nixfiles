@@ -1,23 +1,7 @@
 { config, lib, pkgs, inputs, ... }:
 
 {
-  # Enable Steam
   nixpkgs.config.allowUnfree = true;
-  programs = {
-      gamescope = {
-        enable = true;
-        capSysNice = true;
-      };
-      steam = {
-        enable = true;
-        remotePlay.openFirewall = true;
-        dedicatedServer.openFirewall = true;
-        gamescopeSession.enable = false;
-        protontricks = {
-            enable = true;
-        };
-      };
-  };
   
   # Enable nix-ld, for anything which requires an FHS environment
   programs.nix-ld.enable = true;
