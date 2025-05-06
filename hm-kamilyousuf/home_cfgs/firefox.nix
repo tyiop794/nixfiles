@@ -1,6 +1,6 @@
 {config, inputs, pkgs, ... }:
 {
-  programs.firefox = {
+  programs.librewolf = {
   	enable = true;
   	profiles.default = {
 		extensions = with inputs.firefox-addons.packages.${pkgs.system}; [
