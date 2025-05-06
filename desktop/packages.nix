@@ -50,7 +50,7 @@
     pinentry-all
     mangohud
     libva-utils
-    firefox
+    # firefox
     git-lfs
     git-lfs-transfer
     dict
