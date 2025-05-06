@@ -1,7 +1,7 @@
 {config, pkgs, inputs, ...}:
 {
     services.flatpak.packages = [
-        "dev.geopjr.Tuba"
+        # "dev.geopjr.Tuba"
         "com.discordapp.Discord"
         "us.zoom.Zoom"
         "com.slack.Slack"
