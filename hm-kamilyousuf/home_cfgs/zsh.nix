@@ -7,7 +7,11 @@
             export PATH=$PATH:/home/kamilyousuf/nixfiles/scripts
             export MOZ_DISABLE_RDD_SANDBOX=1
         '';
-        oh-my-zsh.enable = true;
+        oh-my-zsh = {
+            enable = true;
+            plugins = ["git"];
+            theme = "agnoster";
+        };
     };
 
 }
