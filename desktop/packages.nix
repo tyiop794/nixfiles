@@ -69,6 +69,7 @@
     libva-utils
     # firefox
     librewolf
+    brave
     git-lfs
     git-lfs-transfer
     git-filter-repo
