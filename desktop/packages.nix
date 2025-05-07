@@ -71,6 +71,7 @@
     librewolf
     git-lfs
     git-lfs-transfer
+    git-filter-repo
     dict
     sshfs
     libimobiledevice
