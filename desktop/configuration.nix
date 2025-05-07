@@ -10,6 +10,7 @@
       ./overlays.nix
       ./virtualisation.nix
       ./packages.nix
+      ./ld.nix
       # ./develop.nix
       # inputs.home-manager.nixosModules.home-manager
     ];

@@ -3,11 +3,6 @@
 {
   nixpkgs.config.allowUnfree = true;
   
-  # Enable nix-ld, for anything which requires an FHS environment
-  programs.nix-ld = {
-    enable = true;
-    libraries = pkgs.steam-run.fhsenv.args.multiPkgs pkgs;
-  };
 
   # Enable zsh
   programs.zsh.enable = true;
