@@ -31,4 +31,14 @@
         "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
       ];
   };
+
+  
+  environment.sessionVariables = {
+    NVD_BACKEND = "direct";
+    LIBVA_DRIVER_NAME = "nvidia";
+    GBM_BACKEND = "nvidia-drm";
+    __GLX_VENDOR_LIBRARY_NAME = "nvidia";
+
+    MOZ_DISABLE_RDD_SANDBOX = 1; # Note: Firefox doesn't hardware decode without this
+  };
 }
