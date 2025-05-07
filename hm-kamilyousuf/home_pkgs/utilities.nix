@@ -43,6 +43,7 @@
          # GUI programs
          anki
          vorta
+         calibre
 
          # Have the 'open' utility?
          xdg-utils

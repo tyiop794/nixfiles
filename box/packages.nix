@@ -1,8 +1,8 @@
 { config, lib, pkgs, input, ... }:
 {
   environment.systemPackages = with pkgs; [
-    davinci-resolve
-    nvtop
+    # davinci-resolve
+    # nvtop
     kdePackages.plasma-browser-integration
     samba
     cifs-utils

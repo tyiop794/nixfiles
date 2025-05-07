@@ -8,24 +8,42 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "uas" "sd_mod" ];
+  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usb_storage" "usbhid" "uas" "sd_mod" ];
   boot.initrd.kernelModules = [ "dm-snapshot" ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/b1dedf98-229e-4365-9cbd-5dca7629de87";
-      fsType = "ext4";
+    { device = "/dev/disk/by-uuid/9dbd6764-c75c-4dc5-af3e-ed7d6e90bbf9";
+      fsType = "btrfs";
+      options = [ "subvol=root" "compress=zstd:3" ];
+    };
+
+  fileSystems."/nix" =
+    { device = "/dev/disk/by-uuid/9dbd6764-c75c-4dc5-af3e-ed7d6e90bbf9";
+      fsType = "btrfs";
+      options = [ "subvol=nix" "compress=zstd:3" "noatime" ];
+    };
+
+  fileSystems."/home" =
+    { device = "/dev/disk/by-uuid/9dbd6764-c75c-4dc5-af3e-ed7d6e90bbf9";
+      fsType = "btrfs";
+      options = [ "subvol=home" "compress=zstd:3" ];
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/DCCE-A34A";
+    { device = "/dev/disk/by-uuid/9324-4DB9";
       fsType = "vfat";
       options = [ "fmask=0022" "dmask=0022" ];
     };
 
   fileSystems."/drive" =
     { device = "/dev/disk/by-uuid/dcff09a5-0a8d-4740-a2a9-5ba92f098d48";
+      fsType = "ext4";
+    };
+
+  fileSystems."/games" =
+    { device = "/dev/disk/by-uuid/54524946-4add-4611-b993-e7e9923d4b4a";
       fsType = "ext4";
     };
 

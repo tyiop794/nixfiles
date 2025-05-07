@@ -9,6 +9,20 @@
   # Enable zsh
   programs.zsh.enable = true;
 
+  # Librewolf web browser
+  # programs.firefox = {
+  #   enable = true;
+  #   package = pkgs.librewolf;
+  #   policies = {
+  #       Preferences = {
+  #           "webgl.disabled" = false;
+  #           "media.hardware-video-decoding.force-enabled" = true;
+  #           "media.ffmpeg.vaapi.enabled" = true;
+  #           "gfx.webrender.all" = true;
+  #       };
+  #   };
+  # };
+
   # Install fonts system-wide
   fonts.packages = with pkgs; [
       nerd-fonts.noto
@@ -54,6 +68,7 @@
     mangohud
     libva-utils
     # firefox
+    librewolf
     git-lfs
     git-lfs-transfer
     dict

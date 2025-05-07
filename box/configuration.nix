@@ -8,6 +8,7 @@
             ./packages.nix
             ./nvidia.nix
             ./samba.nix
+	    ./desktop/plasma.nix
             # ./packages-gnome.nix
         ];
         
@@ -20,7 +21,7 @@
       # Indicate that our drive is encrypted
       boot.initrd.luks.devices = {
        root = {
-         device = "/dev/disk/by-uuid/34d73681-3fbf-4226-b75f-357e6ecbe82b";
+         device = "/dev/disk/by-uuid/d55c2b9c-266a-4521-9453-319eaf0e445f";
          preLVM = true;
         };
       };

@@ -15,6 +15,7 @@
         settings = {
             "webgl.disabled" = false;
             "media.hardware-video-decoding.force-enabled" = true;
+            "media.ffmpeg.vaapi.enabled" = true;
         };
   };
 }
