@@ -3,10 +3,7 @@
   # Enable nix-ld, for anything which requires an FHS environment
   programs.nix-ld = {
     enable = true;
-    # libraries = pkgs.steam-run.fhsenv.args.multiPkgs pkgs;
-  };
-  environment.variables = {
-      NIX_LD_LIBRARY_PATH = with pkgs; lib.makeLibraryPath [
+    libraries = with pkgs; [
         stdenv.cc.cc
         openssl
         xorg.libXcomposite
@@ -100,7 +97,7 @@
         libdrm
         mesa
         libxkbcommon
-      ];
-      NIX_LD = lib.fileContents "${pkgs.stdenv.cc}/nix-support/dynamic-linker";
-  };  
+        
+    ];
+  };
 }
