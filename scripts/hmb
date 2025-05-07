@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-cd ~/nixfiles
-git add . 
-([ -z $1 ] 2>/dev/null && git commit -m "$(date +%F--%T)") || git commit -m "$(date +%F--%T): \"home-manager: $1\""
+cd /home/kamilyousuf/.config/home-manager
+git add -u
+([ -z $1 ] 2>/dev/null && git commit -m "home-manager: $(date +%F--%T)") || git commit -m "$(date +%F--%T): \"home-manager: $1\""
 git push
-home-manager switch --impure
+home-manager switch

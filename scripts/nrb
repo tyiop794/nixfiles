@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 cd ~/nixfiles
-git add . 
+git add -u
 ([ -z $1 ] 2>/dev/null && git commit -m "$(date +%F--%T)") || git commit -m "$(date +%F--%T): \"$1\""
 git push
 sudo nixos-rebuild switch --show-trace

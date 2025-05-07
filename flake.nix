@@ -51,7 +51,7 @@
                 # };
             };
             modules = [
-                lix-module.nixosModules.default
+                # lix-module.nixosModules.default
                 # nix-flatpak.nixosModules.nix-flatpak
                ./tardis/configuration.nix
                # ./firejail.nix

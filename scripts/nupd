@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-cd /home/kamilyousuf/nixfiles/
-git add .
+cd ~/nixfiles
+git add -u
 nix flake update
 git add -u
 git push
 sudo nixos-rebuild boot
-hmu
+# hmu
