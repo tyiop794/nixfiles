@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 cd /home/kamilyousuf/nixfiles/hm-kamilyousuf
-git add .
+# git add -u
 nix flake update
-/home/kamilyousuf/nixfiles/scripts/hmb "update"
+home-manager switch
+# /home/kamilyousuf/nixfiles/scripts/hmb "update"
 flatpak upgrade -y
