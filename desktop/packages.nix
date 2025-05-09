@@ -69,6 +69,7 @@
     librewolf
     brave
     git-lfs
+    stow
     git-lfs-transfer
     git-filter-repo
     dict
