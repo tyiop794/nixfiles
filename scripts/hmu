@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd /home/kamilyousuf/nixfiles/hm-kamilyousuf
+cd ~/.config/home-manager
 # git add -u
 nix flake update
 home-manager switch
