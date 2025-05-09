@@ -9,7 +9,7 @@
     [ # Include the results of the hardware scan.
       ./overlays.nix
       ./virtualisation.nix
-      ./packages.nix
+      ./packages/packages.nix
       ./ld.nix
       # ./develop.nix
       # inputs.home-manager.nixosModules.home-manager
@@ -232,6 +232,8 @@
   # Enable firewall
   networking.firewall.enable = true;
 
+  # Dictionary support
+  environment.etc."dict.conf".text = "server dict.org";
 
   # Copy the NixOS configuration file and link it from the resulting system
   # (/run/current-system/configuration.nix). This is useful in case you
