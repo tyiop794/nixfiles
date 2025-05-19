@@ -8,14 +8,14 @@ git pull
 # git merge main
 # git add -u
 sudo nixos-rebuild boot
-status=$?
-if [ $status -eq 0 ]; then
-    # git add -A ':!./flake.lock'
-    git commit -m "$(date +%F--%T): flake update" && git push
-else
-    echo -e "update failed with error $status"
-    # git restore flake.lock
-fi
+# status=$?
+# if [ $status -eq 0 ]; then
+#     # git add -A ':!./flake.lock'
+#     git commit -m "$(date +%F--%T): flake update" && git push
+# else
+#     echo -e "update failed with error $status"
+#     # git restore flake.lock
+# fi
 # git push
 # sudo nixos-rebuild boot
 hmu

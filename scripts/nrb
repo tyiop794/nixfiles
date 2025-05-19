@@ -1,7 +1,14 @@
 #!/usr/bin/env bash
 
 cd ~/nixfiles
+git pull
 git add -u
-([ -z $1 ] 2>/dev/null && git commit -m "$(date +%F--%T)") || git commit -m "$(date +%F--%T): \"$1\""
-git push
 sudo nixos-rebuild switch --show-trace
+status=$?
+if [ $status -eq 0 ]; then
+    ([ -z $1 ] 2>/dev/null && git commit -m "$(date +%F--%T)") || git commit -m "$(date +%F--%T): \"$1\""
+else
+    git restore --staged .
+    echo -e "'nixos-rebuild switch' failed: not committing changes"
+fi
+# git push
