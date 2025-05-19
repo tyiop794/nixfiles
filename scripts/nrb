@@ -1,8 +1,14 @@
 #!/usr/bin/env bash
 
 cd ~/nixfiles
-git pull
-sudo nixos-rebuild switch --show-trace
+new_pull=$(git pull)
+is_flake_update=$(grep "${new_pull}" ~/nixfiles/flake.lock)
+echo -e "Running ${is_flake_update}\n"
+cmd="switch"
+if [ ! -z $is_flake_update ]; then
+    cmd="boot"
+fi
+sudo nixos-rebuild $cmd --show-trace
 status=$?
 if [ $status -eq 0 ]; then
     git add -u

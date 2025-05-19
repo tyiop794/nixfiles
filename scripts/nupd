@@ -4,8 +4,8 @@ cd ~/nixfiles
 #@git add -u
 # nix flake update
 git pull
-git checkout current
-git merge main
+# git checkout current
+# git merge main
 # git add -u
 sudo nixos-rebuild boot
 status=$?
