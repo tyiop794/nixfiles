@@ -2,7 +2,8 @@
 
 cd ~/nixfiles
 #@git add -u
-nix flake update
+# nix flake update
+git pull
 # git add -u
 sudo nixos-rebuild boot
 status=$?
