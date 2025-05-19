@@ -11,11 +11,14 @@ jobs:
       - uses: actions/checkout@v4
       - uses: DeterminateSystems/nix-installer-action@v12
       - id: update
-        uses: DeterminateSystems/update-flake-lock@v23
+        uses: DeterminateSystems/update-flake-lock@main
         with:
-          nix-options: --debug --log-format raw
-      - name: Merge
-        run: gh pr merge --auto "${{ steps.update.outputs.pull-request-number }}" --rebase
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        if: ${{ steps.update.outputs.pull-request-number != '' }}
+          # nix-options: --debug --log-format raw
+          token: $ {{ secrets.GITHUB_TOKEN }}
+          pr-labels: |
+            automerge
+      # - name: Merge
+      #   run: gh pr merge --auto "${{ steps.update.outputs.pull-request-number }}" --rebase
+      #   env:
+      #     GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      #   if: ${{ steps.update.outputs.pull-request-number != '' }}
