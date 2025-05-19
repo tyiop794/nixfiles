@@ -6,17 +6,18 @@ cd ~/nixfiles
 git pull
 git checkout current
 git merge main
-git add -u
+# git add -u
 sudo nixos-rebuild boot
-flatpak upgrade -y
-# status=$?
-# if [ $status -eq 0 ]; then
-#     # git add -A ':!./flake.lock'
-#     git commit -m "$(date +%F--%T): flake update" && git push
-# else
-#     echo -e "update failed with error $status"
-#     # git restore flake.lock
-# fi
+status=$?
+if [ $status -eq 0 ]; then
+    # git add -A ':!./flake.lock'
+    git add -u
+    git commit -m "$(date +%F--%T): flake update" && git push
+    flatpak upgrade -y
+else
+    echo -e "update failed with error $status"
+    git restore --staged . 
+fi
 # git push
 # sudo nixos-rebuild boot
 hmu
