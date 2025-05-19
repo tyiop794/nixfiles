@@ -4,7 +4,7 @@ cd ~/nixfiles
 git add -u
 nix flake update
 git add -u
-git commit -m "$(date +%F--%T): flake update"
-git push
-sudo nixos-rebuild boot
-# hmu
+sudo nixos-rebuild boot && git commit -m "$(date +%F--%T): flake update" && git push
+# git push
+# sudo nixos-rebuild boot
+hmu

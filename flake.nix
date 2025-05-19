@@ -9,7 +9,7 @@
     #     inputs.nixpkgs.follows = "nixpkgs";
     # };
     # nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.4.1";
-    # nix-flatpak.url = "github:gmodena/nix-flatpak";
+    nix-flatpak.url = "github:gmodena/nix-flatpak";
     # home-manager = {
     #    url = "github:nix-community/home-manager/master";
     #    inputs.nixpkgs.follows = "nixpkgs";
@@ -27,7 +27,7 @@
     # };
   };
 
-  outputs = { self, nixpkgs, lix-module, home-manager, firefox-addons, ... }@inputs: let
+  outputs = { self, nixpkgs, lix-module, home-manager, firefox-addons, nix-flatpak, ... }@inputs: let
     inherit (self) outputs;
     systems = [
       "aarch64-linux"
@@ -52,7 +52,7 @@
             };
             modules = [
                 # lix-module.nixosModules.default
-                # nix-flatpak.nixosModules.nix-flatpak
+                nix-flatpak.nixosModules.nix-flatpak
                ./tardis/configuration.nix
                # ./firejail.nix
             ];
@@ -68,7 +68,7 @@
             };
             modules = [
                 lix-module.nixosModules.default
-                # nix-flatpak.nixosModules.nix-flatpak
+                nix-flatpak.nixosModules.nix-flatpak
                ./box/configuration.nix
                # ./firejail.nix
             ];

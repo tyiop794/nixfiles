@@ -3,6 +3,16 @@
 cd ~/.config/home-manager
 # git add -u
 nix flake update
-home-manager switch
+# sudo home-manager switch && git commit -m "$(date +%F--%T): flake update" && git push
+success=$(home-manager switch)
+if [$success == 0]; then
+    git commit -m "$(date +%F--%T): flake update" && git push
+    flatpak upgrade -y
+else
+    # revert to the older flake until the world stops ending
+    echo -e "\"home-manager switch\" failed: see error logs"
+    git restore ~/.config/home-manager/flake.lock
+endif
+
+# home-manager switch
 # /home/kamilyousuf/nixfiles/scripts/hmb "update"
-flatpak upgrade -y

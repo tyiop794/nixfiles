@@ -4,12 +4,11 @@
   nixpkgs.config.allowUnfree = true;
   
 
-  # Enable zsh
-  programs.zsh.enable = true;
-
   imports = [
     ./utilities.nix
     ./fonts.nix
+    ./communication.nix
+    # ./neovim.nix
   ];
 
 
