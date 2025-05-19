@@ -2,10 +2,11 @@
 
 cd ~/nixfiles
 new_pull=$(git pull)
-is_flake_update=$(grep "${new_pull}" ~/nixfiles/flake.lock)
+flake_cmd="echo \"${new_pull}\" | grep flake.lock"
+is_flake_update=$(${flake_cmd})
 echo -e "Running ${is_flake_update}\n"
 cmd="switch"
-if [ ! -z $is_flake_update ]; then
+if [ ! -z "${is_flake_update}" ]; then
     cmd="boot"
 fi
 sudo nixos-rebuild $cmd --show-trace
