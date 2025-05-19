@@ -1,10 +1,17 @@
 #!/usr/bin/env bash
 
 cd ~/nixfiles
-git add -u
+#@git add -u
 nix flake update
-git add -u
-sudo nixos-rebuild boot && git commit -m "$(date +%F--%T): flake update" && git push
+# git add -u
+update=$(sudo nixos-rebuild boot)
+if [ $update == 0 ]
+    git add -u
+    git commit -m "$(date +%F--%T): flake update" && git push
+else
+    echo -e "update failed with error $update"
+    git restore flake.lock
+endif
 # git push
 # sudo nixos-rebuild boot
-hmu
+# hmu
