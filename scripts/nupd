@@ -8,6 +8,7 @@ git pull
 # git merge main
 # git add -u
 sudo nixos-rebuild boot
+flatpak upgrade -y
 # status=$?
 # if [ $status -eq 0 ]; then
 #     # git add -A ':!./flake.lock'
