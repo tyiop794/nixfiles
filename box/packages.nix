@@ -2,7 +2,7 @@
 {
   environment.systemPackages = with pkgs; [
     # davinci-resolve
-    nvtopPackages.nvidia
+    # nvtopPackages.nvidia
     kdePackages.plasma-browser-integration
     samba
     cifs-utils

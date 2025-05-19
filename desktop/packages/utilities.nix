@@ -81,7 +81,7 @@
     mediainfo
     solaar
     ltunify
-    ventoy-full
+    # ventoy-full
 
     tree
     fastfetch
