@@ -6,7 +6,7 @@ nix flake update
 # sudo home-manager switch && git commit -m "$(date +%F--%T): flake update" && git push
 home-manager switch
 success=$?
-if [$success -eq 0]; then
+if [ $success -eq 0 ]; then
     git add -A ':!./flake.lock'
     git commit -m "$(date +%F--%T): flake update" && git push
     flatpak upgrade -y
