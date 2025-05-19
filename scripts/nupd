@@ -4,9 +4,9 @@ cd ~/nixfiles
 #@git add -u
 # nix flake update
 git pull
-# git checkout current
-# git merge main
-# git add -u
+git checkout current
+git merge main
+git add -u
 sudo nixos-rebuild boot
 flatpak upgrade -y
 # status=$?
