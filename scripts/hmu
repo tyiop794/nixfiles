@@ -7,9 +7,8 @@ nix flake update
 home-manager switch
 success=$?
 if [ $success -eq 0 ]; then
-    git add -A ':!./flake.lock'
+    # git add -A ':!./flake.lock'
     git commit -m "$(date +%F--%T): flake update" && git push
-    flatpak upgrade -y
 else
     # revert to the older flake until the world stops ending
     echo -e "\"home-manager switch\" failed: see error logs"
