@@ -15,4 +15,4 @@ else
 fi
 # git push
 # sudo nixos-rebuild boot
-# hmu
+hmu
