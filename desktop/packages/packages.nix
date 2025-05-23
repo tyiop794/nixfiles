@@ -8,6 +8,7 @@
     ./utilities.nix
     ./fonts.nix
     ./communication.nix
+    ./internet.nix
     # ./neovim.nix
   ];
 

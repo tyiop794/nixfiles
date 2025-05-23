@@ -46,9 +46,6 @@
     pinentry-all
     mangohud
     libva-utils
-    # firefox
-    librewolf
-    brave
     git-lfs
     stow
     git-lfs-transfer
