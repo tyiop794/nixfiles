@@ -9,6 +9,7 @@
         "io.appflowy.AppFlowy"
         "io.github.thetumultuousunicornofdarkness.cpu-x"
         # "com.github.joseexposito.touche"
+        "com.usebottles.bottles"
     ];
 
   # Enable zsh
