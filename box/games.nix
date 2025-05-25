@@ -18,7 +18,8 @@
 
   environment.systemPackages = with pkgs; [
     lutris
-    wine
+    wineWowPackages.unstable
     winetricks
   ];
+
 }
