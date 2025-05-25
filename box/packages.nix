@@ -1,5 +1,9 @@
 { config, lib, pkgs, input, ... }:
 {
+
+  imports = [
+    ./games.nix
+  ];
   environment.systemPackages = with pkgs; [
     # davinci-resolve
     # nvtopPackages.nvidia
@@ -9,19 +13,4 @@
     dolphin-emu
   ];
 
-  programs = {
-      gamescope = {
-        enable = true;
-        capSysNice = true;
-      };
-      steam = {
-        enable = true;
-        remotePlay.openFirewall = true;
-        dedicatedServer.openFirewall = true;
-        gamescopeSession.enable = false;
-        protontricks = {
-            enable = true;
-        };
-      };
-  };
 }
