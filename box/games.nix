@@ -20,6 +20,7 @@
     lutris
     wineWowPackages.unstable
     winetricks
+    heroic
   ];
 
 }
