@@ -88,7 +88,7 @@
                 # };
             };
             modules = [
-                lix-module.nixosModules.default
+                # lix-module.nixosModules.default
                ./dingusrv/configuration.nix
             ];
         };
