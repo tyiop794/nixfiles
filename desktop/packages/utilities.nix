@@ -79,6 +79,7 @@
     mediainfo
     solaar
     ltunify
+    sbctl
     # ventoy-full
 
     tree
