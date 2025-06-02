@@ -58,6 +58,7 @@
     idevicerestore
     usbmuxd
     compsize
+    jellyfin-mpv-shim
 
     # additional utilities
     fzf
