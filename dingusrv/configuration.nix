@@ -11,6 +11,7 @@
       ./samba.nix
       ./docker.nix
       ./automount.nix
+      ./server.nix
       # inputs.home-manager.nixosModules.home-manager
     ];
 
