@@ -10,6 +10,7 @@
       ./hardware-configuration.nix
       ./samba.nix
       ./docker.nix
+      ./automount.nix
       # inputs.home-manager.nixosModules.home-manager
     ];
 
@@ -70,7 +71,10 @@
     extraGroups = [ "wheel"  "networkmanager" ];
     # set an init password b/c root does not have one
     initialPassword = "dingus";
+    shell = pkgs.zsh;
   };
+
+  programs.zsh.enable = true;
 
   # home-manager = {
   #    extraSpecialArgs = { inherit inputs; };
@@ -104,6 +108,8 @@
     pciutils
     borgbackup
     fastfetch
+    taskwarrior3
+    home-manager               
 
     # (pkgs.callPackage ./custom_pkgs/rounded-window-corners-reborn.nix)
     # firefox
