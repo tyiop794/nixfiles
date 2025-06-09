@@ -27,12 +27,16 @@
        inputs.nixpkgs.follows = "nixpkgs";
        inputs.lix.follows = "lix";
     };
+    lanzaboote = {
+        url = "github:nix-community/lanzaboote/v0.4.2";
+        inputs.nixpkgs.follows = "nixpkgs";
+    };
     # flatpak_nixpkgs = {
     #     url = "github:NixOS/nixpkgs/7695a1e9a9789fa13684ffd87c02b6c9f9e99b96";
     # };
   };
 
-  outputs = { self, nixpkgs, lix-module, home-manager, firefox-addons, nix-flatpak, ... }@inputs: let
+  outputs = { self, nixpkgs, lix-module, home-manager, firefox-addons, nix-flatpak, lanzaboote, ... }@inputs: let
     inherit (self) outputs;
     systems = [
       "aarch64-linux"
@@ -59,6 +63,7 @@
                 # lix-module.nixosModules.default
                 nix-flatpak.nixosModules.nix-flatpak
                ./tardis/configuration.nix
+               lanzaboote.nixosModules.lanzaboote
                # ./firejail.nix
             ];
         };

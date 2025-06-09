@@ -11,7 +11,7 @@
         ];
         
       # Use the systemd-boot EFI boot loader.
-      boot.loader.systemd-boot.enable = true;
+      boot.loader.systemd-boot.enable = lib.mkForce false;
       boot.loader.efi.canTouchEfiVariables = true;
       boot.loader.efi.efiSysMountPoint = "/boot";
 
@@ -21,6 +21,11 @@
          device = "/dev/nvme0n1p2";
          preLVM = true;
         };
+      };
+
+      boot.lanzaboote = {
+        enable = true;
+        pkiBundle = "/var/lib/sbctl";
       };
       networking.hostName = "tardis"; # Define your hostname.
 
