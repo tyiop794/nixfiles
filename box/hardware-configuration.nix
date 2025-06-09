@@ -37,10 +37,10 @@
       options = [ "fmask=0022" "dmask=0022" ];
     };
 
-  fileSystems."/drive" =
-    { device = "/dev/disk/by-uuid/dcff09a5-0a8d-4740-a2a9-5ba92f098d48";
-      fsType = "ext4";
-    };
+  # fileSystems."/drive" =
+  #   { device = "/dev/disk/by-uuid/dcff09a5-0a8d-4740-a2a9-5ba92f098d48";
+  #     fsType = "ext4";
+  #   };
 
   fileSystems."/games" =
     { device = "/dev/disk/by-uuid/54524946-4add-4611-b993-e7e9923d4b4a";
