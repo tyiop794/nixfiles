@@ -59,7 +59,7 @@
     usbmuxd
     compsize
     jellyfin-mpv-shim
-    logseq
+    nb
 
     # additional utilities
     fzf
