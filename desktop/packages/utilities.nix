@@ -56,7 +56,7 @@
     libimobiledevice
     ifuse
     idevicerestore
-    usbmuxd
+    # usbmuxd
     compsize
     jellyfin-mpv-shim
     nb

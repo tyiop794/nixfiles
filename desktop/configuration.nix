@@ -26,7 +26,7 @@
 
   # enable usbmuxd
   services.usbmuxd = {
-    enable = true;
+    enable = false;
   };
 
   services.avahi.enable = true;
