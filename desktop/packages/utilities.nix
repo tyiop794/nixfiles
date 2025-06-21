@@ -95,6 +95,7 @@
     anki
     vorta
     calibre
+    kitty
 
     # Have the 'open' utility?
     xdg-utils
