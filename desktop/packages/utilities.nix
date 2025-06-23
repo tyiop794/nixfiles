@@ -53,9 +53,9 @@
     git-filter-repo
     dict
     sshfs
-    libimobiledevice
+    # libimobiledevice
     ifuse
-    idevicerestore
+    # idevicerestore
     # usbmuxd
     compsize
     jellyfin-mpv-shim
