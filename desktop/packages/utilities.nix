@@ -10,6 +10,7 @@
         "io.github.thetumultuousunicornofdarkness.cpu-x"
         # "com.github.joseexposito.touche"
         "com.usebottles.bottles"
+        "com.calibre_ebook.calibre"
     ];
 
   # Enable zsh
@@ -53,13 +54,16 @@
     git-filter-repo
     dict
     sshfs
-    libimobiledevice
+    # libimobiledevice
     ifuse
-    idevicerestore
+    # idevicerestore
     # usbmuxd
     compsize
     jellyfin-mpv-shim
     nb
+    openssl
+    libxcrypt
+    sox
 
     # additional utilities
     fzf
@@ -94,7 +98,7 @@
     # GUI programs
     anki
     vorta
-    calibre
+    # calibre
     kitty
 
     # Have the 'open' utility?
