@@ -11,6 +11,7 @@
         # "com.github.joseexposito.touche"
         "com.usebottles.bottles"
         "com.calibre_ebook.calibre"
+        "io.github.ciromattia.kcc"
     ];
 
   # Enable zsh
