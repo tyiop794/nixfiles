@@ -3,6 +3,7 @@
     environment.systemPackages = with pkgs; [
         brave
         firefox
+        librewolf
         chromium
         ungoogled-chromium
     ];
