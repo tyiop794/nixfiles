@@ -39,6 +39,9 @@
     GBM_BACKEND = "nvidia-drm";
     __GLX_VENDOR_LIBRARY_NAME = "nvidia";
 
+    VK_LOADER_DEBUG = "driver";
+    VK_ADD_DRIVER_FILES = "/run/opengl-driver/share/vulkan/icd.d/nvidia_icd.x86_64.json";
+
     MOZ_DISABLE_RDD_SANDBOX = 1; # Note: Firefox doesn't hardware decode without this
   };
 }
