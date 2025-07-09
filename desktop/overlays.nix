@@ -29,12 +29,31 @@
   #   })
   # ];
 
+  nixpkgs.overlays = [
+    (final: prev: {
+        brave = prev.brave.override {
+            # vulkanSupport = true;
+            # enableVideoAcceleration = true;
+            commandLineArgs = "--ozone-platform=x11";
+        };
+    })
+  ];
   nixpkgs.config.chromium.commandLineArgs = "--enable-features=VaapiVideoDecoder,VaapiIgnoreDriverChecks,Vulkan,DefaultANGLEVulkan,VulkanFromANGLE --ozone-platform=x11";
+  # nixpkgs.config.brave.commandLineArgs = "--enable-features=VaapiVideoDecoder,VaapiIgnoreDriverChecks,Vulkan,DefaultANGLEVulkan,VulkanFromANGLE --ozone-platform=x11";
+
+  # nixpkgs.config.brave = {
+  #   enableVideoAcceleration = true;
+  #   vulkanSupport = true;
+  #   commandLineArgs = "--ozone-platform-hint=x11";
+  # };
   
   nixpkgs.config.packageOverrides = pkgs: rec {
     wpa_supplicant = pkgs.wpa_supplicant.overrideAttrs (attrs: {
         patches = attrs.patches ++ [ ./eduroam.patch ];
     });
+    # brave = pkgs.brave.overrideAttrs (attrs: {
+    #     patches = attrs.patches ++ [ ./eduroam.patch ];
+    # });
   };
 }
 

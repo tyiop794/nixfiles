@@ -45,6 +45,21 @@
       "aarch64-darwin"
       "x86_64-darwin"
     ];
+    patches = [
+        {
+            url = "https://patch-diff.githubusercontent.com/raw/NixOS/nixpkgs/pull/378184.diff";
+            sha256 = "sha256-iM4o/e93tQFHVyyhBfMggWxVaxDXrqxDJ2E+CmBQMXA=";
+        }
+    ];
+    originPkgs = inputs.nixpkgs.legacyPackages."x86_64-linux";
+    nixpkgs = originPkgs.applyPatches {
+        name = "nixpkgs-patched";
+        src = inputs.nixpkgs;
+        patches = map originPkgs.fetchpatch patches;
+    };
+
+    nixosSystem = import (nixpkgs + "/nixos/lib/eval-config.nix");
+    # nixosSystem = inputs.nixpkgs.lib.nixosSystem;
     # flatpakOverlay = final: prev: {
     #     flatpak = flatpak_nixpkgs.legacyPackages.x86_64-linux.flatpak;
     # };
@@ -67,7 +82,7 @@
                # ./firejail.nix
             ];
         };
-         box = nixpkgs.lib.nixosSystem rec {
+         box = nixosSystem rec {
             system = "x86_64-linux";
             # nixpkgs.overlays = [ flatpakOverlay ];
             specialArgs = { 

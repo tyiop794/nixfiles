@@ -5,6 +5,6 @@
         firefox
         librewolf
         chromium
-        ungoogled-chromium
+        # ungoogled-chromium
     ];
 }

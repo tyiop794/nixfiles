@@ -11,6 +11,8 @@
     samba
     cifs-utils
     dolphin-emu
+    ntfs3g
+    woeusb-ng
   ];
 
 }

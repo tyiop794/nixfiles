@@ -9,6 +9,6 @@
   programs.dconf.enable = true;
 
   environment.plasma6.excludePackages = with pkgs.kdePackages; [
-    discover
+    # discover
   ];
 }
