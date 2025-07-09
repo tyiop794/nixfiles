@@ -6,5 +6,6 @@
         librewolf
         chromium
         ungoogled-chromium
+        tor-browser
     ];
 }
