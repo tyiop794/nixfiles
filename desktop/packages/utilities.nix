@@ -9,7 +9,6 @@
         "io.appflowy.AppFlowy"
         "io.github.thetumultuousunicornofdarkness.cpu-x"
         # "com.github.joseexposito.touche"
-        "com.usebottles.bottles"
         "com.calibre_ebook.calibre"
         "io.github.ciromattia.kcc"
     ];

@@ -10,7 +10,7 @@
     kdePackages.plasma-browser-integration
     samba
     cifs-utils
-    dolphin-emu
+    # dolphin-emu
     ntfs3g
     woeusb-ng
   ];
