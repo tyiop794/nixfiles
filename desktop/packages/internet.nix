@@ -5,5 +5,6 @@
         firefox
         # librewolf
         chromium
+        vulkan-loader # use to get hardware acceleration in chromium
     ];
 }
