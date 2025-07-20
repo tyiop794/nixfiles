@@ -1,9 +1,9 @@
 { config, lib, pkgs, inputs, ...}:
 {
     environment.systemPackages = with pkgs; [
-        brave
+        # brave
         firefox
-        librewolf
+        # librewolf
         chromium
     ];
 }
