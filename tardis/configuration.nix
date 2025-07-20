@@ -7,6 +7,7 @@
             ./desktop/configuration.nix
             ./services.nix
 	    ./desktop/plasma.nix
+            ./overlays.nix
             # ./touchpad.nix
         ];
         

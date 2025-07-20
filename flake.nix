@@ -65,7 +65,7 @@
     # };
     forAllSystems = nixpkgs.lib.genAttrs systems;
   in {  nixosConfigurations = { 
-         tardis = nixpkgs.lib.nixosSystem rec {
+         tardis = nixosSystem rec {
             system = "x86_64-linux";
             # nixpkgs.overlays = [ flatpakOverlay ];
             specialArgs = { 

@@ -9,6 +9,7 @@
             ./nvidia.nix
             ./samba.nix
 	    ./desktop/plasma.nix
+            ./overlays.nix
             # ./packages-gnome.nix
         ];
         
