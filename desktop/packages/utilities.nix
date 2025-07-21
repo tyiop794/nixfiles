@@ -3,13 +3,12 @@
     services.flatpak.packages = [
         "io.github.Foldex.AdwSteamGtk"
         "com.github.wwmm.easyeffects"
-        "com.github.tchx84.Flatseal"
+       "com.github.tchx84.Flatseal"
         # "org.gnome.World.PikaBackup"
         # "org.libreoffice.LibreOffice"
         "io.appflowy.AppFlowy"
         "io.github.thetumultuousunicornofdarkness.cpu-x"
         # "com.github.joseexposito.touche"
-        "com.usebottles.bottles"
         "com.calibre_ebook.calibre"
         "io.github.ciromattia.kcc"
     ];
@@ -17,11 +16,11 @@
   # Enable zsh
   programs.zsh.enable = true;
 
-  # programs.direnv = {
-  #     enable = true;
-  #     enableZshIntegration = true;
-  #     nix-direnv.enable = true;
-  # };
+  programs.direnv = {
+      enable = true;
+      enableZshIntegration = true;
+      nix-direnv.enable = true;
+  };
 
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
@@ -87,6 +86,7 @@
     solaar
     ltunify
     sbctl
+    nvd
     # ventoy-full
 
     tree

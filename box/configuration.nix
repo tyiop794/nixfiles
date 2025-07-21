@@ -9,6 +9,7 @@
             ./nvidia.nix
             ./samba.nix
 	    ./desktop/plasma.nix
+            ./overlays.nix
             # ./packages-gnome.nix
         ];
         
@@ -16,6 +17,7 @@
       boot.loader.systemd-boot.enable = true;
       boot.loader.efi.canTouchEfiVariables = true;
       boot.loader.efi.efiSysMountPoint = "/boot";
+      boot.supportedFilesystems = ["ntfs"];
       # boot.kernelPackages = pkgs.linuxPackages_latest;
 
       # Indicate that our drive is encrypted

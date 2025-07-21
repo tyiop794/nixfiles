@@ -1,5 +1,10 @@
 { config, lib, pkgs, input, ... }:
 {
+  services.flatpak.packages = [
+    "com.usebottles.bottles"
+    "org.DolphinEmu.dolphin-emu"
+  ];
+
   programs = {
       gamescope = {
         enable = true;

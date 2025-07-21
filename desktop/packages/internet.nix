@@ -3,8 +3,9 @@
     environment.systemPackages = with pkgs; [
         brave
         firefox
-        librewolf
+        # librewolf
         chromium
-        ungoogled-chromium
+        vulkan-loader # use to get hardware acceleration in chromium
+        # google-chrome
     ];
 }
