@@ -37,6 +37,13 @@
             commandLineArgs = "--enable-features=VaapiVideoDecoder,VaapiIgnoreDriverChecks,Vulkan,DefaultANGLEVulkan,VulkanFromANGLE,VaapiOnNvidiaGPUs,VaapiVideoEncoder,AcceleratedVideoEncoder --ozone-platform=x11";
         };
     })
+    (final: prev: {
+        brave = prev.brave.override {
+            vulkanSupport = true;
+            enableVideoAcceleration = true;
+            commandLineArgs = "--enable-features=VaapiVideoDecoder,VaapiIgnoreDriverChecks,Vulkan,DefaultANGLEVulkan,VulkanFromANGLE,VaapiOnNvidiaGPUs,VaapiVideoEncoder,AcceleratedVideoEncoder --ozone-platform=x11";
+        };
+    })
   ];
   nixpkgs.config.chromium.commandLineArgs = "--enable-features=VaapiVideoDecoder,VaapiIgnoreDriverChecks,Vulkan,DefaultANGLEVulkan,VulkanFromANGLE,VaapiOnNvidiaGPUs,VaapiVideoEncoder,AcceleratedVideoEncoder --ozone-platform=x11";
   # nixpkgs.config.brave.commandLineArgs = "--enable-features=VaapiVideoDecoder,VaapiIgnoreDriverChecks,Vulkan,DefaultANGLEVulkan,VulkanFromANGLE --ozone-platform=x11";
@@ -62,6 +69,14 @@
         };
         # __intentionallyOverridingVersion = true;
     });
+    # brave = pkgs.brave.overrideAttrs (final: prev: {
+    #     version = "138.0.7204.157";
+    #     src = pkgs.fetchurl {
+    #         url = "https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_${final.version}-1_amd64.deb";
+    #         hash = "sha256-QmWevU4cYmUc6lUbFG4bQ1aKFuUyIUorJjMMF14bzZ4=";
+    #     };
+    #     # __intentionallyOverridingVersion = true;
+    # });
   };
 }
 

@@ -50,6 +50,10 @@
             url = "https://patch-diff.githubusercontent.com/raw/NixOS/nixpkgs/pull/378184.diff";
             sha256 = "sha256-iM4o/e93tQFHVyyhBfMggWxVaxDXrqxDJ2E+CmBQMXA=";
         }
+        {
+            url = "https://patch-diff.githubusercontent.com/raw/NixOS/nixpkgs/pull/425841.diff";
+            sha256 = "sha256-tcfHUvAKNPefVYf4flETRuN946gmDeDDRZOZgYbNnsI=";
+        }
     ];
     originPkgs = inputs.nixpkgs.legacyPackages."x86_64-linux";
     nixpkgs = originPkgs.applyPatches {
