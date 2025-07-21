@@ -86,6 +86,7 @@
     solaar
     ltunify
     sbctl
+    nvd
     # ventoy-full
 
     tree
