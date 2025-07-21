@@ -9,7 +9,8 @@
     ./fonts.nix
     ./communication.nix
     ./internet.nix
-    # ./neovim.nix
+    ./hm-former.nix
+    ./neovim.nix
   ];
 
 

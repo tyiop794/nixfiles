@@ -3,7 +3,7 @@
     services.flatpak.packages = [
         "io.github.Foldex.AdwSteamGtk"
         "com.github.wwmm.easyeffects"
-        "com.github.tchx84.Flatseal"
+       "com.github.tchx84.Flatseal"
         # "org.gnome.World.PikaBackup"
         # "org.libreoffice.LibreOffice"
         "io.appflowy.AppFlowy"
@@ -16,11 +16,11 @@
   # Enable zsh
   programs.zsh.enable = true;
 
-  # programs.direnv = {
-  #     enable = true;
-  #     enableZshIntegration = true;
-  #     nix-direnv.enable = true;
-  # };
+  programs.direnv = {
+      enable = true;
+      enableZshIntegration = true;
+      nix-direnv.enable = true;
+  };
 
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.

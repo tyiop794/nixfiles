@@ -31,10 +31,10 @@
 
   nixpkgs.overlays = [
     (final: prev: {
-        brave = prev.brave.override {
+        google-chrome = prev.google-chrome.override {
             # vulkanSupport = true;
             # enableVideoAcceleration = true;
-            commandLineArgs = "--ozone-platform=x11";
+            commandLineArgs = "--enable-features=VaapiVideoDecoder,VaapiIgnoreDriverChecks,Vulkan,DefaultANGLEVulkan,VulkanFromANGLE,VaapiOnNvidiaGPUs,VaapiVideoEncoder,AcceleratedVideoEncoder --ozone-platform=x11";
         };
     })
   ];
@@ -54,6 +54,14 @@
     # brave = pkgs.brave.overrideAttrs (attrs: {
     #     patches = attrs.patches ++ [ ./eduroam.patch ];
     # });
+    google-chrome = pkgs.google-chrome.overrideAttrs (final: prev: {
+        version = "138.0.7204.157";
+        src = pkgs.fetchurl {
+            url = "https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_${final.version}-1_amd64.deb";
+            hash = "sha256-QmWevU4cYmUc6lUbFG4bQ1aKFuUyIUorJjMMF14bzZ4=";
+        };
+        # __intentionallyOverridingVersion = true;
+    });
   };
 }
 
