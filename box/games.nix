@@ -3,6 +3,11 @@
   services.flatpak.packages = [
     "com.usebottles.bottles"
     "org.DolphinEmu.dolphin-emu"
+    "com.github.k4zmu2a.spacecadetpinball"
+    "dev.ares.ares"
+    "net.davidotek.pupgui2"
+    "net.pcsx2.PCSX2"
+    "org.duckstation.DuckStation"
   ];
 
   programs = {
