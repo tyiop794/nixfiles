@@ -8,55 +8,36 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usb_storage" "usbhid" "uas" "sd_mod" ];
+  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "usb_storage" "uas" "sd_mod" ];
   boot.initrd.kernelModules = [ "dm-snapshot" ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/9dbd6764-c75c-4dc5-af3e-ed7d6e90bbf9";
+    { device = "/dev/mapper/nixos--vg-root";
       fsType = "btrfs";
       options = [ "subvol=root" "compress=zstd:3" ];
     };
 
-  fileSystems."/nix" =
-    { device = "/dev/disk/by-uuid/9dbd6764-c75c-4dc5-af3e-ed7d6e90bbf9";
-      fsType = "btrfs";
-      options = [ "subvol=nix" "compress=zstd:3" "noatime" ];
-    };
-
   fileSystems."/home" =
-    { device = "/dev/disk/by-uuid/9dbd6764-c75c-4dc5-af3e-ed7d6e90bbf9";
+    { device = "/dev/mapper/nixos--vg-root";
       fsType = "btrfs";
       options = [ "subvol=home" "compress=zstd:3" ];
     };
 
+  fileSystems."/nix" =
+    { device = "/dev/mapper/nixos--vg-root";
+      fsType = "btrfs";
+      options = [ "subvol=nix" "compress=zstd:3" "noatime" ];
+    };
+
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/9324-4DB9";
+    { device = "/dev/disk/by-uuid/AAA5-4FF4";
       fsType = "vfat";
       options = [ "fmask=0022" "dmask=0022" ];
     };
 
-  # fileSystems."/drive" =
-  #   { device = "/dev/disk/by-uuid/dcff09a5-0a8d-4740-a2a9-5ba92f098d48";
-  #     fsType = "ext4";
-  #   };
-
-  fileSystems."/games" =
-    { device = "/dev/disk/by-uuid/54524946-4add-4611-b993-e7e9923d4b4a";
-      fsType = "ext4";
-    };
-
   swapDevices = [ ];
-
-  # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
-  # (the default) this is the recommended approach. When using systemd-networkd it's
-  # still possible to use this option, but it's recommended to use it in conjunction
-  # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
-  networking.useDHCP = lib.mkDefault true;
-  # networking.interfaces.docker0.useDHCP = lib.mkDefault true;
-  # networking.interfaces.enp12s0.useDHCP = lib.mkDefault true;
-  # networking.interfaces.wlp13s0.useDHCP = lib.mkDefault true;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;

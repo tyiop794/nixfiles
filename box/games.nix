@@ -31,7 +31,7 @@
     wineWowPackages.unstable
     winetricks
     heroic
-    sm64ex
+    # sm64ex
   ];
 
 }
