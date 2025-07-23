@@ -18,7 +18,7 @@
 
   # Use the latest linux kernel
   # Maybe not...it seems to be blowing up bluetooth for whatever reason...
-  # boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   hardware.bluetooth.enable = true;
   # Enable fwupd

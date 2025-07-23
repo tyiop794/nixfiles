@@ -8,33 +8,38 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "usb_storage" "uas" "sd_mod" ];
+  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "uas" "sd_mod" ];
   boot.initrd.kernelModules = [ "dm-snapshot" ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/mapper/nixos--vg-root";
+    { device = "/dev/disk/by-uuid/99b4d1b8-0836-4d32-816f-3781bc7899ef";
       fsType = "btrfs";
       options = [ "subvol=root" "compress=zstd:3" ];
     };
 
-  fileSystems."/home" =
-    { device = "/dev/mapper/nixos--vg-root";
+  fileSystems."/nix" =
+    { device = "/dev/disk/by-uuid/99b4d1b8-0836-4d32-816f-3781bc7899ef";
       fsType = "btrfs";
-      options = [ "subvol=home" "compress=zstd:3" ];
+      options = [ "subvol=nix" "compress=zstd:3"];
     };
 
-  fileSystems."/nix" =
-    { device = "/dev/mapper/nixos--vg-root";
+  fileSystems."/home" =
+    { device = "/dev/disk/by-uuid/99b4d1b8-0836-4d32-816f-3781bc7899ef";
       fsType = "btrfs";
-      options = [ "subvol=nix" "compress=zstd:3" "noatime" ];
+      options = [ "subvol=home" "noatime" "compress=zstd:3"];
     };
 
   fileSystems."/boot" =
     { device = "/dev/disk/by-uuid/AAA5-4FF4";
       fsType = "vfat";
       options = [ "fmask=0022" "dmask=0022" ];
+    };
+
+  fileSystems."/games" =
+    { device = "/dev/disk/by-uuid/54524946-4add-4611-b993-e7e9923d4b4a";
+      fsType = "ext4";
     };
 
   swapDevices = [ ];
